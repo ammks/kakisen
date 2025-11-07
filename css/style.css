@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+/* フルードイメージ */
+img{max-width: 100%;height:auto;}
+
+/* 共通 */
+
+/* 色番号 */
+/* ベースカラー（ベージュ）：#FFF8F0
+メインカラー（赤）：#E64C4C
+アクセントカラー（黄）：#FDC865
+文字色（黒）：#2C2929 */
+
+/* フォント */
+/* 日本語大見出し */
+h1{
+    color:#2C2929;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 日本語小見出し */
+h2{
+    color:#2C2929;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+/* 英語大見出し太字 */
+h3{
+    color:#2C2929;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 英語大見出し細字 */
+h4{
+    color:#2C2929;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 日本語本文 */
+p{
+    color:#2C2929;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/* スクロール */
+html {
+  scroll-behavior: smooth;
+}
+/* 中央に揃える */
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #FFF8F0;
+}
+/* タイトル */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.78%;
+    margin-bottom: 2%;
+}
+
+/* 各ページ */
+/* TOP */
+
+/* ABOUT */
+
+/* PRODUCT */
+
+/* ONLINE SHOP */
+
+/* 個人情報保護方針 */
+
+/* 特定商取引法 */
+
+/* メディアクエリ */
+@media(width<780px){
+    /* 各ページ */
+
+    /* TOP */
+
+    /* ABOUT */
+
+    /* PRODUCT */
+
+    /* ONLINE SHOP */
+
+    /* 個人情報保護方針 */
+
+    /* 特定商取引法 */ 
+}
