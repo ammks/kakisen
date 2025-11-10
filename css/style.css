@@ -87,6 +87,7 @@ html {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 100px;
 }
 
 #product .header-tile {
@@ -102,17 +103,179 @@ html {
 
 #product .kakisen.wrapper {
     display: flex;
+    align-items: stretch;
     justify-content: center;
+    gap: 4.17%;
+}
+
+#product .kakisen.wrapper .img-area {
+    flex: 1;
+    display: flex;
+}
+
+#product .kakisen.wrapper .img-area img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
 
 #product .kakisen.wrapper .content-area {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
 }
 
 #product .kakisen.wrapper .content-area h2 {
     text-align: center;
+}
+
+#product .kakisen.wrapper .content-area img {
+    width: 100%;
+}
+
+#product .kakisen.wrapper .content-area h2,
+#product .kakisen.wrapper .content-area h3,
+#product .kakisen.wrapper .content-area p,
+#product .kakisen.wrapper .content-area img:last-child {
+    margin-top: 8.90%;
+}
+
+#product .list.wrapper {
+    margin-top: 6.25%;
+}
+
+#product .list.wrapper .list-container {
+    display: flex;
+    justify-content: center;
+}
+
+#product .list.wrapper .list-container .item:nth-child(2n) {
+    background-color: #FEECCF;
+}
+
+#product .list.wrapper .list-container .item h4 {
+    color:#2C2929;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-bottom: 1px solid #2C2929;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 4.33%;
+    margin-bottom: 6.67%; 
+    line-height: 1em;
+}
+
+#product .list.wrapper .list-container .item {
+    max-width: 300px;
+    width: 100%;
+    padding: 7.14% 2.08%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product .list.wrapper .list-container .item .img-area {
+    margin-bottom: 33.33%;
+}
+
+#product .list.wrapper .list-container .item p {
+    text-align: center
+}
+
+h5 {
+    color:#2C2929;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+#product .list.wrapper .list-container .item .graph-outer {
+    width: 100%;
+    margin-top: 16.67%;
+}
+
+#product .list.wrapper .list-container .item .graph-outer .graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+;
+    margin-top: 10.67%;
+}
+
+#product .graph .value {
+    width: 18.33%;
+    height: 2px;
+    background-color: #E64C4C;
+    position: relative;
+}
+
+#product .graph .value .circle {
+    width: 15px; height: 15px;
+    border-radius: 100px;
+    background-color: #E64C4C;
+
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translate(50%, -50%); 
+    z-index: 3;
+}
+
+#product .graph .value::before, #product .graph .value-1::after {
+    content: "";
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1;
+}
+
+#product .graph .value::before {
+    right: 0; top: 50%;
+    width: 1.5px; height: 9px;
+    transform: translateY(-50%);
+}
+
+#product .graph .value-1::after {
+    left: 0; top: 50%;
+    width: 1.5px; height: 9px;
+    transform: translateY(-50%);
+}
+
+#product .kakisen-list.wrapper .item.salt .aroma .value-4,
+#product .kakisen-list.wrapper .item.salt .umami .value-4,
+#product .kakisen-list.wrapper .item.butterHerb .aroma .value-3,
+#product .kakisen-list.wrapper .item.butterHerb .aroma .value-4,
+#product .kakisen-list.wrapper .item.butterHerb .sharp .value-3,
+#product .kakisen-list.wrapper .item.butterHerb .sharp .value-4,
+#product .kakisen-list.wrapper .item.spicyRed .umami .value-4,
+#product .kakisen-list.wrapper .item.spicyRed .sharp .value-3,
+#product .kakisen-list.wrapper .item.spicyRed .sharp .value-4,
+#product .kakisen-list.wrapper .item.lemonPepper .aroma .value-3,
+#product .kakisen-list.wrapper .item.lemonPepper .aroma .value-4,
+#product .kakisen-list.wrapper .item.lemonPepper .umami .value-3,
+#product .kakisen-list.wrapper .item.lemonPepper .umami .value-4,
+#product .kakio-list.wrapper .item.salt .aroma .value-4,
+#product .kakio-list.wrapper .item.salt .umami .value-4,
+#product .kakio-list.wrapper .item.shoyu .sharp .value-3,
+#product .kakio-list.wrapper .item.shoyu .sharp .value-4,
+#product .kakio-list.wrapper .item.spicyRed .umami .value-4,
+#product .kakio-list.wrapper .item.spicyRed .sharp .value-4,
+#product .kakio-list.wrapper .item.spicyRed .sharp .value-3,
+#product .kakio-list.wrapper .item.yuzuSalt .aroma .value-3,
+#product .kakio-list.wrapper .item.yuzuSalt .aroma .value-4,
+#product .kakio-list.wrapper .item.yuzuSalt .umami .value-4,
+#product .kakio-list.wrapper .item.yuzuSalt .sharp .value-4 {
+    background-color: #D9D9D9;
+}
+
+#product .kakio-section {
+    margin-top: 13.02%;
 }
 
 
