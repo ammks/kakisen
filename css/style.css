@@ -77,7 +77,43 @@ html {
 
 /* ABOUT */
 
-/* PRODUCT */
+/*=================================
+            PRODUCT
+=================================*/
+#product main {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#product .header-tile {
+    width: 100%;
+    height: 130px;
+    background: url(../img/product-tile-1.png) repeat-x;
+    margin-bottom: 6.25%;
+}
+
+#product .title {
+    margin-bottom: 5.21%;
+}
+
+#product .kakisen.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#product .kakisen.wrapper .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product .kakisen.wrapper .content-area h2 {
+    text-align: center;
+}
+
+
+
 
 /* ONLINE SHOP */
 
