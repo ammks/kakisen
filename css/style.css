@@ -968,7 +968,7 @@ html {
     mask-image: linear-gradient(to right, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
   }
-  .nav-content li{
+.nav-content li{
     color:#2C2929;
     font-family: "Gravitas One", serif;
     font-weight: 400;
