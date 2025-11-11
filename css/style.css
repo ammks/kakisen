@@ -934,6 +934,48 @@ html {
 
 
 /* 個人情報保護方針 */
+    ol li{
+        font-weight: bold;
+        margin: 2% 0 1% 0%;
+    }
+
+    ul li{
+        font-weight: normal;
+        margin: 0;
+    }
+
+#PP .header-blocks{
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 130px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+
+/* HELP涙涙涙 */
+.privacy-policy{
+ text-align: center;    
+}
+
+.test{ 
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 130px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+
+.main-paaage {
+    width: 70%; /* ページのコンテンツ幅 */
+    margin: 0 auto;
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+}
+
+.personal-information{
+    margin: 80px 0 50px 0;
+}
+
+
 
 /* 特定商取引法 */
 #tokushoho .line-deco{
@@ -1096,6 +1138,10 @@ html {
     /* ONLINE SHOP */
 
     /* 個人情報保護方針 */
+    ol {
+	list-style-type: decimal;
+}
+
 
     /* 特定商取引法 */ 
 }
