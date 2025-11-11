@@ -27,3 +27,17 @@ menuClose.addEventListener("click", () => {
     menuBtn.classList.remove("active");
     patternBg.style.opacity = 0;
 });
+
+const shopBtn = document.querySelector(".fixed-shop-btn");
+
+menuBtn.addEventListener("click", () => {
+    if (navOverlay.classList.contains("active")) {
+    shopBtn.style.display = "none";
+    } else {
+    shopBtn.style.display = "flex";
+    }
+});
+
+menuClose.addEventListener("click", () => {
+    shopBtn.style.display = "flex";
+});
