@@ -81,152 +81,9 @@ html {
 
 /* ONLINE SHOP */
 
-@charset "utf-8";
-/* CSS Document */
-/* フルードイメージ */
-img{max-width: 100%;height:auto;}
-
-/* 共通 */
-
-/* 色番号 */
-/* ベースカラー（ベージュ）：#FFF8F0
-メインカラー（赤）：#E64C4C
-アクセントカラー（黄）：#FDC865
-文字色（黒）：#2C2929 */
-
-/* フォント */
-/* 日本語大見出し */
-h1{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 日本語小見出し */
-h2{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-}
-/* 英語大見出し太字 */
-h3{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 英語大見出し細字 */
-h4{
-    color:#2C2929;
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 日本語本文 */
-p{
-    color:#2C2929;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-}
-/* スクロール */
-html {
-  scroll-behavior: smooth;
-}
-/* 中央に揃える */
-.wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: #FFF8F0;
-}
-/* タイトル */
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.78%;
-    margin-bottom: 1.92%;
-}
-/* ボタン */
-.kakisen-btn{
-    width: 170px;
-    /* height:; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #E64C4C;
-    /* border-radius: 100px; */
-    padding: 6px;
-    color: #FFF8F0;
-}
-.kakisen-btn p{
-    color: #FFF8F0;
-}
-.kakisen-a{
-    text-decoration: none;
-}
-.kakisen-circle{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FDC865;
-    position: relative;
-    transition: 0.3s;
-}
-.kakisen-circle::after{
-    content: "";
-    position: absolute;
-    top: 50%; left: 50%;
-    translate: -75% -50%;
-    rotate: -135deg;
-    width: 10px;
-    height: 10px;
-    border-bottom:3px solid #FFF8F0;
-    border-left: 3px solid #FFF8F0;
-}
-.kakisen-a:hover .kakisen-circle{
-    transform:translateX(30%) ;
-
-}
-
-/* 各ページ */
-/* TOP */
-
-/* ABOUT */
-
-/* PRODUCT */
-
-/* ONLINE SHOP */
-
 /* ACCESS */
-#access .access-container {
-    max-width: 80%; /* カンプに合わせて幅を調整 */
-    margin: 0 auto;
-    padding: 0 0 5%;
-}
 
-/* タイトルと装飾 */
-#access .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5%; /* 装飾帯との間隔を詰める */
-}
-
-#access .title h4 {
-    font-size: 2.5vw; 
-    font-weight: 500;
-}
-
-#access .line-deco {
+#access .line-deco{
     width: 100%;
     height: auto;
     margin-bottom: 3.5%; /* 次のセクションとの間隔 */
@@ -235,20 +92,38 @@ html {
     margin-right: auto;
 }
 
+#access .legal-notation-page {
+    width: 70%; /* ページのコンテンツ幅 */
+    max-width: 960px; /* 必要に応じて最大幅を設定 */
+    margin: 0 auto;
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+}
+
+#access .page-title h3{
+    text-align: center;
+    font-size: 32px; /* 画面幅に応じたサイズ */
+    margin-bottom: 5.2%;
+}
+
+#access .page-title .title-icon {
+    text-align: center;
+    width: 2vw; /* アイコンのサイズ */
+    height: auto;
+}
+
 /* --- Section 1: スライダーと基本情報 --- */
 
 #access .store-info-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 5%;
+    margin-bottom: 5.21%;
 }
 
 /* 写真スライダー（左側） */
 #access .photo-slider-wrapper {
     position: relative;
     width: 55%; /* カンプに合わせて左側の幅を広げる */
-    border: 1px solid #2C2929; /* 画像周りの線 */
 }
 
 #access .photo-slider {
@@ -307,16 +182,15 @@ html {
 /* 親子のイラスト */
 #access .illustration.parentandchild-move {
     position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    right: 0;
+    width: 50%; /* イラストのサイズ調整 */
+    top: -30%; /* 上に大きくはみ出す */
+    right: 30%;
     z-index: 10;
     /* アニメーション適用 */
     animation: gentle-float 4s infinite alternate ease-in-out; 
 }
 
 #access .details-box {
-    border: 1px solid #2C2929;
     padding: 5% 5%;
 }
 
@@ -336,21 +210,21 @@ html {
     width: 30%; /* 項目名の幅 */
     font-weight: bold;
     line-height: 1.6;
-    padding: 0.5% 0;
+    padding: 5% 0;
 }
 #access .basic-details dl dd {
     margin-left: 30%; /* dtの幅に合わせる */
     line-height: 1.6;
-    padding: 0.5% 0;
+    padding: 5% 0;
 }
 
 /* 装飾パターン */
-#access .deco-pattern.info-deco {
-    text-align: right;
+#access .deco-pattern {
+    text-align: center;
     margin-top: 5%;
 }
-#access .deco-pattern.info-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
+#access .deco-pattern img {
+    width: 20%; /* 装飾のサイズ調整 */
     height: auto;
     margin-left: 1%;
 }
@@ -359,6 +233,7 @@ html {
 
 #access .guidance-map-section {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 5%;
@@ -367,7 +242,7 @@ html {
 /* 簡易地図（左側） */
 #access .simple-map-wrapper {
     width: 48%; /* 左側の幅 */
-    border: 1px solid #2C2929;
+    margin-top: 5.21%;
 }
 #access .simple-map-wrapper img {
     display: block;
@@ -378,22 +253,21 @@ html {
 #access .transport-guidance {
     width: 48%; /* 右側の幅 */
     position: relative;
-    padding-top: 3%;
+    padding-top: 5.21%;
 }
 
 /* 夫婦のイラスト */
 #access .illustration.couple-move {
     position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    left: 0; /* 左側に配置 */
+    width: 50%; /* イラストのサイズ調整 */
+    top: -15%; /* 上に大きくはみ出す */
+    left: 30%;
     z-index: 10;
     /* アニメーション適用 */
-    animation: sway 3s infinite alternate ease-in-out;
+    animation: sway 4s infinite alternate ease-in-out; 
 }
 
 #access .guidance-options {
-    border: 1px solid #2C2929;
     padding: 5% 5%;
 }
 
@@ -409,18 +283,6 @@ html {
     margin-bottom: 1%;
 }
 
-/* 装飾パターン */
-#access .deco-pattern.guidance-deco {
-    text-align: left; /* 左寄せ */
-    margin-top: 5%;
-}
-#access .deco-pattern.guidance-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
-    height: auto;
-    margin-right: 1%;
-}
-
-
 /* --- Section 3: Googleマップ埋め込み --- */
 
 #access .google-map-section {
@@ -432,7 +294,6 @@ html {
     padding-bottom: 40%; /* カンプに合わせて高さを調整 (100%幅で40%の高さ) */
     height: 0;
     overflow: hidden;
-    border: 1px solid #2C2929;
 }
 
 #access .google-map-container iframe {
@@ -453,28 +314,37 @@ html {
         transform: translateY(0) rotate(0deg);
     }
     100% {
-        transform: translateY(-2%) rotate(0.5deg);
+        transform: translateY(-2%) rotate(5deg);
     }
 }
 
-/* 人形のゆらゆら動くアニメーション (夫婦に使用) */
 @keyframes sway {
     0% {
-        transform: translate(0, 0) rotate(0deg);
+        transform: translateY(0) rotate(0deg);
     }
     100% {
-        transform: translate(1%, -1.5%) rotate(-0.5deg);
+        transform: translateY(-2%) rotate(5deg);
     }
 }
 
-
 /* 個人情報保護方針 */
+
+
+
+
+
+
+
+
 
 /* 特定商取引法 */
 #tokushoho .line-deco{
     width: 100%;
-    height: 1.56%; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
+    height: auto;
+    margin-bottom: 3.5%; /* 次のセクションとの間隔 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #tokushoho .legal-notation-page {
@@ -487,7 +357,7 @@ html {
 /* ページタイトル */
 #tokushoho .page-title {
     text-align: center;
-    font-size: 2.29vw; /* 画面幅に応じたサイズ */
+    font-size: 32px; /* 画面幅に応じたサイズ */
     margin-bottom: 5.2%;
 }
 
@@ -495,7 +365,7 @@ html {
 #tokushoho .block-title {
     display: flex;
     align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
+    font-size: 24px; /* 画面幅に応じたサイズ */
     font-weight: 700; /* 太字 */
     color: #2C2929;
     margin: 1.52%; 
@@ -505,20 +375,19 @@ html {
 #tokushoho .block-subtitle{
     display: flex;
     align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
+    font-size: 24px; /* 画面幅に応じたサイズ */
     font-weight: 700; /* 太字 */
     color: #2C2929;
     padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
-
 }
 
- .block-title .title-icon {
+#tokushoho .block-title .title-icon {
     width: 2vw; /* アイコンのサイズ */
     height: auto;
     margin-right: 0.52%; /* アイコンとテキストの間隔 */
 }
 
-.block-subtitle .subtitle-icon{
+#tokushoho .block-subtitle .subtitle-icon{
     width: 0.5vw; /* アイコンのサイズ */
     height: auto;
     margin-right: 0.75%; /* アイコンとテキストの間隔 */
@@ -533,11 +402,11 @@ html {
 
 /* 項目名 (dt) */
 #tokushoho .info-list dt {
-    width: 25%; /* 項目名の幅 */
+    width: 50%; 
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 700; /* 太字 */
     color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
+    font-size: 16px; /* 画面幅に応じたサイズ */
     padding: 0.78% 0;
     line-height: 1.6;
     vertical-align: top;
@@ -549,7 +418,7 @@ html {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
     color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
+    font-size: 16px; /* 画面幅に応じたサイズ */
     padding: 0.78% 0;
     line-height: 1.6;
 }
@@ -564,21 +433,28 @@ html {
 
 /* 支払い方法のdd内のp */
 #tokushoho .payment-data dd p {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
+    font-size: 16px; /* 画面幅に応じたサイズ */
     line-height: 1.6;
     margin: 0;
 }
 
 /* 区切り線 */
+
+#tokushoho .notation-main-hr{
+    border: none;
+    border-bottom: 2px solid #333; 
+    margin: 3.125% 0; /* 上下の余白 */
+}
+
 #tokushoho .notation-hr {
     border: none;
-    border-top: 1px solid #C4C4C4; /* グレーの細い線 */
+    border-bottom: 1px solid #C4C4C4; /* グレーの細い線 */
     margin: 3.125% 0; /* 上下の余白 */
 }
 
 /* 本文テキスト */
 #tokushoho .content-text {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
+    font-size: 16px; 
     line-height: 1.8;
     margin-top: 0;
     margin-bottom: 1.56%;
@@ -590,7 +466,7 @@ html {
     padding-left: 0.52%;
 }
 #tokushoho .sub-list li p {
-    font-size: 0.9375vw;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0;
 }
