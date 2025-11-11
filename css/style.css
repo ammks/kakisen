@@ -337,7 +337,7 @@ html {
     padding: 0 100px;
 }
 
-#product .header-tile {
+#product .header-tile, #online .header-tile {
     width: 100%;
     height: 130px;
     background: url(../img/product-tile-1.png) repeat-x;
@@ -525,6 +525,244 @@ h5 {
     margin-top: 13.02%;
 }
 
+#product .ankerLink-section {
+    margin-top: 13.02%;
+    display: flex;
+    justify-content: center;
+}
+
+#product .access-link.wrapper {
+    width: 400px;
+    background: url(../img/product-access-button.png) repeat;
+    padding: 25px 0;
+    margin: 0;
+}
+
+#product .shop-link.wrapper {
+    background: url(../img/product-onlineShop-button.png);
+    margin-left: 5.71%;
+}
+
+#product .access-link.wrapper .link-button {
+    width: 350px;
+    background-color: #FFF8F0;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px;
+}
+
+#product .access-link.wrapper .link-button .button {
+    text-align: center;
+    margin-top: 40px;
+    width: 238px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product .access-link.wrapper .link-button .button a {
+    text-decoration: none;
+    color: #FFF8F0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #E64C4C;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product .access-link.wrapper .link-button .button a:hover {
+    background-color: #FDC865;
+}
+
+/*=================================
+            ONLINE SHOP
+=================================*/
+#online .onlineShop .item-list .item h4 {
+    font-size: 24px;
+    line-height: 1em;
+}
+
+#online .onlineShop .item-list .item .contents {
+    font-size: 12px;
+}
+
+#online .onlineShop .number-btn-outer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#online .minus, #online .plus {
+    width: 15px;
+    height: 15px;
+    background-color: #FDC865;
+    outline: none;
+    border: none;
+    position: relative;
+}
+
+#online .minus:active, #online .plus:active {
+    scale: 0.9;
+}
+
+#online .minus::after, #online .plus::after {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 9px;
+    height: 2px;
+    background-color: #FFF8F0;
+    transform: translate(-50%, -50%);
+}
+
+#online .plus::before {
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 2px;
+    height: 9px;
+    background-color: #FFF8F0;
+    transform: translate(-50%, -50%);
+}
+
+#online .toCart-btn-outer {
+    width: 44px;
+    height: 36px;
+    background-color: #E64C4C
+}
+
+
+/* ONLINE SHOP */
+
+@charset "utf-8";
+/* CSS Document */
+/* フルードイメージ */
+img{max-width: 100%;height:auto;}
+
+/* 共通 */
+
+/* 色番号 */
+/* ベースカラー（ベージュ）：#FFF8F0
+メインカラー（赤）：#E64C4C
+アクセントカラー（黄）：#FDC865
+文字色（黒）：#2C2929 */
+
+/* フォント */
+/* 日本語大見出し */
+h1{
+    color:#2C2929;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 日本語小見出し */
+h2{
+    color:#2C2929;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+/* 英語大見出し太字 */
+h3{
+    color:#2C2929;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 英語大見出し細字 */
+h4{
+    color:#2C2929;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+/* 日本語本文 */
+p{
+    color:#2C2929;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/* スクロール */
+html {
+  scroll-behavior: smooth;
+}
+/* 中央に揃える */
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #FFF8F0;
+}
+/* タイトル */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.78%;
+    margin-bottom: 1.92%;
+}
+/* ボタン */
+.kakisen-btn{
+    width: 170px;
+    /* height:; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #E64C4C;
+    /* border-radius: 100px; */
+    padding: 6px;
+    color: #FFF8F0;
+}
+.kakisen-btn p{
+    color: #FFF8F0;
+}
+.kakisen-a{
+    text-decoration: none;
+}
+.kakisen-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FDC865;
+    position: relative;
+    transition: 0.3s;
+}
+.kakisen-circle::after{
+    content: "";
+    position: absolute;
+    top: 50%; left: 50%;
+    translate: -75% -50%;
+    rotate: -135deg;
+    width: 10px;
+    height: 10px;
+    border-bottom:3px solid #FFF8F0;
+    border-left: 3px solid #FFF8F0;
+}
+.kakisen-a:hover .kakisen-circle{
+    transform:translateX(30%) ;
+
+}
+
+/* 各ページ */
+/* TOP */
+
+/* ABOUT */
+
+/* PRODUCT */
 
 /* ONLINE SHOP */
 
@@ -791,6 +1029,48 @@ h5 {
 
 
 /* 個人情報保護方針 */
+    ol li{
+        font-weight: bold;
+        margin: 2% 0 1% 0%;
+    }
+
+    ul li{
+        font-weight: normal;
+        margin: 0;
+    }
+
+#PP .header-blocks{
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 130px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+
+/* HELP涙涙涙 */
+.privacy-policy{
+ text-align: center;    
+}
+
+.test{ 
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 130px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+
+.main-paaage {
+    width: 70%; /* ページのコンテンツ幅 */
+    margin: 0 auto;
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+}
+
+.personal-information{
+    margin: 80px 0 50px 0;
+}
+
+
 
 /* 特定商取引法 */
 #tokushoho .line-deco{
@@ -968,6 +1248,10 @@ h5 {
     /* ONLINE SHOP */
 
     /* 個人情報保護方針 */
+    ol {
+	list-style-type: decimal;
+}
+
 
     /* 特定商取引法 */ 
 }
