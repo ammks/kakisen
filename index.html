@@ -40,7 +40,7 @@ $(function(){
     <!-- ヘッダー -->
     <header class="footer">
         <div class="footer-logo">
-            <img src="img/top-footer-logo.png" alt="kakisen.ロゴ" width="119" height="51">
+            <a href="index.html"><img src="img/top-footer-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
         </div>
         <div class="footer-menu">
             <div class="menu-btn" id="menu-btn">
@@ -59,10 +59,10 @@ $(function(){
             </div>
             <nav class="nav-content">
                 <ul>
-                    <li data-pattern="top-about-bg">ABOUT</li>
-                    <li data-pattern="top-product-bg">PRODUCT</li>
-                    <li data-pattern="top-online-bg">ONLINE SHOP</li>
-                    <li data-pattern="top-access-bg">ACCESS</li>
+                    <a href="01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
                 </ul>  
                 <div id="pattern-bg">
                 </div>      
@@ -71,14 +71,98 @@ $(function(){
     </header>
     <!-- メイン -->
     <main id="top">
-        <!-- セクション諸々 -->
+        <!-- 流れる文字 -->
+        <section class="scroll-area">
+            <div class="scroll-wrapper">
+                    <div class="scroll-track">
+                        <div class="scroll-item fill square">広島</div>        
+                        <div class="scroll-item border oval">で</div>        
+                        <div class="scroll-item fill oval">誕生</div>
+                        <span class="dot">・</span>                   
+                        <div class="scroll-item border oval">牡蠣好き</div>
+                        <div class="scroll-item fill oval">に</div>
+                        <div class="scroll-item square square">刺さる</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border square">お土産</div>
+                        <div class="scroll-item fill oval">で</div>
+                        <div class="scroll-item border oval">絶対</div>
+                        <div class="scroll-item fill square">喜ばれる</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item fill oval">ワクワク</div>
+                        <div class="scroll-item border oval">美味しい</div>
+                        <div class="scroll-item fill square">ご褒美</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border square">海の恵み</div>
+                        <div class="scroll-item fill oval">を</div>
+                        <div class="scroll-item border square">一口に</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border oval">パリッ</div>
+                        <div class="scroll-item fill square">サクッ</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item fill square">伝統</div>
+                        <div class="scroll-item border oval">と</div>
+                        <div class="scroll-item fill square">モダン</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border oval">さあ</div>
+                        <div class="scroll-item fill square">食べてみては？</div>
+                        <span class="dot">・</span>
+                    </div>
+                    <div class="scroll-track">
+                        <div class="scroll-item fill square">広島</div>        
+                        <div class="scroll-item border oval">で</div>        
+                        <div class="scroll-item fill oval">誕生</div>
+                        <span class="dot">・</span>                   
+                        <div class="scroll-item border oval">牡蠣好き</div>
+                        <div class="scroll-item fill oval">に</div>
+                        <div class="scroll-item square square">刺さる</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border square">お土産</div>
+                        <div class="scroll-item fill oval">で</div>
+                        <div class="scroll-item border oval">絶対</div>
+                        <div class="scroll-item fill square">喜ばれる</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item fill oval">ワクワク</div>
+                        <div class="scroll-item border oval">美味しい</div>
+                        <div class="scroll-item fill square">ご褒美</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border square">海の恵み</div>
+                        <div class="scroll-item fill oval">を</div>
+                        <div class="scroll-item border square">一口に</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border oval">パリッ</div>
+                        <div class="scroll-item fill square">サクッ</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item fill square">伝統</div>
+                        <div class="scroll-item border oval">と</div>
+                        <div class="scroll-item fill square">モダン</div>
+                        <span class="dot">・</span>
+                        <div class="scroll-item border oval">さあ</div>
+                        <div class="scroll-item fill square">食べてみては？</div>
+                        <span class="dot">・</span>                    
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- ランダム煎餅 -->
+        <section class="senbei-area">
+            <div class="senbei-wrapper">
+                <div class="senbei" data-back="1"></div>
+                <div class="senbei" data-back="2"></div>
+                <div class="senbei" data-back="3"></div>
+                <div class="senbei" data-back="4"></div>
+                <div class="senbei" data-back="5"></div>
+                <div class="senbei" data-back="6"></div>
+                <div class="senbei" data-back="7"></div>
+            </div>
+        </section>
     </main>
     <!-- フッター -->
     <footer>
     </footer>
 
 <!-- JavaScript -->
-<script src="js/top-footer-menu.js"></script>
+<script src="js/top-header-menu.js"></script>
+<script src="js/top-senbei-ura.js"></script>
 </body>
 
 </html>
