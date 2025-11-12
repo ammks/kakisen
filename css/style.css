@@ -660,8 +660,17 @@ h5 {
     width: 264px;
 }
 
+#online .onlineShop .item-list .item a {
+    text-decoration: none;
+}
+
+#online .onlineShop .item-list .item a:hover .img-area {
+    transform: scale(1.1);
+}
+
 #online .onlineShop .item-list .item .img-area {
     width: 100%;
+    transition: 0.3s;
 }
 
 #online .onlineShop .item-list .item .img-area img {
@@ -843,6 +852,20 @@ h5 {
 
 /* ======================メディアクエリ =========================*/
 @media(width<780px){
+    #product .kakisen.wrapper {
+        flex-direction: column;
+    }
+
+    #product .kakisen.wrapper .content-area h2 {
+        text-wrap: nowrap;
+    }
+
+    #product .list.wrapper .list-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     #online .onlineShop .item-list {
         gap: 20px;
     }
