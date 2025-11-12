@@ -71,14 +71,10 @@ html {
     gap: 0.78%;
     margin-bottom: 2%;
 }
-
 /* 各ページ */
 /*=================================
             TOP
 =================================*/
-/* #top .aaa{
-    color: #2C2929;
-} */
 /* ヘッダー */
 header{
     position: fixed;
@@ -103,8 +99,9 @@ header{
 }
 .header-menu{
     position: absolute;
+    position: fixed;
     right: 2%;
-    top: 50%;
+    top: 5%;
     transform: translateY(-50%);
 }
 .menu-btn{
@@ -237,9 +234,9 @@ header{
 .fixed-shop-btn{
     position: fixed;
     bottom: 2%;
-    right: 2%;
-    width: 110px;
-    height: 110px;
+    right: 1%;
+    width: 90px;
+    height: 90px;
     background-color: #E64C4C;
     border: 8px solid #FDC865;
     border-radius: 50%;
@@ -252,13 +249,14 @@ header{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .fixed-shop-btn h4{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.3;
     text-align: center;
 }
 /* 横切る文字 */
 #top .scroll-area{
     width: 100%;
+    height: 22vh;
     overflow: hidden;
     background-color: #FFF8F0;
     padding: 8px 0;
@@ -318,16 +316,22 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.04%;
-    margin-top: 6%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 2
 }
 #top .senbei-wrapper{
     display: flex;
-    gap: 2.08%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 1vw;
+    box-sizing: border-box;
 }
 #top .senbei{
-    width: 255px;
-    height: 255px;
+    width: calc(100% / 7 - 1vw);
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -363,7 +367,7 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 33vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -382,6 +386,100 @@ header{
     transform: scale(0.98);
     overflow: hidden;
 }
+/* キャッチコピー */
+#top .fv-section {
+    position: relative;
+    height: 80vh;
+    transition: opacity 1s ease;
+}
+#top .catch-section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#top .catch-bg {
+    position: absolute;    
+    inset: 0;                  
+    background-image: url("../img/top-moyou-bg.png") ;
+    background-size: cover;            
+    background-position: center;     
+    opacity: 0;                      
+    transform: translateY(50px);     
+    transition: all 1.5s ease;       
+}
+#top .catch-copy {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+    gap: 10vw;
+}
+#top .catch-column{
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease;
+}
+#top .catch-column.right  { transition-delay: 0.3s; }
+#top .catch-column.center { transition-delay: 0.9s; }
+#top .catch-column.left   { transition-delay: 1.5s; }
+#top .show-bg .catch-bg {
+    opacity: 1;                    
+    transform: translateY(0);
+}
+#top .show-text .catch-text {
+  opacity: 1;                   
+  transform: translateY(0);     
+}
+/* せんべい単体 */
+#top .senbei-container{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+#top .senbei-text {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+#top .senbei-text.text1 {
+    top: -20px;
+    left: -40px;
+}
+#top .senbei-text.text2 {
+    top: -40px;
+    right: -30px;
+}
+#top .senbei-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+#top .senbei{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#top .senbei.active{
+    opacity: 1;
+}
+#top .senbei-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+/* ABOUT */
 
 /* ABOUT =====================================*/
 /* ABOUT =====================================*/
@@ -1569,6 +1667,11 @@ html {
     font-size: clamp(2.5rem, 12vw, 3rem);
     transform: scale(0.95) translateY(10%);
 }
+/* オンラインショップのボタンを消す？ */
+/* キャッチコピー */
+#top .catch-column.right  { transition-delay: 0.2s; }
+#top .catch-column.center { transition-delay: 0.4s; }
+#top .catch-column.left   { transition-delay: 0.6s; }
 
     /* ABOUT */
 
