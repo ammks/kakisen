@@ -383,7 +383,17 @@ header{
     overflow: hidden;
 }
 
-/* ABOUT */
+/* ABOUT =====================================*/
+/* ABOUT =====================================*/
+#about h2{
+    text-align: center;
+
+}
+
+#about h5{
+    margin-top: 50px;
+}
+
 #about main {
     max-width: 1400px;
     width: 100%;
@@ -401,16 +411,20 @@ header{
 
 #about .Sliders{
     margin: 0 auto;
-    width: 1240px;
+    width: 900px;
 }
 
  #about .BGanime {
+  text-align: center;
+  margin: 120px auto 120px;
+      
   background-repeat:no-repeat;
   width: 990px;  /* 横幅を200pxに指定 */
-  height: 400px; /* 高さを200pxに指定 */
-  animation: image_anime 6s ease infinite; /* 5秒のアニメーションを繰り返す */
+ 
+  animation: image_anime 5s ease infinite; /* 5秒のアニメーションを繰り返す */
 }
 @keyframes image_anime {
+    
   0%{
     background-image: url(../img/about-bg0.png); /* 背景画像1を指定 */
   }
@@ -425,6 +439,9 @@ header{
   }
 }
 
+#about p{
+    text-align: center;
+}
 
 /*=================================
             PRODUCT
