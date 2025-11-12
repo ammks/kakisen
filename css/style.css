@@ -384,6 +384,47 @@ header{
 }
 
 /* ABOUT */
+#about main {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+#about .blocks{
+    background-image: url(../img/About-blocks.png);
+    height: 130px;
+    background-repeat: repeat-x;
+    width: 100%;
+    margin-bottom: 6.25%;
+}
+
+#about .Sliders{
+    margin: 0 auto;
+    width: 1240px;
+}
+
+ #about .BGanime {
+  background-repeat:no-repeat;
+  width: 990px;  /* 横幅を200pxに指定 */
+  height: 400px; /* 高さを200pxに指定 */
+  animation: image_anime 6s ease infinite; /* 5秒のアニメーションを繰り返す */
+}
+@keyframes image_anime {
+  0%{
+    background-image: url(../img/about-bg0.png); /* 背景画像1を指定 */
+  }
+  50% {
+    background-image: url(../img/about-bg1.png); /* 背景画像2を指定 */
+  }
+  80% {
+    background-image: url(../img/about-bg2.png); /* 背景画像1を指定 */
+  }
+  100% {
+    background-image: url(../img/about-bg3.png); /* 背景画像1を指定 */
+  }
+}
+
 
 /*=================================
             PRODUCT
@@ -1101,7 +1142,7 @@ html {
     background-image: url(../img/PP-line.png);
     background-repeat: repeat-x;
     width: 100%;
-    height: 130px; /* 高さの調整 */
+    height: 65px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
 }
 
@@ -1114,7 +1155,7 @@ html {
     background-image: url(../img/PP-line.png);
     background-repeat: repeat-x;
     width: 100%;
-    height: 130px; /* 高さの調整 */
+    height: 40px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
 }
 

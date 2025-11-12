@@ -27,16 +27,23 @@
 <!--jQuery本体-->
 <script src="js/jquery-1.11.2.min.js"></script>
 
-<!--ready関数-->
-<script>
-$(function(){
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 
-});
+<!-- スライダー -->
+ <script src="../js/jquery.bxslider.js"></script>
+ <link href="../js/jquery.bxslider.css" rel="stylesheet">
+<!-- レディ関数 -->
+ <script>
+    $(document).ready(function(){
+      $('.slider-2').bxSlider();
+    });
 </script>
 
 </head>
 
 <body class="wrapper">
+    
     <!-- ヘッダー -->
     <header>
         <!-- グローバルナビ -->
@@ -44,13 +51,39 @@ $(function(){
         </nav>
     </header>
     <!-- メイン -->
-    <main>
+    <main id="about">
+        <div class="blocks">
+
+
+        </div>
+         <div class="title">
+            <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
+            <h3>ABOUT</h3>
+        </div>
         <!-- セクション諸々 -->
-        
-    </main>
-    <!-- フッター -->
-    <footer>
-    </footer>
+
+        <div class="Sliders">
+            <ul class="slider-2">
+                <li><img src="../img/about-main1.png" alt="#"></li>
+                <li><img src="../img/about-main3.png" alt="#"></li>
+                <li><img src="../img/about-main2.png" alt="#"></li>
+            </ul> 
+        </div>
+
+        <div class="BGanime">
+            <h1>KAKISEN.の美味しさの秘密</h1>
+    <p>
+        <li>1.旨みが凝縮された濃厚な牡蠣</li>
+    <br>安芸津の牡蠣が持つ最大の特長は、「濃厚な味わい」です。
+    <br>これは、安芸灘に面したこの海域に大きな河川が流れ込んでいないため、
+    <br>他の産地と比べて塩分濃度が高いという地理的条件がもたらす恵みです。
+    <br><br>高い塩分濃度の海水でじっくりと育つことで、
+    <br>牡蠣の身は旨み成分やミネラルを豊富に蓄え、
+    <br>口に入れた瞬間に広がる磯の香りと凝縮された甘みが際立ちます。
+
+
+        </div>
+         
 </body>
 
 </html>
