@@ -588,28 +588,30 @@ h5 {
 	background-color: #E64C4C
 }
 /* ONLINE SHOP */
+
+
+
 /* ACCESS */
-#access .line-deco{
-	width: 100%;
-	height: auto;
-	margin-bottom: 3.5%; /* 次のセクションとの間隔 */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+#access .header-tile {
+    width: 100%;
+    margin-bottom: 6.25%;
 }
+
 #access .legal-notation-page {
-	width: 70%; /* ページのコンテンツ幅 */
-	max-width: 960px; /* 必要に応じて最大幅を設定 */
+	width: 72.92%; /* ページのコンテンツ幅 */
+	max-width: 1400px; /* 必要に応じて最大幅を設定 */
 	margin: 0 auto;
 	padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
 }
+
 #access .page-title h3{
 	text-align: center;
 	font-size: 32px; /* 画面幅に応じたサイズ */
 	margin-bottom: 5.2%;
 }
 #access .page-title .title-icon {
-	text-align: center;
+    text-align: center;
 	width: 2vw; /* アイコンのサイズ */
 	height: auto;
 }
@@ -713,7 +715,7 @@ h5 {
 	animation: gentle-float 4s infinite alternate ease-in-out;
 }
 #access .details-box {
-	padding: 5% 5%;
+	padding:10% 5% 5% 30%;
 }
 #access .store-name {
 	font-size: 1.2em;
@@ -753,7 +755,7 @@ h5 {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 5.21%;
+	margin: 5.21% 0;
 }
 /* 簡易地図（左側） */
 #access .simple-map-wrapper {
@@ -862,15 +864,15 @@ ul li{
 .personal-information{
 	margin: 80px 0 50px 0;
 }
+
+
 /* 特定商取引法 */
-#tokushoho .line-deco{
-	width: 100%;
-	height: auto;
-	margin-bottom: 3.5%; /* 次のセクションとの間隔 */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
+#tokushoho .header-tile {
+    width: 100%;
+    margin-bottom: 6.25%;
 }
+
 #tokushoho .legal-notation-page {
 	width: 70%; /* ページのコンテンツ幅 */
 	max-width: 960px; /* 必要に応じて最大幅を設定 */
