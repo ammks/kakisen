@@ -395,10 +395,8 @@ header{
     padding: 0 100px;
 }
 
-#product .header-tile, #online .header-tile {
+.header-tile {
     width: 100%;
-    height: 130px;
-    background: url(../img/product-tile-1.png) repeat-x;
     margin-bottom: 6.25%;
 }
 
@@ -642,13 +640,51 @@ h5 {
 /*=================================
             ONLINE SHOP
 =================================*/
+#online .onlineShop.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 65px;
+    position: relative;
+}
+
+#online .onlineShop .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-bottom: 17.86%;
+}
+
+#online .onlineShop .item-list .item {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+}
+
+#online .onlineShop .item-list .item .img-area {
+    width: 100%;
+}
+
+#online .onlineShop .item-list .item .img-area img {
+    width: 100%;
+}
+
 #online .onlineShop .item-list .item h4 {
     font-size: 24px;
     line-height: 1em;
+    width: fit-content;
+    margin-top: 7.58%;
+    font-family: "Shippori Mincho", serif;
 }
 
 #online .onlineShop .item-list .item .contents {
     font-size: 12px;
+    width: fit-content;
+    margin-top: 3.41%;
+}
+
+#online .onlineShop .item-list .item .price {
+    width: fit-content;
+    margin-top: 3.41%;
 }
 
 #online .onlineShop .number-btn-outer {
@@ -657,13 +693,18 @@ h5 {
     gap: 14px;
 }
 
+#online .onlineShop .number-btn-outer p {
+    line-height: 1em;
+}
+
 #online .minus, #online .plus {
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 22px;
     background-color: #FDC865;
     outline: none;
     border: none;
     position: relative;
+    cursor: pointer;
 }
 
 #online .minus:active, #online .plus:active {
@@ -690,10 +731,141 @@ h5 {
     transform: translate(-50%, -50%);
 }
 
+#online .number-toCart-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 9.85%;
+    /* width: 100%; */
+}
+
 #online .toCart-btn-outer {
     width: 44px;
     height: 36px;
-    background-color: #E64C4C
+    background-color: #E64C4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+
+#online .toCart-btn-outer:hover {
+    width: 122px;
+}
+
+#online .toCart-btn-outer img {
+    transition: 0.3s;
+}
+
+#online .toCart-btn-outer:hover img {
+    transform: translateX(-70px);
+}
+
+#online .toCart-btn-outer::after {
+    content: "カートへ";
+    position: absolute;
+    right: -10%; top: 50%;
+    transform: translate(50%, -50%);
+    color: #FFF8F0;
+    opacity: 0;
+    transition: 0.3s;
+    text-wrap: nowrap;
+}
+
+#online .toCart-btn-outer:hover::after {
+    opacity: 1;
+    right: 50%;
+}
+
+#online .price-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 374px;
+    height: 73px;
+    background: url(../img/online-priceCard-ver.1.png) repeat;
+    background-size: 8%;
+    background-color: #FFF8F0;
+
+    position: fixed;
+    right: 2%; bottom: 6%;
+    transition: 0.3s;
+
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#online .price-card-container:hover {
+    background: url(../img/online-priceCard-hover-ver.1.png) repeat;
+    background-size: 8%;
+    background-color: #E64C4C;
+}
+
+#online .price-card-container .content-area p,
+#online .price-card-container .content-area h1 {
+    transition: 0.3s;
+}
+
+#online .price-card-container:hover .content-area p,
+#online .price-card-container:hover .content-area h1 {
+    color: #FFF8F0;
+}
+
+#online .price-card-container:hover .cart-number {
+    border-color: #FFF8F0;
+}
+
+#online .price-card-container .cart-number {
+    padding-right: 20px;
+    border-right: 2px solid #2C2929;
+    transition: 0.3s;
+}
+
+#online .price-card-container .cart-price {
+    margin-left: 20px;
+}
+
+#online .price-card-container .content-area {
+    display: flex;
+    align-items: flex-end;
+}
+
+#online .price-card-container .content-area .label {
+    margin-right: 20px;
+}
+
+#online .price-card-container .content-area h1 {
+    line-height: 1em;
+    margin-right: 10px;
+}
+
+/* ======================メディアクエリ =========================*/
+@media(width<780px){
+    #online .onlineShop .item-list {
+        gap: 20px;
+    }
+
+    #online .onlineShop .item-list .item {
+        width: 110px;
+    }
+
+    #online .onlineShop .item-list .item h4 {
+        font-size: 16px
+    }
+
+    #online .number-toCart-btn {
+        display: none;
+    }
+
+    #online .toCart-btn-outer {
+        margin-top: 10px
+    }
+
+    #online .price-card-container {
+        display: none;
+    }
 }
 
 
