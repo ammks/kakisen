@@ -499,14 +499,19 @@ header{
 /* KAKISEN.について */
 #top .about-area{
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
 }
-#top .about-text{
+#top .about-text {
     width: 100%;
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+    z-index: 10;
+    position: relative;
 }
 #top .text-highlight{
     font-family: "Gravitas One", serif;
@@ -515,14 +520,14 @@ header{
     font-size: 24px;
     margin: 0 3px;
 }
-#top .about-slider{
+#top .about-slider {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3%;
+    overflow: hidden;
+    position: relative;
+    margin: 5% 0 3% 0;
+    z-index: 1;
 }
-#top .slide-track{
+#top .slide-track {
     display: flex;
     gap: 20px;
     animation: scrollSlide 40s linear infinite;
@@ -534,8 +539,8 @@ header{
     flex-shrink: 0;
 }
 @keyframes scrollSlide {
-    0% {transform: translateX(0);}
-    100% {transform: translateX(-50%);}
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 /* PRODUCT */
 #top .product-area{
@@ -581,6 +586,7 @@ display: flex;
 100% {transform: translateX(-50%);}
 }
 #top .product-text{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -681,7 +687,7 @@ display: flex;
     margin-top: 6.5%;
 }
 .footer-area img{
-    margin: 3% 0;
+    margin: 20% 0;
 }
 .nav-footer{
     width: 100%;
@@ -717,6 +723,10 @@ display: flex;
     justify-content: center;
     align-items: center;
     gap: 4%;
+    margin-bottom:1%;
+}
+.footer-sub a{
+    text-decoration: none;
 }
 .footer-sub p{
     font-size: 12px;
