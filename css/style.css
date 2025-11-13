@@ -2,69 +2,72 @@
 /* CSS Document */
 /* フルードイメージ */
 img{max-width: 100%;height:auto;}
-
 /* 共通 */
-
 /* 色番号 */
 /* ベースカラー（ベージュ）：#FFF8F0
 メインカラー（赤）：#E64C4C
 アクセントカラー（黄）：#FDC865
 文字色（黒）：#2C2929 */
-
 /* フォント */
 /* 日本語大見出し */
 h1{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 32px;
+	color:#2C2929;
+	font-family: "Shippori Mincho", serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 32px;
 }
 /* 日本語小見出し */
 h2{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
+	color:#2C2929;
+	font-family: "Shippori Mincho", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
 }
 /* 英語大見出し太字 */
 h3{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
+	color:#2C2929;
+	font-family: "Gravitas One", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 32px;
 }
 /* 英語大見出し細字 */
 h4{
-    color:#2C2929;
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
+	color:#2C2929;
+	font-family: "Inknut Antiqua", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 32px;
 }
 /* 日本語本文 */
 p{
-    color:#2C2929;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
+	color:#2C2929;
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
 }
 /* スクロール */
 html {
+	scroll-behavior: smooth;
     scroll-behavior: smooth;
 }
 /* 中央に揃える */
 .wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: #FFF8F0;
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: #FFF8F0;
 }
 /* タイトル */
 .title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.78%;
+	margin-bottom: 2%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -74,8 +77,46 @@ html {
 }
 /* 各ページ */
 /*=================================
-            TOP
+            TOP
 =================================*/
+/* #top .aaa{
+	color: #2C2929;
+} */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+/* フッター */
+.footer{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #FFF8F0;
+	border-top: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 2%;
+	z-index: 100;
+	position: relative;
+}
+.footer-logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-logo img{
+	height: 40px;
+}
+.footer-menu{
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 /* ヘッダー */
 header{
     position: fixed;
@@ -104,67 +145,79 @@ header{
     right: 2%;
     top: 5%;
     transform: translateY(-50%);
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 .menu-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    gap: 10px;
-    user-select: none;
-    height: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	gap: 10px;
+	user-select: none;
+	height: 16px;
 }
 .menu-text{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    letter-spacing: 0.05em;
+	color:#2C2929;
+	font-family: "Gravitas One", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 0.05em;
 }
 .menu-lines{
-    position: relative;
-    width: 24px;
-    height: 16px;
-    flex-direction: column;
-    justify-content: space-between;
+	position: relative;
+	width: 24px;
+	height: 16px;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .line{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #2C2929;
-    border-radius: 2px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #2C2929;
+	border-radius: 2px;
 }
 .line1{
-    top:0;
+	top:0;
 }
 .line2{
-    bottom: 0;
+	bottom: 0;
 }
 .menu-btn.active .line2{
-    transform: rotate(-45deg);
-    bottom: 6px;
+	transform: rotate(-45deg);
+	bottom: 6px;
 }
 .nav-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #E64C4C;
-    color: #FFF8F0;
-    display: none;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 200;
-    transition: opacity 0.4s ease;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #E64C4C;
+	color: #FFF8F0;
+	display: none;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 200;
+	transition: opacity 0.4s ease;
 }
 .nav-overlay.active{
-    display: flex;
+	display: flex;
 }
 .close-btn{
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	user-select: none;
+	z-index: 300;
     position: absolute;
     top: 20px;
     right: 30px;
@@ -175,61 +228,61 @@ header{
     z-index: 300;
 }
 .close-line{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #2C2929;
-    border-radius: 2px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #2C2929;
+	border-radius: 2px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .close-line.line1{
-    transform:translateY(-50%) rotate(45deg);
+	transform:translateY(-50%) rotate(45deg);
 }
 .close-line.line2{
-    transform:translateY(-50%) rotate(-45deg);
+	transform:translateY(-50%) rotate(-45deg);
 }
 .close-btn:hover .close-line{
-    background-color: #FFF8F0;
+	background-color: #FFF8F0;
 }
 .nav-content ul{
-    list-style: none;
-    text-align: right;
-    margin-right: 60px;
-    padding: 0;
-    margin-bottom: 10%;
-    margin-top: 0;
+	list-style: none;
+	text-align: right;
+	margin-right: 60px;
+	padding: 0;
+	margin-bottom: 10%;
+	margin-top: 0;
 }
 .nav-content li{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    margin: 3rem 0;
+	color:#2C2929;
+	font-family: "Gravitas One", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 32px;
+	cursor: pointer;
+	transition: color 0.3s ease;
+	margin: 3rem 0;
 }
 .nav-content ul a{
     text-decoration: none;
 }
 .nav-content li:hover{
-    color: #FDC865;
-    transition: color 0.3s ease;
+	color: #FDC865;
+	transition: color 0.3s ease;
 }
 #pattern-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center left;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 70%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center left;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	z-index: 0;
 }
 /* ONLINE SHOPボタン */
 .fixed-shop-btn{
@@ -256,58 +309,105 @@ header{
 }
 /* 横切る文字 */
 #top .scroll-area{
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+	width: 100%;
+	overflow: hidden;
+	background-color: #FFF8F0;
+	padding: 8px 0;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
     width: 100%;
     height: 22vh;
     overflow: hidden;
     background-color: #FFF8F0;
     padding: 8px 0;
     margin-top: 3%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #top .scroll-wrapper{
-    display: flex;
-    width: 200%;
-    animation: scrollMove 30s linear infinite;
+	display: flex;
+	width: 200%;
+	animation: scrollMove 30s linear infinite;
 }
 #top .scroll-track{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    white-space: nowrap;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	white-space: nowrap;
 }
 #top .scroll-item{
-    font-family: "Noto Serif JP", serif;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    margin: 0 1px;
-    padding: 4px 12px;
-    border: 1px solid #E64C4C;
-    color: #E64C4C;
-    background-color: transparent;
-    white-space: nowrap;
-    line-height: 1.4;
+	font-family: "Noto Serif JP", serif;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	margin: 0 1px;
+	padding: 4px 12px;
+	border: 1px solid #E64C4C;
+	color: #E64C4C;
+	background-color: transparent;
+	white-space: nowrap;
+	line-height: 1.4;
 }
 #top .scroll-item.fill{
-    background-color: #E64C4C;
-    color: #FFF8F0;
+	background-color: #E64C4C;
+	color: #FFF8F0;
 }
 #top .scroll-item.border{
-    background-color: transparent;
-    color: #E64C4C;
+	background-color: transparent;
+	color: #E64C4C;
 }
 #top .scroll-item.oval{
-    border-radius: 30px;
+	border-radius: 30px;
 }
 #top .scroll-item.suare{
-    border-radius: 4px;
+	border-radius: 4px;
 }
-
 #top .dot{
-    color: #E64C4C;
-    margin: 0 12px;
-    font-size: 18px;
-    font-weight: 600;
+	color: #E64C4C;
+	margin: 0 12px;
+	font-size: 18px;
+	font-weight: 600;
 }
 @keyframes scrollMove {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
+}
+/* ランダム煎餅 */
+#top .senbei-area{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.04%;
+<<<<<<< HEAD
+=======
+=======
+}
+#top .senbei-wrapper{
+	display: flex;
+	gap: 2.08%;
+}
+#top .senbei{
+	width: 6.25%;
+	aspect-ratio: 1/1;
+	background-image: var(--front-img, url("img/top-senbei.png"));
+	background-size: cover;
+	border-radius: 50%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+>>>>>>> main
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
@@ -317,9 +417,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+    padding: 1.04%;
+    margin-top: 6%;
+>>>>>>> main
+=======
     overflow-x: hidden;
     position: relative;
     z-index: 2
+>>>>>>> main
 }
 #top .senbei-wrapper{
     display: flex;
@@ -331,12 +437,31 @@ header{
     box-sizing: border-box;
 }
 #top .senbei{
+<<<<<<< HEAD
+<<<<<<< HEAD
+	width: 6.25%;
+	aspect-ratio: 1/1;
+	background-image: var(--front-img, url("img/top-senbei.png"));
+	background-size: cover;
+	border-radius: 50%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+=======
+    width: 255px;
+    height: 255px;
+=======
     width: calc(100% / 7 - 1vw);
     aspect-ratio: 1 / 1;
+>>>>>>> main
     border-radius: 50%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     position: relative;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #top .senbei::before {
     content: "";
@@ -349,6 +474,31 @@ header{
     backface-visibility: hidden;
 }
 #top .senbei::after{
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	background-image: var(--back-img);
+}
+#top .senbei{
+	background-image: var(--front-img);
+}
+#top .senbei.flip{
+	transform: rotateY(180deg);
+<<<<<<< HEAD
+}
+/* ABOUT */
+=======
+=======
+>>>>>>> main
     content: "";
     position: absolute;
     inset: 0;
@@ -746,7 +896,6 @@ display: flex;
     0% {transform: translateX(0);}
     100% {transform: translateX(-50%);}
 }
-
 /* ABOUT */
 
 /* ABOUT =====================================*/
@@ -809,171 +958,167 @@ display: flex;
     text-align: center;
 }
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 /*=================================
-            PRODUCT
+            PRODUCT
 =================================*/
 #product main {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 100px;
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 100px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+#product .header-tile, #online .header-tile {
+	width: 100%;
+	height: 130px;
+	background: url(../img/product-tile-1.png) repeat-x;
+	margin-bottom: 6.25%;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 .header-tile {
     width: 100%;
     margin-bottom: 6.25%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
 #product .title {
-    margin-bottom: 5.21%;
+	margin-bottom: 5.21%;
 }
-
 #product .kakisen.wrapper {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 4.17%;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	gap: 4.17%;
 }
-
 #product .kakisen.wrapper .img-area {
-    flex: 1;
-    display: flex;
+	flex: 1;
+	display: flex;
 }
-
 #product .kakisen.wrapper .img-area img {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
+	height: 100%;
+	width: auto;
+	object-fit: cover;
 }
-
 #product .kakisen.wrapper .content-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
 }
-
 #product .kakisen.wrapper .content-area h2 {
-    text-align: center;
+	text-align: center;
 }
-
 #product .kakisen.wrapper .content-area img {
-    width: 100%;
+	width: 100%;
 }
-
 #product .kakisen.wrapper .content-area h2,
 #product .kakisen.wrapper .content-area h3,
 #product .kakisen.wrapper .content-area p,
 #product .kakisen.wrapper .content-area img:last-child {
-    margin-top: 8.90%;
+	margin-top: 8.90%;
 }
-
 #product .list.wrapper {
-    margin-top: 6.25%;
+	margin-top: 6.25%;
 }
-
 #product .list.wrapper .list-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-
 #product .list.wrapper .list-container .item:nth-child(2n) {
-    background-color: #FEECCF;
+	background-color: #FEECCF;
 }
-
 #product .list.wrapper .list-container .item h4 {
-    color:#2C2929;
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    border-bottom: 1px solid #2C2929;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 4.33%;
-    margin-bottom: 6.67%; 
-    line-height: 1em;
+	color:#2C2929;
+	font-family: "Inknut Antiqua", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+	border-bottom: 1px solid #2C2929;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 4.33%;
+	margin-bottom: 6.67%;
+	line-height: 1em;
 }
-
 #product .list.wrapper .list-container .item {
-    max-width: 300px;
-    width: 100%;
-    padding: 7.14% 2.08%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	max-width: 300px;
+	width: 100%;
+	padding: 7.14% 2.08%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
 #product .list.wrapper .list-container .item .img-area {
-    margin-bottom: 33.33%;
+	margin-bottom: 33.33%;
 }
-
 #product .list.wrapper .list-container .item p {
-    text-align: center
+	text-align: center
 }
-
 h5 {
-    color:#2C2929;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-    text-align: center;
+	color:#2C2929;
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
 }
-
 #product .list.wrapper .list-container .item .graph-outer {
-    width: 100%;
-    margin-top: 16.67%;
+	width: 100%;
+	margin-top: 16.67%;
 }
-
 #product .list.wrapper .list-container .item .graph-outer .graph {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 0;
 ;
-    margin-top: 10.67%;
+	margin-top: 10.67%;
 }
-
 #product .graph .value {
-    width: 18.33%;
-    height: 2px;
-    background-color: #E64C4C;
-    position: relative;
+	width: 18.33%;
+	height: 2px;
+	background-color: #E64C4C;
+	position: relative;
 }
-
 #product .graph .value .circle {
-    width: 15px; height: 15px;
-    border-radius: 100px;
-    background-color: #E64C4C;
-
-    position: absolute;
-    right: 0; top: 50%;
-    transform: translate(50%, -50%); 
-    z-index: 3;
+	width: 15px; height: 15px;
+	border-radius: 100px;
+	background-color: #E64C4C;
+	position: absolute;
+	right: 0; top: 50%;
+	transform: translate(50%, -50%);
+	z-index: 3;
 }
-
 #product .graph .value::before, #product .graph .value-1::after {
-    content: "";
-    position: absolute;
-    background-color: #D9D9D9;
-    z-index: -1;
+	content: "";
+	position: absolute;
+	background-color: #D9D9D9;
+	z-index: -1;
 }
-
 #product .graph .value::before {
-    right: 0; top: 50%;
-    width: 1.5px; height: 9px;
-    transform: translateY(-50%);
+	right: 0; top: 50%;
+	width: 1.5px; height: 9px;
+	transform: translateY(-50%);
 }
-
 #product .graph .value-1::after {
-    left: 0; top: 50%;
-    width: 1.5px; height: 9px;
-    transform: translateY(-50%);
+	left: 0; top: 50%;
+	width: 1.5px; height: 9px;
+	transform: translateY(-50%);
 }
-
 #product .kakisen-list.wrapper .item.salt .aroma .value-4,
 #product .kakisen-list.wrapper .item.salt .umami .value-4,
 #product .kakisen-list.wrapper .item.butterHerb .aroma .value-3,
@@ -998,71 +1143,61 @@ h5 {
 #product .kakio-list.wrapper .item.yuzuSalt .aroma .value-4,
 #product .kakio-list.wrapper .item.yuzuSalt .umami .value-4,
 #product .kakio-list.wrapper .item.yuzuSalt .sharp .value-4 {
-    background-color: #D9D9D9;
+	background-color: #D9D9D9;
 }
-
 #product .kakio-section {
-    margin-top: 13.02%;
+	margin-top: 13.02%;
 }
-
 #product .ankerLink-section {
-    margin-top: 13.02%;
-    display: flex;
-    justify-content: center;
+	margin-top: 13.02%;
+	display: flex;
+	justify-content: center;
 }
-
 #product .access-link.wrapper {
-    width: 400px;
-    background: url(../img/product-access-button.png) repeat;
-    padding: 25px 0;
-    margin: 0;
+	width: 400px;
+	background: url(../img/product-access-button.png) repeat;
+	padding: 25px 0;
+	margin: 0;
 }
-
 #product .shop-link.wrapper {
-    background: url(../img/product-onlineShop-button.png);
-    margin-left: 5.71%;
+	background: url(../img/product-onlineShop-button.png);
+	margin-left: 5.71%;
 }
-
 #product .access-link.wrapper .link-button {
-    width: 350px;
-    background-color: #FFF8F0;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 56px;
+	width: 350px;
+	background-color: #FFF8F0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 56px;
 }
-
 #product .access-link.wrapper .link-button .button {
-    text-align: center;
-    margin-top: 40px;
-    width: 238px;
-    height: 82px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	text-align: center;
+	margin-top: 40px;
+	width: 238px;
+	height: 82px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 #product .access-link.wrapper .link-button .button a {
-    text-decoration: none;
-    color: #FFF8F0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: #E64C4C;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	text-decoration: none;
+	color: #FFF8F0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #E64C4C;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
 #product .access-link.wrapper .link-button .button a:hover {
-    background-color: #FDC865;
+	background-color: #FDC865;
 }
-
 /*=================================
-            ONLINE SHOP
+            ONLINE SHOP
 =================================*/
 #online .onlineShop.wrapper {
     max-width: 1400px;
@@ -1102,14 +1237,32 @@ h5 {
 }
 
 #online .onlineShop .item-list .item h4 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+	font-size: 24px;
+	line-height: 1em;
+=======
+=======
+	font-size: 24px;
+	line-height: 1em;
+>>>>>>> main
     font-size: 24px;
     line-height: 1em;
     width: fit-content;
     margin-top: 7.58%;
     font-family: "Shippori Mincho", serif;
+<<<<<<< HEAD
+>>>>>>> main
 }
-
 #online .onlineShop .item-list .item .contents {
+<<<<<<< HEAD
+	font-size: 12px;
+=======
+=======
+}
+#online .onlineShop .item-list .item .contents {
+	font-size: 12px;
+>>>>>>> main
     font-size: 12px;
     width: fit-content;
     margin-top: 3.41%;
@@ -1118,13 +1271,31 @@ h5 {
 #online .onlineShop .item-list .item .price {
     width: fit-content;
     margin-top: 3.41%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
 #online .onlineShop .number-btn-outer {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+#online .minus, #online .plus {
+	width: 15px;
+	height: 15px;
+	background-color: #FDC865;
+	outline: none;
+	border: none;
+	position: relative;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 #online .onlineShop .number-btn-outer p {
     line-height: 1em;
@@ -1138,31 +1309,44 @@ h5 {
     border: none;
     position: relative;
     cursor: pointer;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
 #online .minus:active, #online .plus:active {
-    scale: 0.9;
+	scale: 0.9;
 }
-
 #online .minus::after, #online .plus::after {
-    content: "";
-    position: absolute;
-    left: 50%; top: 50%;
-    width: 9px;
-    height: 2px;
-    background-color: #FFF8F0;
-    transform: translate(-50%, -50%);
+	content: "";
+	position: absolute;
+	left: 50%; top: 50%;
+	width: 9px;
+	height: 2px;
+	background-color: #FFF8F0;
+	transform: translate(-50%, -50%);
 }
-
 #online .plus::before {
-    content: "";
-    position: absolute;
-    left: 50%; top: 50%;
-    width: 2px;
-    height: 9px;
-    background-color: #FFF8F0;
-    transform: translate(-50%, -50%);
+	content: "";
+	position: absolute;
+	left: 50%; top: 50%;
+	width: 2px;
+	height: 9px;
+	background-color: #FFF8F0;
+	transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+#online .toCart-btn-outer {
+	width: 44px;
+	height: 36px;
+	background-color: #E64C4C
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 #online .number-toCart-btn {
     display: flex;
@@ -1313,399 +1497,274 @@ h5 {
     #online .price-card-container {
         display: none;
     }
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
-
 /* ONLINE SHOP */
 
-@charset "utf-8";
-/* CSS Document */
-/* フルードイメージ */
-img{max-width: 100%;height:auto;}
 
-/* 共通 */
-
-/* 色番号 */
-/* ベースカラー（ベージュ）：#FFF8F0
-メインカラー（赤）：#E64C4C
-アクセントカラー（黄）：#FDC865
-文字色（黒）：#2C2929 */
-
-/* フォント */
-/* 日本語大見出し */
-h1{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 日本語小見出し */
-h2{
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-}
-/* 英語大見出し太字 */
-h3{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 英語大見出し細字 */
-h4{
-    color:#2C2929;
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-}
-/* 日本語本文 */
-p{
-    color:#2C2929;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-}
-/* スクロール */
-html {
-  scroll-behavior: smooth;
-}
-/* 中央に揃える */
-.wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
-    background-color: #FFF8F0;
-}
-/* タイトル */
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.78%;
-    margin-bottom: 1.92%;
-}
-/* ボタン */
-.kakisen-btn{
-    width: 170px;
-    /* height:; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #E64C4C;
-    /* border-radius: 100px; */
-    padding: 6px;
-    color: #FFF8F0;
-}
-.kakisen-btn p{
-    color: #FFF8F0;
-}
-.kakisen-a{
-    text-decoration: none;
-}
-.kakisen-circle{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FDC865;
-    position: relative;
-    transition: 0.3s;
-}
-.kakisen-circle::after{
-    content: "";
-    position: absolute;
-    top: 50%; left: 50%;
-    translate: -75% -50%;
-    rotate: -135deg;
-    width: 10px;
-    height: 10px;
-    border-bottom:3px solid #FFF8F0;
-    border-left: 3px solid #FFF8F0;
-}
-.kakisen-a:hover .kakisen-circle{
-    transform:translateX(30%) ;
-
-}
-
-/* 各ページ */
-/* TOP */
-
-/* ABOUT */
-
-/* PRODUCT */
-
-/* ONLINE SHOP */
 
 /* ACCESS */
-#access .access-container {
-    max-width: 80%; /* カンプに合わせて幅を調整 */
-    margin: 0 auto;
-    padding: 0 0 5%;
-}
 
-/* タイトルと装飾 */
-#access .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5%; /* 装飾帯との間隔を詰める */
-}
-
-#access .title h4 {
-    font-size: 2.5vw; 
-    font-weight: 500;
-}
-
-#access .line-deco {
+#access .header-tile {
     width: 100%;
-    height: auto;
-    margin-bottom: 3.5%; /* 次のセクションとの間隔 */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 6.25%;
 }
 
+#access .legal-notation-page {
+	width: 72.92%; /* ページのコンテンツ幅 */
+	max-width: 1400px; /* 必要に応じて最大幅を設定 */
+	margin: 0 auto;
+	padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+}
+
+#access .page-title h3{
+	text-align: center;
+	font-size: 32px; /* 画面幅に応じたサイズ */
+	margin-bottom: 5.2%;
+}
+#access .page-title .title-icon {
+    text-align: center;
+	width: 2vw; /* アイコンのサイズ */
+	height: auto;
+}
 /* --- Section 1: スライダーと基本情報 --- */
-
 #access .store-info-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
-
 /* 写真スライダー（左側） */
 #access .photo-slider-wrapper {
-    position: relative;
-    width: 55%; /* カンプに合わせて左側の幅を広げる */
-    border: 1px solid #2C2929; /* 画像周りの線 */
+	position: relative;
+	width: 55%; /* カンプに合わせて左側の幅を広げる */
 }
-
+/* ★ 修正: Slickの動作を妨げる display: flex; と transition を削除 */
 #access .photo-slider {
-    display: flex; 
-    overflow: hidden; 
-    width: 100%;
+	/* display: flex; <- 削除 */
+	overflow: hidden;
+	width: 100%;
+	/* transition: transform 0.5s ease-in-out; <- 削除 */
 }
-
-#access .slider-item {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
 #access .slider-item img {
-    display: block;
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 100%;
+	/* ↓↓↓↓↓ 修正・追記箇所 (3/3) ↓↓↓↓↓ */
+	/* 親要素の高さに合わせるため、height: auto; を height: 100%; に変更 */
+	height: 100%;
+	/* 画像がコンテナに収まり、はみ出た部分を切り取る */
+	object-fit: cover;
+	/* ↑↑↑↑↑ 修正・追記箇所 (3/3) ↑↑↑↑↑ */
 }
-
-#access .slider-dots {
-    text-align: center;
-    padding-top: 2%;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+/* ======================================================= */
+/* ★ カスタムドットデザインのSlick要素への移植 */
+/* 元の .slider-dots, .dot のCSSは削除し、以下のSlick用のCSSに置き換えます */
+/* ======================================================= */
+/* ドット全体のコンテナ（元の .slider-dots の位置を再現） */
+#access .photo-slider-wrapper .slick-dots {
+	/* slick-theme.css の設定を上書きして元の位置に移動 */
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	/* slick-theme.css の設定をリセット */
+	margin: 0;
+	padding: 0;
 }
-
-#access .dot {
-    display: inline-block;
-    width: 1.5%; /* 画面幅に対する%でサイズ指定 */
-    padding-bottom: 1.5%;
-    margin: 0 0.5%;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* ドット一つ一つの要素の余白（元の .dot の margin を再現） */
+#access .photo-slider-wrapper .slick-dots li {
+	width: auto; /* サイズ指定を解除 */
+	height: auto; /* サイズ指定を解除 */
+	margin: 0 0.5%; /* 元の .dot の margin: 0 0.5%; を再現 */
+	padding: 0;
 }
-/* ドットのアスペクト比を維持するための修正 */
-#access .dot::before {
-    content: "";
-    display: block;
-    padding-top: 100%; /* 高さ = 幅 */
+/* ドット自体のデザイン（元の .dot の形と色を再現） */
+#access .photo-slider-wrapper .slick-dots li button {
+	/* slick-theme.css の padding: 5px; を上書きしてサイズを小さくする */
+	padding: 0;
+	/* ドットのサイズを元の 1.5% の意図に近い固定サイズで設定 */
+	width: 10px;
+	height: 10px;
+	/* button要素のデフォルトスタイルをリセット */
+	background: none;
+	border: none;
 }
-#access .dot.active {
-    background-color: #E64C4C;
+#access .photo-slider-wrapper .slick-dots li button:before {
+	content: ''; /* 矢印フォントを無効化 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* サイズを再現 */
+	display: block;
+	width: 100%; /* 親要素の button に合わせる */
+	height: 100%;
+	/* スタイル */
+	border-radius: 50%;
+	background-color: #ccc; /* 非アクティブ時の色 */
+	/* slick-theme.css の opacity を上書き */
+	opacity: 1;
 }
-
+/* アクティブなドットの色 */
+#access .photo-slider-wrapper .slick-dots li.slick-active button:before {
+	background-color: #E64C4C; /* アクティブ時の色 */
+}
+/* ======================================================= */
+/* カスタムドットデザインのSlick要素への移植 - ここまで */
+/* ======================================================= */
 /* 基本情報ブロック（右側） */
 #access .basic-details {
-    width: 40%; /* 右側の幅を調整 */
-    position: relative;
-    padding-top: 3%; /* イラストが上にはみ出るための調整 */
+	text-align: center;
+	width: 100%; /* 右側の幅を調整 */
+	position: relative;
 }
-
 /* 親子のイラスト */
 #access .illustration.parentandchild-move {
-    position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    right: 0;
-    z-index: 10;
-    /* アニメーション適用 */
-    animation: gentle-float 4s infinite alternate ease-in-out; 
+	position: absolute;
+	width: 25%; /* イラストのサイズ調整 */
+	top: 0; /* 上に大きくはみ出す */
+	right: 70%;
+	z-index: 10;
+	/* アニメーション適用 */
+	animation: gentle-float 4s infinite alternate ease-in-out;
 }
-
 #access .details-box {
-    border: 1px solid #2C2929;
-    padding: 5% 5%;
+	padding:10% 5% 5% 30%;
 }
-
 #access .store-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5%;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 5%;
 }
-
 /* 定義リスト（dl）の修正 */
 #access .basic-details dl {
-    overflow: hidden; /* float解除のため */
+	overflow: hidden; /* float解除のため */
 }
 #access .basic-details dl dt {
-    float: left;
-    clear: left;
-    width: 30%; /* 項目名の幅 */
-    font-weight: bold;
-    line-height: 1.6;
-    padding: 0.5% 0;
+	float: left;
+	clear: left;
+	width: 30%; /* 項目名の幅 */
+	font-weight: bold;
+	line-height: 1.6;
+	padding: 5% 0;
 }
 #access .basic-details dl dd {
-    margin-left: 30%; /* dtの幅に合わせる */
-    line-height: 1.6;
-    padding: 0.5% 0;
+	margin-left: 30%; /* dtの幅に合わせる */
+	line-height: 1.6;
+	padding: 5% 0;
 }
-
 /* 装飾パターン */
-#access .deco-pattern.info-deco {
-    text-align: right;
-    margin-top: 5%;
+#access .deco-pattern {
+	text-align: center;
+	margin-top: 5%;
 }
-#access .deco-pattern.info-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
-    height: auto;
-    margin-left: 1%;
+#access .deco-pattern img {
+	width: 15%; /* 装飾のサイズ調整 */
+	height: auto;
+	margin-left: 1%;
 }
-
 /* --- Section 2: 簡易地図とアクセス案内 --- */
-
 #access .guidance-map-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 5%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 5.21% 0;
 }
-
 /* 簡易地図（左側） */
 #access .simple-map-wrapper {
-    width: 48%; /* 左側の幅 */
-    border: 1px solid #2C2929;
+	width: 48%; /* 左側の幅 */
 }
 #access .simple-map-wrapper img {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 }
-
 /* 交通案内（右側） */
 #access .transport-guidance {
-    width: 48%; /* 右側の幅 */
-    position: relative;
-    padding-top: 3%;
+	width: 48%; /* 右側の幅 */
+	position: relative;
 }
-
 /* 夫婦のイラスト */
 #access .illustration.couple-move {
-    position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    left: 0; /* 左側に配置 */
-    z-index: 10;
-    /* アニメーション適用 */
-    animation: sway 3s infinite alternate ease-in-out;
+	position: absolute;
+	width: 25%; /* イラストのサイズ調整 */
+	top: -15%; /* 上に大きくはみ出す */
+	left: 30%;
+	z-index: 10;
+	/* アニメーション適用 */
+	animation: sway 4s infinite alternate ease-in-out;
 }
-
 #access .guidance-options {
-    border: 1px solid #2C2929;
-    padding: 5% 5%;
+	padding: 5% 5%;
 }
-
 #access .option {
-    margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 #access .option:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
-
 #access .title-transport {
-    font-weight: bold;
-    margin-bottom: 1%;
+	font-weight: bold;
+	margin-bottom: 1%;
 }
-
-/* 装飾パターン */
-#access .deco-pattern.guidance-deco {
-    text-align: left; /* 左寄せ */
-    margin-top: 5%;
-}
-#access .deco-pattern.guidance-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
-    height: auto;
-    margin-right: 1%;
-}
-
-
 /* --- Section 3: Googleマップ埋め込み --- */
-
 #access .google-map-section {
-    margin-bottom: 5%;
+	margin-bottom: 5%;
 }
-
 #access .google-map-container {
-    position: relative;
-    padding-bottom: 40%; /* カンプに合わせて高さを調整 (100%幅で40%の高さ) */
-    height: 0;
-    overflow: hidden;
-    border: 1px solid #2C2929;
+	position: relative;
+	padding-bottom: 40%; /* カンプに合わせて高さを調整 (100%幅で40%の高さ) */
+	height: 0;
+	overflow: hidden;
 }
-
 #access .google-map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
 }
-
-
 /* --- アニメーション定義（イラストの動き） --- */
-
 /* 人形が軽く浮くようなアニメーション (親子に使用) */
 @keyframes gentle-float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    100% {
-        transform: translateY(-2%) rotate(0.5deg);
-    }
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		transform: translateY(-2%) rotate(5deg);
+	}
 }
-
-/* 人形のゆらゆら動くアニメーション (夫婦に使用) */
 @keyframes sway {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-    100% {
-        transform: translate(1%, -1.5%) rotate(-0.5deg);
-    }
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		transform: translateY(-2%) rotate(5deg);
+	}
 }
-
-
 /* 個人情報保護方針 */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+ol li{
+	font-weight: bold;
+	margin: 2% 0 1% 0%;
+}
+ul li{
+	font-weight: normal;
+	margin: 0;
+}
+#PP .header-blocks{
+	background-image: url(../img/PP-line.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 130px; /* 高さの調整 */
+	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+=======
     ol li{
         font-weight: bold;
         margin: 2% 0 1% 0%;
@@ -1717,17 +1776,36 @@ html {
     }
 
 #PP .header-blocks{
+=======
+>>>>>>> main
     background-image: url(../img/PP-line.png);
     background-repeat: repeat-x;
     width: 100%;
     height: 65px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
 /* HELP涙涙涙 */
 .privacy-policy{
- text-align: center;    
+	text-align: center;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+.test{
+	background-image: url(../img/PP-line.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 130px; /* 高さの調整 */
+	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 .test{ 
     background-image: url(../img/PP-line.png);
@@ -1735,176 +1813,193 @@ html {
     width: 100%;
     height: 40px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
-
 .main-paaage {
-    width: 70%; /* ページのコンテンツ幅 */
-    margin: 0 auto;
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+	width: 70%; /* ページのコンテンツ幅 */
+	margin: 0 auto;
+	padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
 }
-
 .personal-information{
-    margin: 80px 0 50px 0;
+	margin: 80px 0 50px 0;
 }
-
 
 
 /* 特定商取引法 */
-#tokushoho .line-deco{
+
+#tokushoho .header-tile {
     width: 100%;
-    height: 1.56%; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
+    margin-bottom: 6.25%;
 }
 
 #tokushoho .legal-notation-page {
-    width: 70%; /* ページのコンテンツ幅 */
-    max-width: 960px; /* 必要に応じて最大幅を設定 */
-    margin: 0 auto;
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+	width: 70%; /* ページのコンテンツ幅 */
+	max-width: 960px; /* 必要に応じて最大幅を設定 */
+	margin: 0 auto;
+	padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
 }
-
 /* ページタイトル */
 #tokushoho .page-title {
-    text-align: center;
-    font-size: 2.29vw; /* 画面幅に応じたサイズ */
-    margin-bottom: 5.2%;
+	text-align: center;
+	font-size: 32px; /* 画面幅に応じたサイズ */
+	margin-bottom: 5.2%;
 }
-
 /* ブロックタイトル（h2） */
 #tokushoho .block-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    margin: 1.52%; 
-    padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
+	display: flex;
+	align-items: center;
+	font-size: 24px; /* 画面幅に応じたサイズ */
+	font-weight: 700; /* 太字 */
+	color: #2C2929;
+	margin: 1.52%;
+	padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
 }
-
 #tokushoho .block-subtitle{
-    display: flex;
-    align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
-
+	display: flex;
+	align-items: center;
+	font-size: 24px; /* 画面幅に応じたサイズ */
+	font-weight: 700; /* 太字 */
+	color: #2C2929;
+	padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
 }
-
- .block-title .title-icon {
-    width: 2vw; /* アイコンのサイズ */
-    height: auto;
-    margin-right: 0.52%; /* アイコンとテキストの間隔 */
+#tokushoho .block-title .title-icon {
+	width: 2vw; /* アイコンのサイズ */
+	height: auto;
+	margin-right: 0.52%; /* アイコンとテキストの間隔 */
 }
-
-.block-subtitle .subtitle-icon{
-    width: 0.5vw; /* アイコンのサイズ */
-    height: auto;
-    margin-right: 0.75%; /* アイコンとテキストの間隔 */
+#tokushoho .block-subtitle .subtitle-icon{
+	width: 0.5vw; /* アイコンのサイズ */
+	height: auto;
+	margin-right: 0.75%; /* アイコンとテキストの間隔 */
 }
-
 /* 各情報のdlリスト */
 #tokushoho .info-list {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2.6%;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 2.6%;
 }
-
 /* 項目名 (dt) */
 #tokushoho .info-list dt {
-    width: 25%; /* 項目名の幅 */
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    padding: 0.78% 0;
-    line-height: 1.6;
-    vertical-align: top;
+	width: 50%;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 700; /* 太字 */
+	color: #2C2929;
+	font-size: 16px; /* 画面幅に応じたサイズ */
+	padding: 0.78% 0;
+	line-height: 1.6;
+	vertical-align: top;
 }
-
 /* 内容 (dd) */
 #tokushoho .info-list dd {
-    width: 75%; /* 内容の幅 */
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    padding: 0.78% 0;
-    line-height: 1.6;
+	width: 75%; /* 内容の幅 */
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 400;
+	color: #2C2929;
+	font-size: 16px; /* 画面幅に応じたサイズ */
+	padding: 0.78% 0;
+	line-height: 1.6;
 }
-
 /* 店舗情報のリスト */
 #tokushoho .store-data dt {
-    width: 15%; /* 店舗情報部分はdtの幅を狭く */
+	width: 15%; /* 店舗情報部分はdtの幅を狭く */
 }
 #tokushoho .store-data dd {
-    width: 85%;
+	width: 85%;
 }
-
 /* 支払い方法のdd内のp */
 #tokushoho .payment-data dd p {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    line-height: 1.6;
-    margin: 0;
+	font-size: 16px; /* 画面幅に応じたサイズ */
+	line-height: 1.6;
+	margin: 0;
 }
-
 /* 区切り線 */
-#tokushoho .notation-hr {
-    border: none;
-    border-top: 1px solid #C4C4C4; /* グレーの細い線 */
-    margin: 3.125% 0; /* 上下の余白 */
+#tokushoho .notation-main-hr{
+	border: none;
+	border-bottom: 2px solid #333;
+	margin: 3.125% 0; /* 上下の余白 */
 }
-
+#tokushoho .notation-hr {
+	border: none;
+	border-bottom: 1px solid #C4C4C4; /* グレーの細い線 */
+	margin: 3.125% 0; /* 上下の余白 */
+}
 /* 本文テキスト */
 #tokushoho .content-text {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    line-height: 1.8;
-    margin-top: 0;
-    margin-bottom: 1.56%;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-top: 0;
+	margin-bottom: 1.56%;
 }
-
 /* 不良品の取り扱い内のリスト */
- #tokushoho.sub-list {
-    list-style: none;
-    padding-left: 0.52%;
+#tokushoho.sub-list {
+	list-style: none;
+	padding-left: 0.52%;
 }
 #tokushoho .sub-list li p {
-    font-size: 0.9375vw;
-    line-height: 1.6;
-    margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 0;
 }
-
 /* ブロックごとの余白調整 */
 #tokushoho .notation-block {
-    margin-bottom: 3.125%;
+	margin-bottom: 3.125%;
 }
-
 /* ======================メディアクエリ =========================*/
 @media(width<780px){
-    /* 各ページ */
-
+	/* 各ページ */
 /*=================================
-            TOP
+            TOP
 =================================*/
 /* ヘッダー */
-#pattern-bg {
-    width: 30%;
-    background-size: cover;
-    background-position: left center;
-    mask-image: linear-gradient(to right, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-}
-.nav-content li{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    margin: 3rem 0;
-}
+	#pattern-bg {
+		width: 30%;
+		background-size: cover;
+		background-position: left center;
+		mask-image: linear-gradient(to right, black 80%, transparent 100%);
+		-webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+	}
+	.nav-content li{
+		color:#2C2929;
+		font-family: "Gravitas One", serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 18px;
+		cursor: pointer;
+		transition: color 0.3s ease;
+		margin: 3rem 0;
+	}
 /* 流れる文字 */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
+	#top .scroll-item{
+		font-size: 12px;
+		padding: 3px 8px;
+		margin: 0 2px;
+	}
+	#top .dot{
+		font-size: 14px;
+		margin: 0 6px;
+	}
+	#top .scroll-wrapper{
+		animation: scrollMove 20s linear infinite;
+	}
+	/* ABOUT */
+	/* PRODUCT */
+	/* ONLINE SHOP */
+	/* 個人情報保護方針 */
+	ol {
+		list-style-type: decimal;
+	}
+	/* 特定商取引法 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 #top .scroll-item{
     font-size: 12px;
     padding: 3px 8px;
@@ -1954,4 +2049,8 @@ html {
 
 
     /* 特定商取引法 */ 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
