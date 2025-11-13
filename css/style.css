@@ -872,6 +872,15 @@ display: flex;
     margin-top: 6.25%;
 }
 
+#product .list.wrapper .list-button ul {
+    display: flex;
+    list-style: none;
+}
+
+#product .list.wrapper .list-button ul li {
+    flex: 1;
+}
+
 #product .list.wrapper .list-container {
     display: flex;
     justify-content: center;
