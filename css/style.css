@@ -53,6 +53,7 @@ p{
 /* スクロール */
 html {
 	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 /* 中央に揃える */
 .wrapper {
@@ -67,6 +68,12 @@ html {
 	align-items: center;
 	gap: 0.78%;
 	margin-bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.78%;
+    margin: 5% 0;
 }
 /* 各ページ */
 /*=================================
@@ -76,6 +83,9 @@ html {
 	color: #2C2929;
 } */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 /* フッター */
 .footer{
 	position: fixed;
@@ -103,7 +113,10 @@ html {
 	right: 2%;
 	top: 50%;
 	transform: translateY(-50%);
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 /* ヘッダー */
 header{
     position: fixed;
@@ -128,9 +141,13 @@ header{
 }
 .header-menu{
     position: absolute;
+    position: fixed;
     right: 2%;
-    top: 50%;
+    top: 5%;
     transform: translateY(-50%);
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 .menu-btn{
@@ -201,6 +218,14 @@ header{
 	cursor: pointer;
 	user-select: none;
 	z-index: 300;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 300;
 }
 .close-line{
 	position: absolute;
@@ -263,9 +288,9 @@ header{
 .fixed-shop-btn{
     position: fixed;
     bottom: 2%;
-    right: 2%;
-    width: 110px;
-    height: 110px;
+    right: 1%;
+    width: 90px;
+    height: 90px;
     background-color: #E64C4C;
     border: 8px solid #FDC865;
     border-radius: 50%;
@@ -278,23 +303,33 @@ header{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .fixed-shop-btn h4{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.3;
     text-align: center;
 }
 /* 横切る文字 */
 #top .scroll-area{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	width: 100%;
 	overflow: hidden;
 	background-color: #FFF8F0;
 	padding: 8px 0;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
     width: 100%;
+    height: 22vh;
     overflow: hidden;
     background-color: #FFF8F0;
     padding: 8px 0;
     margin-top: 3%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 #top .scroll-wrapper{
@@ -342,6 +377,9 @@ header{
 }
 @keyframes scrollMove {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	0% { transform: translateX(0); }
 	100% { transform: translateX(-50%); }
 }
@@ -352,7 +390,24 @@ header{
 	justify-content: center;
 	align-items: center;
 	padding: 1.04%;
+<<<<<<< HEAD
 =======
+=======
+}
+#top .senbei-wrapper{
+	display: flex;
+	gap: 2.08%;
+}
+#top .senbei{
+	width: 6.25%;
+	aspect-ratio: 1/1;
+	background-image: var(--front-img, url("img/top-senbei.png"));
+	background-size: cover;
+	border-radius: 50%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+>>>>>>> main
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
@@ -362,15 +417,27 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     padding: 1.04%;
     margin-top: 6%;
 >>>>>>> main
+=======
+    overflow-x: hidden;
+    position: relative;
+    z-index: 2
+>>>>>>> main
 }
 #top .senbei-wrapper{
-	display: flex;
-	gap: 2.08%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0 1vw;
+    box-sizing: border-box;
 }
 #top .senbei{
+<<<<<<< HEAD
 <<<<<<< HEAD
 	width: 6.25%;
 	aspect-ratio: 1/1;
@@ -383,10 +450,17 @@ header{
 =======
     width: 255px;
     height: 255px;
+=======
+    width: calc(100% / 7 - 1vw);
+    aspect-ratio: 1 / 1;
+>>>>>>> main
     border-radius: 50%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     position: relative;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 #top .senbei::before {
@@ -398,9 +472,12 @@ header{
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
-  }
+}
 #top .senbei::after{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -416,9 +493,12 @@ header{
 }
 #top .senbei.flip{
 	transform: rotateY(180deg);
+<<<<<<< HEAD
 }
 /* ABOUT */
 =======
+=======
+>>>>>>> main
     content: "";
     position: absolute;
     inset: 0;
@@ -438,7 +518,7 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 33vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -457,6 +537,366 @@ header{
     transform: scale(0.98);
     overflow: hidden;
 }
+/* キャッチコピー */
+#top .fv-section {
+    position: relative;
+    height: 80vh;
+    transition: opacity 1s ease;
+}
+#top .catch-section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#top .catch-bg {
+    position: absolute;    
+    inset: 0;                  
+    background-image: url("../img/top-moyou-bg.png") ;
+    background-size: cover;            
+    background-position: center;     
+    opacity: 0;                      
+    transform: translateY(50px);     
+    transition: all 1.5s ease;       
+}
+#top .catch-copy {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: start;
+    gap: 10vw;
+}
+#top .catch-column{
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 32px;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 1s ease;
+}
+#top .catch-column.right  { transition-delay: 0.4s; }
+#top .catch-column.center { transition-delay: 0.9s; }
+#top .catch-column.left   { transition-delay: 1.4s; }
+#top .show-bg .catch-bg {
+    opacity: 1;                    
+    transform: translateY(0);
+}
+#top .show-text .catch-text {
+    opacity: 1;                   
+    transform: translateY(0);     
+}
+/* せんべい単体 */
+#top .senbei-intro {
+    margin: 10% 0;
+}
+#top .senbei-container {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 5%;
+}
+#top .senbei-text {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+}
+#top .senbei-text.show {
+    opacity: 1;
+}
+#top .senbei-text.text1 {
+    top: -32px;  
+    left: 10px;    
+}
+#top .senbei-text.text2 {
+    top: -37px;   
+    right: 10px;   
+}
+#top .senbei-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+#top .senbei-bg.active {
+    opacity: 1;
+}
+#top .senbei-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 3% 0;
+}
+#top .senbei-description h2 {
+    margin: 15px 0;
+    line-height: 1.8em;
+    text-align: center;
+}
+#top .section-tile{
+    width: 100%;
+}
+/* KAKISEN.について */
+#top .about-area{
+    width: 100%;
+    overflow: hidden;
+}
+#top .about-text{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top .text-highlight{
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0 3px;
+}
+#top .about-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+#top .slide-track{
+    display: flex;
+    gap: 20px;
+    animation: scrollSlide 40s linear infinite;
+}
+#top .slide-track img{
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+@keyframes scrollSlide {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+/* PRODUCT */
+#top .product-area{
+    width: 100%;
+}
+/* 流れるおかき */
+#top .product-loop{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 4%;
+}
+#top .loop-track{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    animation: loopMove 20s linear infinite;
+}
+#top .loop-set{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+#top .text-o{
+    color: #E64C4C;
+}
+#top .text-r{
+    color: #FDC865;
+    }
+#top .text-question {
+    color: #E64C4C;
+}
+#top .senbei-img, .okaki-img {
+    width: 60px;
+    height: auto;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.15));
+}
+@keyframes loopMove {
+0% {transform: translateX(0);}
+100% {transform: translateX(-50%);}
+}
+#top .product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#top .product-kakisen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 7%;
+}
+#top .product-kakio{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-bottom: 7%;
+}
+#top .product-intro{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#top .product-intro p{
+    text-align: left;
+    margin: 8% 0 8% 2%;
+}
+#top .product-intro-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/* STORE */
+#top .ankerLink-section {
+    margin-top: 13.02%;
+    display: flex;
+    justify-content: center;
+}
+#top .access-link.wrapper {
+    width: 400px;
+    background: url(../img/product-access-button.png) repeat;
+    padding: 25px 0;
+    margin: 0;
+}
+#top .shop-link.wrapper {
+    background: url(../img/product-onlineShop-button.png);
+    margin-left: 5.71%;
+}
+#top .access-link.wrapper .link-button {
+    width: 350px;
+    background-color: #FFF8F0;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px;
+}
+#top .access-link.wrapper .link-button .button {
+    text-align: center;
+    margin-top: 40px;
+    width: 238px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top .access-link.wrapper .link-button .button a {
+    text-decoration: none;
+    color: #FFF8F0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #E64C4C;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#top .access-link.wrapper .link-button .button a:hover {
+    background-color: #FDC865;
+}
+/* フッター */
+.footer-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E64C4C;
+    margin-top: 6.5%;
+}
+.footer-area img{
+    margin: 3% 0;
+}
+.nav-footer{
+    width: 100%;
+    margin-bottom: 1%;
+}
+.nav-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    
+}
+.nav-footer li{
+    list-style: none;
+    color:#2C2929;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.nav-footer ul a{
+    text-decoration: none;
+}
+.nav-footer li:hover{
+    color: #FDC865;
+    transition: color 0.3s ease;
+}
+.footer-sub{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.footer-sub p{
+    font-size: 12px;
+    margin-bottom:1%;
+}
+.footer-sub p:hover{
+    color: #FDC865;
+    transition: color 0.3s ease;
+}
+.copyright p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.footer-pattern{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.pattern-track{
+    display: flex;
+    animation: patternMove 40s linear infinite;
+}
+.pattern-track img{
+    flex-shrink: 0;
+}
+@keyframes patternMove {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+/* ABOUT */
 
 /* ABOUT =====================================*/
 /* ABOUT =====================================*/
@@ -518,6 +958,9 @@ header{
     text-align: center;
 }
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 /*=================================
             PRODUCT
@@ -529,16 +972,25 @@ header{
 	padding: 0 100px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #product .header-tile, #online .header-tile {
 	width: 100%;
 	height: 130px;
 	background: url(../img/product-tile-1.png) repeat-x;
 	margin-bottom: 6.25%;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 
 .header-tile {
     width: 100%;
     margin-bottom: 6.25%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 #product .title {
@@ -786,20 +1238,31 @@ h5 {
 
 #online .onlineShop .item-list .item h4 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 24px;
 	line-height: 1em;
 =======
+=======
+	font-size: 24px;
+	line-height: 1em;
+>>>>>>> main
     font-size: 24px;
     line-height: 1em;
     width: fit-content;
     margin-top: 7.58%;
     font-family: "Shippori Mincho", serif;
+<<<<<<< HEAD
 >>>>>>> main
 }
 #online .onlineShop .item-list .item .contents {
 <<<<<<< HEAD
 	font-size: 12px;
 =======
+=======
+}
+#online .onlineShop .item-list .item .contents {
+	font-size: 12px;
+>>>>>>> main
     font-size: 12px;
     width: fit-content;
     margin-top: 3.41%;
@@ -808,6 +1271,9 @@ h5 {
 #online .onlineShop .item-list .item .price {
     width: fit-content;
     margin-top: 3.41%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 #online .onlineShop .number-btn-outer {
@@ -816,6 +1282,9 @@ h5 {
 	gap: 14px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #online .minus, #online .plus {
 	width: 15px;
 	height: 15px;
@@ -823,7 +1292,10 @@ h5 {
 	outline: none;
 	border: none;
 	position: relative;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 
 #online .onlineShop .number-btn-outer p {
     line-height: 1em;
@@ -837,6 +1309,9 @@ h5 {
     border: none;
     position: relative;
     cursor: pointer;
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 #online .minus:active, #online .plus:active {
@@ -861,11 +1336,17 @@ h5 {
 	transform: translate(-50%, -50%);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #online .toCart-btn-outer {
 	width: 44px;
 	height: 36px;
 	background-color: #E64C4C
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 
 #online .number-toCart-btn {
     display: flex;
@@ -1016,6 +1497,9 @@ h5 {
     #online .price-card-container {
         display: none;
     }
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 /* ONLINE SHOP */
@@ -1262,6 +1746,9 @@ h5 {
 }
 /* 個人情報保護方針 */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 ol li{
 	font-weight: bold;
 	margin: 2% 0 1% 0%;
@@ -1276,6 +1763,7 @@ ul li{
 	width: 100%;
 	height: 130px; /* 高さの調整 */
 	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
 =======
     ol li{
         font-weight: bold;
@@ -1288,11 +1776,16 @@ ul li{
     }
 
 #PP .header-blocks{
+=======
+>>>>>>> main
     background-image: url(../img/PP-line.png);
     background-repeat: repeat-x;
     width: 100%;
     height: 65px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 /* HELP涙涙涙 */
@@ -1300,13 +1793,19 @@ ul li{
 	text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 .test{
 	background-image: url(../img/PP-line.png);
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 130px; /* 高さの調整 */
 	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 
 .test{ 
     background-image: url(../img/PP-line.png);
@@ -1314,6 +1813,9 @@ ul li{
     width: 100%;
     height: 40px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
 .main-paaage {
@@ -1471,6 +1973,9 @@ ul li{
 	}
 /* 流れる文字 */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	#top .scroll-item{
 		font-size: 12px;
 		padding: 3px 8px;
@@ -1491,7 +1996,10 @@ ul li{
 		list-style-type: decimal;
 	}
 	/* 特定商取引法 */
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> main
 #top .scroll-item{
     font-size: 12px;
     padding: 3px 8px;
@@ -1522,6 +2030,11 @@ ul li{
     font-size: clamp(2.5rem, 12vw, 3rem);
     transform: scale(0.95) translateY(10%);
 }
+/* オンラインショップのボタンを消す？ */
+/* キャッチコピー */
+#top .catch-column.right  { transition-delay: 0.2s; }
+#top .catch-column.center { transition-delay: 0.4s; }
+#top .catch-column.left   { transition-delay: 0.6s; }
 
     /* ABOUT */
 
@@ -1536,5 +2049,8 @@ ul li{
 
 
     /* 特定商取引法 */ 
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 }
