@@ -1,5 +1,5 @@
-const beforeImg = document.querySelector('.senbei.before');
-const afterImg = document.querySelector('.senbei.after');
+const beforeImg = document.querySelector('.senbei-bg.before');
+const afterImg = document.querySelector('.senbei-bg.after');
 const text1 = document.querySelector('.senbei-text.text1');
 const text2 = document.querySelector('.senbei-text.text2');
 
@@ -22,4 +22,4 @@ setInterval(() => {
   }
 
   isBefore = !isBefore;
-}, 2000); 
+}, 1500); 
