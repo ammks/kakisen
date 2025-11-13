@@ -1549,31 +1549,6 @@ html {
 }
 
 
-
-#access .page-title h3{
-
-    text-align: center;
-
-    font-size: 32px; /* 画面幅に応じたサイズ */
-
-    margin-bottom: 5.2%;
-
-}
-
-
-
-#access .page-title .title-icon {
-
-    text-align: center;
-
-    width: 2vw; /* アイコンのサイズ */
-
-    height: auto;
-
-}
-
-
-
 /* --- Section 1: スライダーと基本情報 --- */
 
 
@@ -1584,7 +1559,7 @@ html {
 
     justify-content: space-between;
 
-    align-items: flex-start;
+    /* align-items: flex-start; */
 
     margin-bottom: 5.21%;
 
@@ -1627,6 +1602,8 @@ html {
     width: 100%;
 
     height: auto;
+
+    margin-top: 6.25%;
 
 }
 
@@ -1813,13 +1790,21 @@ html {
 
 
 #access .store-name {
-
-    font-size: 1.2em;
-
-    font-weight: bold;
-
+    color:#2C2929;
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
     margin-bottom: 5%;
 
+}
+
+.store-name span{
+    color:#2C2929;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
 }
 
 
