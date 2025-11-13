@@ -1318,7 +1318,6 @@ h5 {
 
 /* ONLINE SHOP */
 
-@charset "utf-8";
 /* CSS Document */
 /* フルードイメージ */
 img{max-width: 100%;height:auto;}
@@ -1444,264 +1443,972 @@ html {
 /* ONLINE SHOP */
 
 /* ACCESS */
-#access .access-container {
-    max-width: 80%; /* カンプに合わせて幅を調整 */
-    margin: 0 auto;
-    padding: 0 0 5%;
-}
 
-/* タイトルと装飾 */
-#access .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5%; /* 装飾帯との間隔を詰める */
-}
 
-#access .title h4 {
-    font-size: 2.5vw; 
-    font-weight: 500;
-}
 
-#access .line-deco {
+#access .line-deco{
+
     width: 100%;
+
     height: auto;
+
     margin-bottom: 3.5%; /* 次のセクションとの間隔 */
+
     display: block;
+
     margin-left: auto;
+
     margin-right: auto;
+
 }
+
+
+
+#access .legal-notation-page {
+
+    width: 70%; /* ページのコンテンツ幅 */
+
+    max-width: 960px; /* 必要に応じて最大幅を設定 */
+
+    margin: 0 auto;
+
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+
+}
+
+
+
+#access .page-title h3{
+
+    text-align: center;
+
+    font-size: 32px; /* 画面幅に応じたサイズ */
+
+    margin-bottom: 5.2%;
+
+}
+
+
+
+#access .page-title .title-icon {
+
+    text-align: center;
+
+    width: 2vw; /* アイコンのサイズ */
+
+    height: auto;
+
+}
+
+
 
 /* --- Section 1: スライダーと基本情報 --- */
 
+
+
 #access .store-info-section {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-start;
-    margin-bottom: 5%;
+
+    margin-bottom: 5.21%;
+
 }
+
+
 
 /* 写真スライダー（左側） */
+
 #access .photo-slider-wrapper {
+
     position: relative;
+
     width: 55%; /* カンプに合わせて左側の幅を広げる */
-    border: 1px solid #2C2929; /* 画像周りの線 */
+
 }
+
+
+
+/* ★ 修正: Slickの動作を妨げる display: flex; と transition を削除 */
 
 #access .photo-slider {
-    display: flex; 
-    overflow: hidden; 
+
+    /* display: flex; <- 削除 */
+
+    overflow: hidden;
+
     width: 100%;
+
+    /* transition: transform 0.5s ease-in-out; <- 削除 */
+
 }
 
-#access .slider-item {
-    min-width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
+
 
 #access .slider-item img {
+
     display: block;
+
     width: 100%;
+
     height: auto;
+
 }
 
-#access .slider-dots {
-    text-align: center;
-    padding-top: 2%;
-    position: absolute;
+
+
+/* ======================================================= */
+
+/* ★ カスタムドットデザインのSlick要素への移植 */
+
+/* 元の .slider-dots, .dot のCSSは削除し、以下のSlick用のCSSに置き換えます */
+
+/* ======================================================= */
+
+
+
+/* ドット全体のコンテナ（元の .slider-dots の位置を再現） */
+
+#access .photo-slider-wrapper .slick-dots {
+
+    /* slick-theme.css の設定を上書きして元の位置に移動 */
+
     bottom: 5%;
+
     left: 50%;
+
     transform: translateX(-50%);
+
+   
+
+    /* slick-theme.css の設定をリセット */
+
+    margin: 0;
+
+    padding: 0;
+
 }
 
-#access .dot {
-    display: inline-block;
-    width: 1.5%; /* 画面幅に対する%でサイズ指定 */
-    padding-bottom: 1.5%;
-    margin: 0 0.5%;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+
+/* ドット一つ一つの要素の余白（元の .dot の margin を再現） */
+
+#access .photo-slider-wrapper .slick-dots li {
+
+    width: auto; /* サイズ指定を解除 */
+
+    height: auto; /* サイズ指定を解除 */
+
+    margin: 0 0.5%; /* 元の .dot の margin: 0 0.5%; を再現 */
+
+    padding: 0;
+
 }
-/* ドットのアスペクト比を維持するための修正 */
-#access .dot::before {
-    content: "";
+
+
+
+/* ドット自体のデザイン（元の .dot の形と色を再現） */
+
+#access .photo-slider-wrapper .slick-dots li button {
+
+    /* slick-theme.css の padding: 5px; を上書きしてサイズを小さくする */
+
+    padding: 0;
+
+   
+
+    /* ドットのサイズを元の 1.5% の意図に近い固定サイズで設定 */
+
+    width: 10px;
+
+    height: 10px;
+
+   
+
+    /* button要素のデフォルトスタイルをリセット */
+
+    background: none;
+
+    border: none;
+
+}
+
+
+
+#access .photo-slider-wrapper .slick-dots li button:before {
+
+    content: ''; /* 矢印フォントを無効化 */
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+   
+
+    /* サイズを再現 */
+
     display: block;
-    padding-top: 100%; /* 高さ = 幅 */
+
+    width: 100%; /* 親要素の button に合わせる */
+
+    height: 100%;
+
+   
+
+    /* スタイル */
+
+    border-radius: 50%;
+
+    background-color: #ccc; /* 非アクティブ時の色 */
+
+   
+
+    /* slick-theme.css の opacity を上書き */
+
+    opacity: 1;
+
 }
-#access .dot.active {
-    background-color: #E64C4C;
+
+
+
+/* アクティブなドットの色 */
+
+#access .photo-slider-wrapper .slick-dots li.slick-active button:before {
+
+    background-color: #E64C4C; /* アクティブ時の色 */
+
 }
+
+
+
+/* ======================================================= */
+
+/* カスタムドットデザインのSlick要素への移植 - ここまで */
+
+/* ======================================================= */
+
+
 
 /* 基本情報ブロック（右側） */
+
 #access .basic-details {
+
     width: 40%; /* 右側の幅を調整 */
+
     position: relative;
+
     padding-top: 3%; /* イラストが上にはみ出るための調整 */
+
 }
+
+
 
 /* 親子のイラスト */
+
 #access .illustration.parentandchild-move {
+
     position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    right: 0;
+
+    width: 50%; /* イラストのサイズ調整 */
+
+    top: -30%; /* 上に大きくはみ出す */
+
+    right: 30%;
+
     z-index: 10;
+
     /* アニメーション適用 */
-    animation: gentle-float 4s infinite alternate ease-in-out; 
+
+    animation: gentle-float 4s infinite alternate ease-in-out;
+
 }
+
+
 
 #access .details-box {
-    border: 1px solid #2C2929;
+
     padding: 5% 5%;
+
 }
+
+
 
 #access .store-name {
+
     font-size: 1.2em;
+
     font-weight: bold;
+
     margin-bottom: 5%;
+
 }
+
+
 
 /* 定義リスト（dl）の修正 */
+
 #access .basic-details dl {
+
     overflow: hidden; /* float解除のため */
-}
-#access .basic-details dl dt {
-    float: left;
-    clear: left;
-    width: 30%; /* 項目名の幅 */
-    font-weight: bold;
-    line-height: 1.6;
-    padding: 0.5% 0;
-}
-#access .basic-details dl dd {
-    margin-left: 30%; /* dtの幅に合わせる */
-    line-height: 1.6;
-    padding: 0.5% 0;
+
 }
 
+#access .basic-details dl dt {
+
+    float: left;
+
+    clear: left;
+
+    width: 30%; /* 項目名の幅 */
+
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    padding: 5% 0;
+
+}
+
+#access .basic-details dl dd {
+
+    margin-left: 30%; /* dtの幅に合わせる */
+
+    line-height: 1.6;
+
+    padding: 5% 0;
+
+}
+
+
+
 /* 装飾パターン */
-#access .deco-pattern.info-deco {
-    text-align: right;
+
+#access .deco-pattern {
+
+    text-align: center;
+
     margin-top: 5%;
+
 }
-#access .deco-pattern.info-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
+
+#access .deco-pattern img {
+
+    width: 20%; /* 装飾のサイズ調整 */
+
     height: auto;
+
     margin-left: 1%;
+
 }
+
+
 
 /* --- Section 2: 簡易地図とアクセス案内 --- */
 
+
+
 #access .guidance-map-section {
+
     display: flex;
+
+    flex-direction: row-reverse;
+
     justify-content: space-between;
+
     align-items: flex-start;
+
     margin-bottom: 5%;
+
 }
+
+
 
 /* 簡易地図（左側） */
+
 #access .simple-map-wrapper {
+
     width: 48%; /* 左側の幅 */
-    border: 1px solid #2C2929;
+
+    margin-top: 5.21%;
+
 }
+
 #access .simple-map-wrapper img {
+
     display: block;
+
     width: 100%;
+
 }
+
+
 
 /* 交通案内（右側） */
+
 #access .transport-guidance {
+
     width: 48%; /* 右側の幅 */
+
     position: relative;
-    padding-top: 3%;
+
+    padding-top: 5.21%;
+
 }
+
+
 
 /* 夫婦のイラスト */
+
 #access .illustration.couple-move {
+
     position: absolute;
-    width: 40%; /* イラストのサイズ調整 */
-    top: -10%; /* 上に大きくはみ出す */
-    left: 0; /* 左側に配置 */
+
+    width: 50%; /* イラストのサイズ調整 */
+
+    top: -15%; /* 上に大きくはみ出す */
+
+    left: 30%;
+
     z-index: 10;
+
     /* アニメーション適用 */
-    animation: sway 3s infinite alternate ease-in-out;
+
+    animation: sway 4s infinite alternate ease-in-out;
+
 }
+
+
 
 #access .guidance-options {
-    border: 1px solid #2C2929;
+
     padding: 5% 5%;
+
 }
+
+
 
 #access .option {
+
     margin-bottom: 5%;
+
 }
+
 #access .option:last-child {
+
     margin-bottom: 0;
+
 }
+
+
 
 #access .title-transport {
+
     font-weight: bold;
+
     margin-bottom: 1%;
+
 }
 
-/* 装飾パターン */
-#access .deco-pattern.guidance-deco {
-    text-align: left; /* 左寄せ */
-    margin-top: 5%;
-}
-#access .deco-pattern.guidance-deco img {
-    width: 8%; /* 装飾のサイズ調整 */
-    height: auto;
-    margin-right: 1%;
-}
 
 
 /* --- Section 3: Googleマップ埋め込み --- */
 
+
+
 #access .google-map-section {
+
     margin-bottom: 5%;
+
 }
+
+
 
 #access .google-map-container {
+
     position: relative;
+
     padding-bottom: 40%; /* カンプに合わせて高さを調整 (100%幅で40%の高さ) */
+
     height: 0;
+
     overflow: hidden;
-    border: 1px solid #2C2929;
+
 }
 
+
+
 #access .google-map-container iframe {
+
     position: absolute;
+
     top: 0;
+
     left: 0;
+
     width: 100%;
+
     height: 100%;
+
     border: none;
+
 }
+
+
+
 
 
 /* --- アニメーション定義（イラストの動き） --- */
 
+
+
 /* 人形が軽く浮くようなアニメーション (親子に使用) */
+
 @keyframes gentle-float {
+
     0% {
+
         transform: translateY(0) rotate(0deg);
+
     }
+
     100% {
-        transform: translateY(-2%) rotate(0.5deg);
+
+        transform: translateY(-2%) rotate(5deg);
+
     }
+
 }
 
-/* 人形のゆらゆら動くアニメーション (夫婦に使用) */
+
+
 @keyframes sway {
+
     0% {
-        transform: translate(0, 0) rotate(0deg);
+
+        transform: translateY(0) rotate(0deg);
+
     }
+
     100% {
-        transform: translate(1%, -1.5%) rotate(-0.5deg);
+
+        transform: translateY(-2%) rotate(5deg);
+
     }
+
+}
+
+
+
+/* 個人情報保護方針 */
+
+    ol li{
+
+        font-weight: bold;
+
+        margin: 2% 0 1% 0%;
+
+    }
+
+
+
+    ul li{
+
+        font-weight: normal;
+
+        margin: 0;
+
+    }
+
+
+
+#PP .header-blocks{
+
+    background-image: url(../img/PP-line.png);
+
+    background-repeat: repeat-x;
+
+    width: 100%;
+
+    height: 130px; /* 高さの調整 */
+
+    margin-bottom: 3.125%; /* 下の余白 */
+
+}
+
+
+
+/* HELP涙涙涙 */
+
+.privacy-policy{
+
+ text-align: center;    
+
+}
+
+
+
+.test{
+
+    background-image: url(../img/PP-line.png);
+
+    background-repeat: repeat-x;
+
+    width: 100%;
+
+    height: 130px; /* 高さの調整 */
+
+    margin-bottom: 3.125%; /* 下の余白 */
+
+}
+
+
+
+.main-paaage {
+
+    width: 70%; /* ページのコンテンツ幅 */
+
+    margin: 0 auto;
+
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+
+}
+
+
+
+.personal-information{
+
+    margin: 80px 0 50px 0;
+
+}
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
 }
 
 
