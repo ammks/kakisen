@@ -82,6 +82,10 @@ html {
 /* #top .aaa{
 	color: #2C2929;
 } */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 /* フッター */
 .footer{
 	position: fixed;
@@ -109,6 +113,10 @@ html {
 	right: 2%;
 	top: 50%;
 	transform: translateY(-50%);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 /* ヘッダー */
 header{
     position: fixed;
@@ -137,6 +145,10 @@ header{
     right: 2%;
     top: 5%;
     transform: translateY(-50%);
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 .menu-btn{
 	display: flex;
@@ -297,16 +309,28 @@ header{
 }
 /* 横切る文字 */
 #top .scroll-area{
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	width: 100%;
 	overflow: hidden;
 	background-color: #FFF8F0;
 	padding: 8px 0;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
     width: 100%;
     height: 22vh;
     overflow: hidden;
     background-color: #FFF8F0;
     padding: 8px 0;
     margin-top: 3%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #top .scroll-wrapper{
 	display: flex;
@@ -352,6 +376,10 @@ header{
 	font-weight: 600;
 }
 @keyframes scrollMove {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	0% { transform: translateX(0); }
 	100% { transform: translateX(-50%); }
 }
@@ -362,6 +390,9 @@ header{
 	justify-content: center;
 	align-items: center;
 	padding: 1.04%;
+<<<<<<< HEAD
+=======
+=======
 }
 #top .senbei-wrapper{
 	display: flex;
@@ -376,6 +407,7 @@ header{
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
 	position: relative;
+>>>>>>> main
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
@@ -385,9 +417,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
+    padding: 1.04%;
+    margin-top: 6%;
+>>>>>>> main
+=======
     overflow-x: hidden;
     position: relative;
     z-index: 2
+>>>>>>> main
 }
 #top .senbei-wrapper{
     display: flex;
@@ -399,12 +437,31 @@ header{
     box-sizing: border-box;
 }
 #top .senbei{
+<<<<<<< HEAD
+<<<<<<< HEAD
+	width: 6.25%;
+	aspect-ratio: 1/1;
+	background-image: var(--front-img, url("img/top-senbei.png"));
+	background-size: cover;
+	border-radius: 50%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+=======
+    width: 255px;
+    height: 255px;
+=======
     width: calc(100% / 7 - 1vw);
     aspect-ratio: 1 / 1;
+>>>>>>> main
     border-radius: 50%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     position: relative;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #top .senbei::before {
     content: "";
@@ -417,6 +474,10 @@ header{
     backface-visibility: hidden;
 }
 #top .senbei::after{
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -432,6 +493,12 @@ header{
 }
 #top .senbei.flip{
 	transform: rotateY(180deg);
+<<<<<<< HEAD
+}
+/* ABOUT */
+=======
+=======
+>>>>>>> main
     content: "";
     position: absolute;
     inset: 0;
@@ -891,6 +958,10 @@ display: flex;
     text-align: center;
 }
 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 /*=================================
             PRODUCT
 =================================*/
@@ -900,15 +971,27 @@ display: flex;
 	margin: 0 auto;
 	padding: 0 100px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #product .header-tile, #online .header-tile {
 	width: 100%;
 	height: 130px;
 	background: url(../img/product-tile-1.png) repeat-x;
 	margin-bottom: 6.25%;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 .header-tile {
     width: 100%;
     margin-bottom: 6.25%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #product .title {
 	margin-bottom: 5.21%;
@@ -1154,16 +1237,32 @@ h5 {
 }
 
 #online .onlineShop .item-list .item h4 {
+<<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 24px;
 	line-height: 1em;
+=======
+=======
+	font-size: 24px;
+	line-height: 1em;
+>>>>>>> main
     font-size: 24px;
     line-height: 1em;
     width: fit-content;
     margin-top: 7.58%;
     font-family: "Shippori Mincho", serif;
+<<<<<<< HEAD
+>>>>>>> main
+}
+#online .onlineShop .item-list .item .contents {
+<<<<<<< HEAD
+	font-size: 12px;
+=======
+=======
 }
 #online .onlineShop .item-list .item .contents {
 	font-size: 12px;
+>>>>>>> main
     font-size: 12px;
     width: fit-content;
     margin-top: 3.41%;
@@ -1172,12 +1271,20 @@ h5 {
 #online .onlineShop .item-list .item .price {
     width: fit-content;
     margin-top: 3.41%;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #online .onlineShop .number-btn-outer {
 	display: flex;
 	align-items: center;
 	gap: 14px;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #online .minus, #online .plus {
 	width: 15px;
 	height: 15px;
@@ -1185,6 +1292,10 @@ h5 {
 	outline: none;
 	border: none;
 	position: relative;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 #online .onlineShop .number-btn-outer p {
     line-height: 1em;
@@ -1198,6 +1309,10 @@ h5 {
     border: none;
     position: relative;
     cursor: pointer;
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 #online .minus:active, #online .plus:active {
 	scale: 0.9;
@@ -1220,10 +1335,18 @@ h5 {
 	background-color: #FFF8F0;
 	transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 #online .toCart-btn-outer {
 	width: 44px;
 	height: 36px;
 	background-color: #E64C4C
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 #online .number-toCart-btn {
     display: flex;
@@ -1374,6 +1497,10 @@ h5 {
     #online .price-card-container {
         display: none;
     }
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 /* ONLINE SHOP */
 
@@ -1618,6 +1745,10 @@ h5 {
 	}
 }
 /* 個人情報保護方針 */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 ol li{
 	font-weight: bold;
 	margin: 2% 0 1% 0%;
@@ -1632,22 +1763,49 @@ ul li{
 	width: 100%;
 	height: 130px; /* 高さの調整 */
 	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+=======
+    ol li{
+        font-weight: bold;
+        margin: 2% 0 1% 0%;
+    }
+
+    ul li{
+        font-weight: normal;
+        margin: 0;
+    }
+
+#PP .header-blocks{
+=======
+>>>>>>> main
     background-image: url(../img/PP-line.png);
     background-repeat: repeat-x;
     width: 100%;
     height: 65px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 /* HELP涙涙涙 */
 .privacy-policy{
 	text-align: center;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 .test{
 	background-image: url(../img/PP-line.png);
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 130px; /* 高さの調整 */
 	margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 
 .test{ 
     background-image: url(../img/PP-line.png);
@@ -1655,6 +1813,10 @@ ul li{
     width: 100%;
     height: 40px; /* 高さの調整 */
     margin-bottom: 3.125%; /* 下の余白 */
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
 .main-paaage {
 	width: 70%; /* ページのコンテンツ幅 */
@@ -1810,6 +1972,10 @@ ul li{
 		margin: 3rem 0;
 	}
 /* 流れる文字 */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> main
 	#top .scroll-item{
 		font-size: 12px;
 		padding: 3px 8px;
@@ -1830,6 +1996,10 @@ ul li{
 		list-style-type: decimal;
 	}
 	/* 特定商取引法 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> main
 #top .scroll-item{
     font-size: 12px;
     padding: 3px 8px;
@@ -1879,4 +2049,8 @@ ul li{
 
 
     /* 特定商取引法 */ 
+<<<<<<< HEAD
+>>>>>>> main
+=======
+>>>>>>> main
 }
