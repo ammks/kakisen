@@ -392,6 +392,7 @@ header{
 
 #about h5{
     margin-top: 50px;
+    text-align: center;
 }
 
 #about main {
@@ -416,12 +417,12 @@ header{
 
  #about .BGanime {
   text-align: center;
-  margin: 120px auto 120px;
+  margin: 120px auto 80px;
       
   background-repeat:no-repeat;
   width: 990px;  /* 横幅を200pxに指定 */
  
-  animation: image_anime 5s ease infinite; /* 5秒のアニメーションを繰り返す */
+  animation: image_anime 2s ease infinite; /* 5秒のアニメーションを繰り返す */
 }
 @keyframes image_anime {
     
@@ -442,6 +443,68 @@ header{
 #about p{
     text-align: center;
 }
+
+#about .fixed-items{
+  background-image:url(../img/about-lemon.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  margin: 0 auto;
+  height: 450px;
+
+}
+
+#about .about-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .slide-track{
+    display: flex;
+    gap: 20px;
+    animation: scrollSlide 30s linear infinite;
+}
+#about .slide-track img{
+    width: 800px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+@keyframes scrollSlide {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}
+
+#about .our-history{
+    display: flex;
+}
+
+
+#about .vertical-slider-left{
+    margin-left: 15%;
+}
+
+#about .vertical-slider-right{
+    margin-right: 15%;
+}
+
+#about .vertical-slide-track{
+    display: flex;
+    flex-direction: column;
+    animation: scrollDown 15s linear infinite;
+}
+
+#about .vertical-slider-left img{
+    width: 80px;}
+    
+#about .vertical-moji{
+    margin: 100px auto 100px;
+
+
+}
+
 
 /*=================================
             PRODUCT
