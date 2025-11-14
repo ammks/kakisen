@@ -64,7 +64,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 0.78%;
-    margin-bottom: 1.92%;
+    margin: 6.25% 0 5.2% 0;
 }
 /* ボタン */
 .kakisen-btn{
@@ -105,7 +105,6 @@ html {
 }
 .kakisen-a:hover .kakisen-circle{
     transform:translateX(30%) ;
-
 }
 /* 各ページ */
 /*=================================
@@ -474,15 +473,14 @@ header{
     transform: translateY(0);     
 }
 /* せんべい単体 */
-#top .senbei-intro {
-    margin: 10% 0;
+#top .senbei-intro{
+    margin-top: 10.25%;
 }
 #top .senbei-container {
     width: 250px;
     height: 250px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 5%;
 }
 #top .senbei-text {
     position: absolute;
@@ -521,7 +519,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 3% 0;
+    margin-top: 5.2%;
 }
 #top .senbei-description h2 {
     margin: 15px 0;
@@ -530,6 +528,7 @@ header{
 }
 #top .section-tile{
     width: 100%;
+    margin-top: 6.25%;
 }
 /* KAKISEN.について */
 #top .about-area{
@@ -540,6 +539,7 @@ header{
 }
 #top .about-text {
     width: 100%;
+    height: 100%;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -547,6 +547,7 @@ header{
     gap: 10%;
     z-index: 10;
     position: relative;
+    margin-bottom: 5.2%;
 }
 #top .text-highlight{
     font-family: "Gravitas One", serif;
@@ -585,9 +586,8 @@ header{
 #top .product-loop{
     width: 100%;
     overflow: hidden;
-    padding: 20px 0;
     position: relative;
-    margin-bottom: 4%;
+    margin-bottom: 5.2%;
 }
 #top .loop-track{
 display: flex;
@@ -632,8 +632,8 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    margin-bottom: 7%;
+    gap: 3%;
+    margin-bottom: 5.2%;
 }
 #top .product-kakio{
     width: 100%;
@@ -641,11 +641,11 @@ display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    margin-bottom: 7%;
+    gap: 3%;
 }
 #top .product-intro{
-    width: 40%;
+    width: 50%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -653,7 +653,7 @@ display: flex;
 }
 #top .product-intro p{
     text-align: left;
-    margin: 8% 0 8% 2%;
+    margin: 3% 0 5.2% 3%;
 }
 #top .product-intro-title{
     display: flex;
@@ -681,7 +681,6 @@ display: flex;
     width: 350px;
     background-color: #FFF8F0;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     align-items: center;
