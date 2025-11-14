@@ -38,10 +38,40 @@ $(function(){
 
 <body class="wrapper"  id="product">
     <!-- ヘッダー -->
-    <header>
+     	<header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
         <!-- グローバルナビ -->
-        <nav>
-        </nav>
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+        <!-- ONLINE SHOPボタン -->
+        <a href="../03online/index.html" class="fixed-shop-btn">
+            <h4>ONLINE<br>SHOP</h4>
+        </a>
     </header>
     <div class="header-tile"></div>
     <!-- メイン -->
@@ -426,6 +456,7 @@ $(function(){
     <!-- フッター -->
     <footer>
     </footer>
+    <script src="../js/top-header-menu.js"></script>
 </body>
 
 </html>
