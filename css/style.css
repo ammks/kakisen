@@ -920,6 +920,10 @@ display: flex;
 /*=================================
             PRODUCT
 =================================*/
+.sp-br {
+    display: none;
+}
+
 #product main {
     max-width: 1400px;
     width: 100%;
@@ -976,19 +980,6 @@ display: flex;
     margin-top: 8.90%;
 }
 
-#product .list.wrapper {
-    margin-top: 6.25%;
-}
-
-#product .list.wrapper .list-button ul {
-    display: flex;
-    list-style: none;
-}
-
-#product .list.wrapper .list-button ul li {
-    flex: 1;
-}
-
 #product .list.wrapper .list-container {
     display: flex;
     justify-content: center;
@@ -1023,6 +1014,7 @@ display: flex;
 
 #product .list.wrapper .list-container .item .img-area {
     margin-bottom: 33.33%;
+    display: flex;
 }
 
 #product .list.wrapper .list-container .item p {
@@ -1091,30 +1083,9 @@ h5 {
     transform: translateY(-50%);
 }
 
-#product .kakisen-list.wrapper .item.salt .aroma .value-4,
-#product .kakisen-list.wrapper .item.salt .umami .value-4,
-#product .kakisen-list.wrapper .item.butterHerb .aroma .value-3,
-#product .kakisen-list.wrapper .item.butterHerb .aroma .value-4,
-#product .kakisen-list.wrapper .item.butterHerb .sharp .value-3,
-#product .kakisen-list.wrapper .item.butterHerb .sharp .value-4,
-#product .kakisen-list.wrapper .item.spicyRed .umami .value-4,
-#product .kakisen-list.wrapper .item.spicyRed .sharp .value-3,
-#product .kakisen-list.wrapper .item.spicyRed .sharp .value-4,
-#product .kakisen-list.wrapper .item.lemonPepper .aroma .value-3,
-#product .kakisen-list.wrapper .item.lemonPepper .aroma .value-4,
-#product .kakisen-list.wrapper .item.lemonPepper .umami .value-3,
-#product .kakisen-list.wrapper .item.lemonPepper .umami .value-4,
-#product .kakio-list.wrapper .item.salt .aroma .value-4,
-#product .kakio-list.wrapper .item.salt .umami .value-4,
-#product .kakio-list.wrapper .item.shoyu .sharp .value-3,
-#product .kakio-list.wrapper .item.shoyu .sharp .value-4,
-#product .kakio-list.wrapper .item.spicyRed .umami .value-4,
-#product .kakio-list.wrapper .item.spicyRed .sharp .value-4,
-#product .kakio-list.wrapper .item.spicyRed .sharp .value-3,
-#product .kakio-list.wrapper .item.yuzuSalt .aroma .value-3,
-#product .kakio-list.wrapper .item.yuzuSalt .aroma .value-4,
-#product .kakio-list.wrapper .item.yuzuSalt .umami .value-4,
-#product .kakio-list.wrapper .item.yuzuSalt .sharp .value-4 {
+#product .graph.point-4 .value-4,
+#product .graph.point-3 .value-4, #product .graph.point-3 .value-3
+ {
     background-color: #D9D9D9;
 }
 
@@ -1191,6 +1162,7 @@ h5 {
 #online .onlineShop .item-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 70px;
     margin-bottom: 17.86%;
 }
@@ -1466,15 +1438,27 @@ h5 {
 #top .catch-column.center { transition-delay: 0.4s; }
 #top .catch-column.left   { transition-delay: 0.6s; }
 
-/*=================================
-            ABOUT
-=================================*/
+    /*=================================
+                ABOUT
+    =================================*/
 
-/*=================================
-            PRODUCT
-=================================*/
+    /*=================================
+                PRODUCT
+    =================================*/
+    .sp-br {
+        display: block;
+    }
+
+    #product main {
+        padding: 0 50px;
+    }
+
     #product .kakisen.wrapper {
         flex-direction: column;
+    }
+
+    #product .kakisen.wrapper .content-area {
+        margin-top: 10.25%;
     }
 
     #product .kakisen.wrapper .content-area h2 {
@@ -1487,6 +1471,97 @@ h5 {
         justify-content: center;
     }
 
+    #product .list.wrapper {
+        margin-top: 6.25%;
+    }
+
+    #product .list.wrapper .list-button {
+        top: 0; right: -50%;
+        margin-top: 20.25%;
+    }
+
+    #product .list.wrapper .list-button ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+    }
+
+    #product .list.wrapper .list-button ul li {
+        font-size: 12px;
+        flex: 1;
+        border-radius: 15px 15px 0 0;
+    }
+
+    #product .list.wrapper .list-button ul li.active {
+        background-color: #FEECCF;
+    }
+
+    #product .list.wrapper .list-container .item {
+        background-color: #FEECCF;
+        display: none;
+        max-width: 100%;
+        padding: 20.22% 10.22%;
+    }
+
+    #product .list.wrapper .list-container .item .img-area {
+        margin-bottom: 10.22%;
+    }
+
+    #product .list.wrapper .list-container .item.active {
+        display: flex;
+    }
+
+    #product .list.wrapper .list-button ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #product .list.wrapper .list-button ul li img {
+        transform: scale(0.5);
+        margin: 0 auto;
+    }
+
+    #product .ankerLink-section {
+        flex-direction: column;
+    }
+
+    #product .access-link.wrapper {
+        width: 100%;
+        padding: 6.22%;
+        margin: 0;
+    }
+
+    #product .shop-link.wrapper {
+        margin-left: 0;
+        margin-top: 5.71%;
+    }
+
+    #product .access-link.wrapper .link-button {
+        width: 100%;
+        padding: 13.93%;
+    }
+
+    #product .access-link.wrapper .link-button p {
+        text-wrap: nowrap;
+    }
+
+    #product .access-link.wrapper .link-button .button {
+        margin-top: 9.95%;
+        width: 100%;
+        height: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product .kakio-section {
+        margin-top: 40.02%;
+    }
+    /*=================================
+                ONLINE
+    =================================*/
     #online .onlineShop .item-list {
         gap: 20px;
     }
@@ -1511,9 +1586,6 @@ h5 {
         display: none;
     }
 }
-/*=================================
-            ONLINE
-=================================*/
 /*=================================
             ACCESS
 =================================*/
