@@ -106,7 +106,6 @@ html {
 .kakisen-a:hover .kakisen-circle{
     transform:translateX(30%) ;
 }
-/* 各ページ */
 /*=================================
             TOP
 =================================*/
@@ -530,14 +529,14 @@ header{
     width: 100%;
     margin-top: 6.25%;
 }
-/* KAKISEN.について */
+/* What is KAKISEN. */
 #top .about-area{
     width: 100%;
     overflow-x: hidden;
     position: relative;
     z-index: 0;
 }
-#top .about-text {
+#top .about-text{
     width: 100%;
     height: 100%;
     text-align: left;
@@ -556,7 +555,7 @@ header{
     font-size: 24px;
     margin: 0 3px;
 }
-#top .about-slider {
+#top .about-slider{
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -1379,65 +1378,156 @@ h5 {
 
 /* ======================メディアクエリ始まり=========================*/
 @media(width<780px){
-
+/*=================================
+            共通
+=================================*/
 /*=================================
             TOP
 =================================*/
-/* ヘッダー */
-#pattern-bg {
-    width: 30%;
-    background-size: cover;
-    background-position: left center;
-    mask-image: linear-gradient(to right, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-}
-.nav-content li{
-    color:#2C2929;
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    margin: 3rem 0;
-}
-/* 流れる文字 */
-#top .scroll-item{
-    font-size: 12px;
-    padding: 3px 8px;
-    margin: 0 2px;
-}
-#top .dot{
-    font-size: 14px;
-    margin: 0 6px;
-}
-#top .scroll-wrapper{
-    animation: scrollMove 20s linear infinite;
-}
-/* ランダム煎餅 */
-#top .senbei-wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4vw;
-}
-#top .senbei {
-    width: 120px;
-    height: 120px;
-}
-#top .senbei {
-    transition: transform 1s ease;
-}
-/* KAKISEN. */
-.fv-title {
-    font-size: clamp(2.5rem, 12vw, 3rem);
-    transform: scale(0.95) translateY(10%);
-}
-/* オンラインショップのボタンを消す？ */
-/* キャッチコピー */
-#top .catch-column.right  { transition-delay: 0.2s; }
-#top .catch-column.center { transition-delay: 0.4s; }
-#top .catch-column.left   { transition-delay: 0.6s; }
+    /* ヘッダー */
+    /* menuとlogoを中央揃えにしたい */
+    .header-logo img{
+        width: 60%;
+        height: auto;
+    }
+    #pattern-bg {
+        width: 30%;
+        background-size: cover;
+        background-position: left center;
+        mask-image: linear-gradient(to right, black 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+    }
+    .nav-content li{
+        color:#2C2929;
+        font-family: "Gravitas One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        margin: 3rem 0;
+    }
+    /* 流れる文字 */
+    #top .scroll-area{
+        height: 11vh;
+    }
+    #top .scroll-item{
+        font-size: 12px;
+        padding: 3px 8px;
+        margin: 0 2px;
+    }
+    #top .dot{
+        font-size: 14px;
+        margin: 0 6px;
+    }
+    #top .scroll-wrapper{
+        animation: scrollMove 20s linear infinite;
+    }
+    /* ランダム煎餅 */
+    /* せんべい２列にしたい */
+    #top .senbei-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vw;
+    }
+    #top .senbei {
+        width: 120px;
+        height: 120px;
+    }
+    #top .senbei {
+        transition: transform 1s ease;
+    }
+    /* KAKISEN. */
+    #top .fv-text-area{
+        height: 11vh;
+    }
 
+    /* キャッチコピー */
+    .fv-title {
+        font-size: clamp(2.5rem, 12vw, 3rem);
+        transform: scale(0.95) translateY(10%);
+    }
+    #top .catch-column.right  { transition-delay: 0.2s; }
+    #top .catch-column.center { transition-delay: 0.4s; }
+    #top .catch-column.left   { transition-delay: 0.6s; }
+    /* せんべい単体 */
+    #top .senbei-intro{
+        padding: 0 20px;
+        margin-top: 16.25%;
+    }
+    #top .senbei-intro h2{
+        /* font-size: 18px; */
+    }
+    /* What is KAKISEN. */
+    #top .about-text{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    #top .about-text-p{
+        margin-bottom: 15px;
+    }
+    #top .slide-track{
+        width: 50%;
+        animation: loopMove 20s linear infinite;
+    }
+    /* PRODUCT */
+    #top .product-text{
+        padding: 0 20px;
+    }
+    #top .product-kakisen{
+        flex-direction: column;
+    }
+    #top .product-kakio{
+        flex-direction: column;
+    }
+    #top .product-img{
+        width: 70%;
+    }
+    #top .product-intro-img{
+        width: 10%;
+    }
+    #top .product-intro{
+        width: 100%;
+        height: auto;
+        margin: 5%;
+    }
+    #top .product-intro p{
+        margin-left: 0;
+    }
+    /* STORE */
+    #top .ankerLink-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #top .access-link.wrapper {
+        width: 100%;
+        padding: 6.22%;
+        margin: 0;
+    }
+    #top .shop-link.wrapper {
+        margin-left: 0;
+        margin-top: 5.71%;
+    }
+    #top .access-link.wrapper .link-button {
+        width: 100%;
+        padding: 13.93%;
+    }
+    #top .access-link.wrapper .link-button p {
+        text-wrap: nowrap;
+    }
+    #top .access-link.wrapper .link-button .button {
+        margin-top: 9.95%;
+        width: 100%;
+        height: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* フッター */
+    .footer-area img{
+        width: 50%;
+        height: auto;
+    }
     /*=================================
                 ABOUT
     =================================*/
