@@ -18,3 +18,19 @@ senbeis.forEach((senbei) => {
     }
   }, 3000 + Math.random() * 3000);
 });
+
+function limitSenbeiForMobile() {
+  if (window.innerWidth <= 768) {
+    senbeis.forEach((senbei, index) => {
+      senbei.style.display = index < 6 ? "block" : "none";
+    });
+  } else {
+    senbeis.forEach((senbei) => {
+      senbei.style.display = "block";
+    });
+  }
+}
+
+limitSenbeiForMobile();
+
+window.addEventListener("resize", limitSenbeiForMobile);

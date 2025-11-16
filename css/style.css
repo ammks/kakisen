@@ -127,9 +127,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 .header-logo img{
     height: 51px;
+    display: block;
+    margin: 0 auto;
 }
 .header-menu{
     position: absolute;
@@ -287,7 +290,7 @@ header{
     line-height: 1.3;
     text-align: center;
 }
-/* 横切る文字 */
+/* 流れる文字 */
 #top .scroll-area{
     width: 100%;
     height: 22vh;
@@ -401,7 +404,7 @@ header{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 33vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -720,7 +723,8 @@ display: flex;
     margin-top: 6.5%;
 }
 .footer-area img{
-    margin: 20% 0;
+    display: block;
+    margin: 40px auto; 
 }
 .nav-footer{
     width: 100%;
@@ -789,7 +793,6 @@ display: flex;
     0% {transform: translateX(0);}
     100% {transform: translateX(-50%);}
 }
-
 /*=================================
             ABOUT
 =================================*/
@@ -1386,6 +1389,16 @@ h5 {
 =================================*/
     /* ヘッダー */
     /* menuとlogoを中央揃えにしたい */
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .header-logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
     .header-logo img{
         width: 60%;
         height: auto;
@@ -1407,6 +1420,11 @@ h5 {
         transition: color 0.3s ease;
         margin: 3rem 0;
     }
+    /* ONLINE SHOPボタン */
+    .fixed-shop-btn{
+        bottom: 17%;
+        right: 0.5%;
+    }
     /* 流れる文字 */
     #top .scroll-area{
         height: 11vh;
@@ -1424,24 +1442,21 @@ h5 {
         animation: scrollMove 20s linear infinite;
     }
     /* ランダム煎餅 */
-    /* せんべい２列にしたい */
     #top .senbei-wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4vw;
+        gap: 20px;
+        padding: 0 5%;
     }
     #top .senbei {
-        width: 120px;
-        height: 120px;
-    }
-    #top .senbei {
+        width: 30%;
+        margin-bottom: 10px;
         transition: transform 1s ease;
     }
     /* KAKISEN. */
     #top .fv-text-area{
         height: 11vh;
     }
-
     /* キャッチコピー */
     .fv-title {
         font-size: clamp(2.5rem, 12vw, 3rem);
@@ -1455,8 +1470,12 @@ h5 {
         padding: 0 20px;
         margin-top: 16.25%;
     }
-    #top .senbei-intro h2{
-        /* font-size: 18px; */
+    #top .senbei-container {
+        width: 200px;
+        height: 200px;
+    }
+    #top .senbei-text{
+        width: 40%;
     }
     /* What is KAKISEN. */
     #top .about-text{
