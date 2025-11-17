@@ -1616,6 +1616,518 @@ input, label, button {
 /*=================================
             ACCESS
 =================================*/
+#access .line-deco{
+    width: 100%;
+    height: 1.56%; /* 高さの調整 */
+    margin-bottom: 6.25%;
+}
+#access .access-title-section {
+    text-align: center;
+    margin-bottom: 5.2%;
+}
+#access .access-title-section .title {
+    margin-bottom: 5.2%;
+}
+#access .access-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.52%;
+}
+#access .access-title span{
+    color:#2C2929;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+#access .subtitle-icon{
+    height: 0.75%;
+    margin-right: 0.75%;
+}
+.store-image-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5.2%;
+}
+.store-image-container {
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+.store-image-container img {
+    height: auto;
+    border-radius: 5px;
+}
+.store-image-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+    position: relative;
+}
+.store-image-container {
+    max-width: 65vw; 
+    width: 90%; 
+    text-align: center;
+    position: relative;
+}
+.photo-slider img {
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.photo-slider .slick-prev,
+.photo-slider .slick-next {
+    display: none !important; 
+}
+.photo-slider .slick-dots {
+    position: absolute;
+    bottom: 0.5vw; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    width: auto; 
+}
+.photo-slider .slick-dots li {
+    margin: 0 0.5rem; 
+    width: 10px;
+    height: 10px;
+    padding: 0;
+}
+.photo-slider .slick-dots li button {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: none;
+}
+.photo-slider .slick-dots li button:before {
+    content: ''; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    display: block;
+    width: 10px; 
+    height: 10px;   
+    border-radius: 50%;
+    background-color: #ccc; 
+    opacity: 1; 
+}
+.photo-slider .slick-dots li.slick-active button:before {
+    background-color: #E64C4C; 
+}
+/* slick スライダー CSS */
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+/* スライダーここまで */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* スマホで折り返す */
+    gap: 1.5rem 5vw; /* 縦横の隙間 */
+    margin-top: 100px;
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.info-item img {
+    width:100%;
+    height: auto;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+.info-item p {
+    white-space: nowrap; /* 情報の途中で改行しない */
+}
+#access .info-text{
+    color: #E64C4C;
+    font-weight: 700;
+}
+/* 模様の区切り */
+.pattern-divider {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+.pattern-divider img {
+    height: 60px; /* 固定 */
+    width: auto;
+    display: block;
+}
+.pattern-divider .pattern-track {
+    display: flex;
+    animation: scroll-pattern 60s linear infinite;
+}
+/* 詳細地図セクション */
+.map-section {
+    text-align: center;
+    margin-bottom: 5.2%;    
+}
+#access .map-section .access-title{
+    margin-bottom: 5.2%;
+}
+.map-container {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+.map-container img:not(.character) {
+    width: 100%;
+    height: auto;
+}
+.character {
+    position: absolute;
+    width: clamp(8rem, 10vw, 12.5rem);
+    height: auto;
+}
+.character-store {
+    right: calc(120px + 5%); 
+    bottom: 10%; 
+    z-index: 10; 
+    animation: gentle-float 2s infinite alternate ease-in-out;
+}
+.character-map {   
+    left: calc(-100px + 5%); 
+    bottom: -5rem;
+    z-index: 10;
+    animation: sway 2.5s infinite alternate ease-in-out;
+}
+/* --- Googleマップ埋め込み --- */
+#access .google-map-section {
+    margin-bottom: 6.25%;
+}
+#access .google-map-section .access-title{
+    margin-bottom: 5.2%;
+}
+.google-map-wrapper {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto; 
+}
+#access .google-map-container {
+    position: relative;
+    padding-bottom: 50%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+#access .google-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* アニメーション */
+@keyframes scroll-pattern {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* 模様画像を2枚連結しているため-50%で無限ループ */
+    }
+}
+/* キャラクター画像のアニメーション */
+@keyframes gentle-float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-2%) rotate(5deg);
+    }
+}
+@keyframes sway {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-2%) rotate(5deg);
+    }
+}
 
 /*=================================
             PRIVACY
@@ -1624,6 +2136,101 @@ input, label, button {
 /*=================================
             TOKUSHO
 =================================*/
+#tokushoho .line-deco{
+    width: 100%;
+    height: 1.56%; 
+    background-color: #E64C4C;
+    margin-bottom: 3.125%; 
+}
+#tokushoho .legal-notation-page {
+    width: 70%; 
+    max-width: 960px; 
+    margin: 0 auto;
+    padding-bottom: 5.2%; 
+}
+#tokushoho .page-title {
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 5.2%;
+}
+#tokushoho .block-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.625rem; 
+    font-weight: 700; 
+    color: #2C2929;
+    margin-bottom: 1.56%;
+}
+#tokushoho .block-subtitle{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem; 
+    font-weight: 700; 
+    padding-left: 0.52%; 
+    margin-bottom: 1.3%;
+    color: #2C2929;
+}
+#tokushoho .block-title .title-icon {
+    width: 34px;
+    height: auto;
+    margin-right: 0.75%; 
+}
+#tokushoho .block-subtitle .subtitle-icon{
+    width: 10px; 
+    height: auto;
+    margin-right: 0.75%; 
+}
+#tokushoho .info-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+    margin-bottom: 2.6%; 
+}
+#tokushoho .info-list dt,
+#tokushoho .info-list dd {
+    display: block; 
+    color: #2C2929;
+    font-size: 1rem;
+    padding: 0.78% 0; 
+    line-height: 1.75;
+}
+#tokushoho .info-list dt {
+    width: 50%; 
+    font-weight: 700;
+    line-height: 1.6;
+}
+#tokushoho .info-list dd {
+    width: 90%; 
+    font-weight: 400; 
+}
+#tokushoho .store-data dt {
+    width: 15%; 
+}
+#tokushoho .store-data dd {
+    width: 85%;
+}
+#tokushoho .notation-hr {
+    border: none;
+    border-top: 1px solid #C4C4C4;
+    margin: 3.125% 0; 
+}
+#tokushoho .content-text {
+    font-size: 1rem; 
+    color: #2C2929;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 1.56%; 
+}
+#tokushoho .sub-list {
+    padding-left: 2.6%; 
+}
+#tokushoho .sub-list p {
+    font-size: 1rem; 
+    margin: 0;
+}
+#tokushoho .notation-block {
+    margin-bottom: 3.125%; 
+}
 
 
 
@@ -1963,6 +2570,73 @@ input, label, button {
 /*=================================
             ACCESS
 =================================*/
+@media(width<780px){
+#access p{
+        font-size: 0.65rem;
+    }
+
+#access .line-deco {
+        margin-bottom: 6.25%;
+    }
+#access .access-title-section {
+        margin-bottom: 5.2%;
+    }
+#access .access-title-section .title {
+        font-size: 1rem;
+        margin-bottom: 5.2%;
+    }
+#access .title .title-icon {
+    width: 24px; 
+    margin-right: 2%;
+    }
+#access .access-title .subtitle-icon {
+    width: 8px; 
+    margin-right: 2%;
+    }
+#access .access-title h2{
+        font-size: 1rem;
+    }
+#access .access-title span {
+        font-size: 0.8rem; 
+    }
+.store-image-section {
+        margin-bottom: 2.5rem;
+    }
+.photo-slider .slick-dots {
+        bottom: 0.3rem; 
+    }
+.contact-info { 
+        gap: 1rem 1rem; 
+        margin-top: 1.5rem; /* 100pxからremに縮小 */
+    }
+.info-item img {
+            width: 1rem; 
+        }
+.pattern-divider {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+.pattern-divider img {
+        height: 20px; /* 模様の高さを小さく */
+    }
+.map-container {
+        margin-bottom: 3rem; /* 75pxからremに縮小 */
+    }
+.character {
+        width: clamp(5rem, 15vw, 10rem); 
+    }
+.character-store {
+        right: -10px; 
+        bottom: 5rem; 
+    }
+.character-map {
+        left: -15px; 
+        bottom: -3rem; 
+    }
+#access .google-map-section {
+        margin-bottom: 4rem;
+    }
+}
 /*=================================
             PRIVACY
 =================================*/
@@ -1972,1131 +2646,61 @@ ol {
 /*=================================
             TOKUSHO
 =================================*/
+@media(width<780px){
+/* 特定商取引法 */
+#tokushoho .line-deco {
+    height: 50%; 
+    margin-bottom: 6.25%;
+    }
+#tokushoho .legal-notation-page {
+    width: 90%; 
+    padding-bottom: 10%;
+    }
+#tokushoho .page-title {
+    font-size: 1rem; 
+    margin-bottom: 5.25%;
+    }
+#tokushoho .block-title {
+    font-size: 1rem; 
+    margin-bottom: 4%;
+    padding-left: 0;
+    }
+#tokushoho .block-subtitle {
+    font-size: 0.8rem; 
+    padding-left: 0;
+    margin-bottom: 3%;
+    }
+#tokushoho .block-title .title-icon {
+    width: 24px; 
+    margin-right: 2%;
+    }
+#tokushoho .block-subtitle .subtitle-icon {
+    width: 8px; 
+    margin-right: 2%;
+    }
+#tokushoho .info-list dt,
+#tokushoho .info-list dd {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem 0; 
+    }
+#tokushoho .info-list dd p{
+    font-size: 0.8rem;
+}
+#tokushoho .store-data dt, #tokushoho .store-data dd {
+    width: 100%;
+    }
+#tokushoho .content-text,
+    #tokushoho .sub-list p {
+    font-size: 0.8rem; 
+    line-height: 1.6;
+    }
+#tokushoho .notation-hr {
+    margin: 5% 0;
+    }
+    #tokushoho .notation-block {
+    margin-bottom: 6%;
+    }
+}
 
 /* ======================メディアクエリ終わり=========================*/
-
-
-#access .line-deco{
-
-    width: 100%;
-
-    height: auto;
-
-    margin-bottom: 3.5%; /* 次のセクションとの間隔 */
-
-    display: block;
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-}
-
-
-
-#access .legal-notation-page {
-
-    width: 70%; /* ページのコンテンツ幅 */
-
-    max-width: 960px; /* 必要に応じて最大幅を設定 */
-
-    margin: 0 auto;
-
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-
-}
-
-
-/* --- Section 1: スライダーと基本情報 --- */
-
-
-
-#access .store-info-section {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    /* align-items: flex-start; */
-
-    margin-bottom: 5.21%;
-
-}
-
-
-
-/* 写真スライダー（左側） */
-
-#access .photo-slider-wrapper {
-
-    position: relative;
-
-    width: 55%; /* カンプに合わせて左側の幅を広げる */
-
-}
-
-
-
-/* ★ 修正: Slickの動作を妨げる display: flex; と transition を削除 */
-
-#access .photo-slider {
-
-    /* display: flex; <- 削除 */
-
-    overflow: hidden;
-
-    width: 100%;
-
-    /* transition: transform 0.5s ease-in-out; <- 削除 */
-
-}
-
-
-
-#access .slider-item img {
-
-    display: block;
-
-    width: 100%;
-
-    height: auto;
-
-    margin-top: 6.25%;
-
-}
-
-
-
-/* ======================================================= */
-
-/* ★ カスタムドットデザインのSlick要素への移植 */
-
-/* 元の .slider-dots, .dot のCSSは削除し、以下のSlick用のCSSに置き換えます */
-
-/* ======================================================= */
-
-
-
-/* ドット全体のコンテナ（元の .slider-dots の位置を再現） */
-
-#access .photo-slider-wrapper .slick-dots {
-
-    /* slick-theme.css の設定を上書きして元の位置に移動 */
-
-    bottom: 5%;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-   
-
-    /* slick-theme.css の設定をリセット */
-
-    margin: 0;
-
-    padding: 0;
-
-}
-
-
-
-/* ドット一つ一つの要素の余白（元の .dot の margin を再現） */
-
-#access .photo-slider-wrapper .slick-dots li {
-
-    width: auto; /* サイズ指定を解除 */
-
-    height: auto; /* サイズ指定を解除 */
-
-    margin: 0 0.5%; /* 元の .dot の margin: 0 0.5%; を再現 */
-
-    padding: 0;
-
-}
-
-
-
-/* ドット自体のデザイン（元の .dot の形と色を再現） */
-
-#access .photo-slider-wrapper .slick-dots li button {
-
-    /* slick-theme.css の padding: 5px; を上書きしてサイズを小さくする */
-
-    padding: 0;
-
-   
-
-    /* ドットのサイズを元の 1.5% の意図に近い固定サイズで設定 */
-
-    width: 10px;
-
-    height: 10px;
-
-   
-
-    /* button要素のデフォルトスタイルをリセット */
-
-    background: none;
-
-    border: none;
-
-}
-
-
-
-#access .photo-slider-wrapper .slick-dots li button:before {
-
-    content: ''; /* 矢印フォントを無効化 */
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-   
-
-    /* サイズを再現 */
-
-    display: block;
-
-    width: 100%; /* 親要素の button に合わせる */
-
-    height: 100%;
-
-   
-
-    /* スタイル */
-
-    border-radius: 50%;
-
-    background-color: #ccc; /* 非アクティブ時の色 */
-
-   
-
-    /* slick-theme.css の opacity を上書き */
-
-    opacity: 1;
-
-}
-
-
-
-/* アクティブなドットの色 */
-
-#access .photo-slider-wrapper .slick-dots li.slick-active button:before {
-
-    background-color: #E64C4C; /* アクティブ時の色 */
-
-}
-
-
-
-/* ======================================================= */
-
-/* カスタムドットデザインのSlick要素への移植 - ここまで */
-
-/* ======================================================= */
-
-
-
-/* 基本情報ブロック（右側） */
-
-#access .basic-details {
-
-    width: 40%; /* 右側の幅を調整 */
-
-    position: relative;
-
-    padding-top: 3%; /* イラストが上にはみ出るための調整 */
-
-}
-
-
-
-/* 親子のイラスト */
-
-#access .illustration.parentandchild-move {
-
-    position: absolute;
-
-    width: 50%; /* イラストのサイズ調整 */
-
-    top: -30%; /* 上に大きくはみ出す */
-
-    right: 30%;
-
-    z-index: 10;
-
-    /* アニメーション適用 */
-
-    animation: gentle-float 4s infinite alternate ease-in-out;
-
-}
-
-
-
-#access .details-box {
-
-    padding: 5% 5%;
-
-}
-
-
-
-#access .store-name {
-    color:#2C2929;
-    font-family: "Shippori Mincho", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    margin-bottom: 5%;
-
-}
-
-.store-name span{
-    color:#2C2929;
-    font-family: "Inknut Antiqua", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-}
-
-
-
-/* 定義リスト（dl）の修正 */
-
-#access .basic-details dl {
-
-    overflow: hidden; /* float解除のため */
-
-}
-
-#access .basic-details dl dt {
-
-    float: left;
-
-    clear: left;
-
-    width: 30%; /* 項目名の幅 */
-
-    font-weight: bold;
-
-    line-height: 1.6;
-
-    padding: 5% 0;
-
-}
-
-#access .basic-details dl dd {
-
-    margin-left: 30%; /* dtの幅に合わせる */
-
-    line-height: 1.6;
-
-    padding: 5% 0;
-
-}
-
-
-
-/* 装飾パターン */
-
-#access .deco-pattern {
-
-    text-align: center;
-
-    margin-top: 5%;
-
-}
-
-#access .deco-pattern img {
-
-    width: 20%; /* 装飾のサイズ調整 */
-
-    height: auto;
-
-    margin-left: 1%;
-
-}
-
-
-
-/* --- Section 2: 簡易地図とアクセス案内 --- */
-
-
-
-#access .guidance-map-section {
-
-    display: flex;
-
-    flex-direction: row-reverse;
-
-    justify-content: space-between;
-
-    align-items: flex-start;
-
-    margin-bottom: 5%;
-
-}
-
-
-
-/* 簡易地図（左側） */
-
-#access .simple-map-wrapper {
-
-    width: 48%; /* 左側の幅 */
-
-    margin-top: 5.21%;
-
-}
-
-#access .simple-map-wrapper img {
-
-    display: block;
-
-    width: 100%;
-
-}
-
-
-
-/* 交通案内（右側） */
-
-#access .transport-guidance {
-
-    width: 48%; /* 右側の幅 */
-
-    position: relative;
-
-    padding-top: 5.21%;
-
-}
-
-
-
-/* 夫婦のイラスト */
-
-#access .illustration.couple-move {
-
-    position: absolute;
-
-    width: 50%; /* イラストのサイズ調整 */
-
-    top: -15%; /* 上に大きくはみ出す */
-
-    left: 30%;
-
-    z-index: 10;
-
-    /* アニメーション適用 */
-
-    animation: sway 4s infinite alternate ease-in-out;
-
-}
-
-
-
-#access .guidance-options {
-
-    padding: 5% 5%;
-
-}
-
-
-
-#access .option {
-
-    margin-bottom: 5%;
-
-}
-
-#access .option:last-child {
-
-    margin-bottom: 0;
-
-}
-
-
-
-#access .title-transport {
-
-    font-weight: bold;
-
-    margin-bottom: 1%;
-
-}
-
-
-
-/* --- Section 3: Googleマップ埋め込み --- */
-
-
-
-#access .google-map-section {
-
-    margin-bottom: 5%;
-
-}
-
-
-
-#access .google-map-container {
-
-    position: relative;
-
-    padding-bottom: 40%; /* カンプに合わせて高さを調整 (100%幅で40%の高さ) */
-
-    height: 0;
-
-    overflow: hidden;
-
-}
-
-
-
-#access .google-map-container iframe {
-
-    position: absolute;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    border: none;
-
-}
-
-
-
-
-
-/* --- アニメーション定義（イラストの動き） --- */
-
-
-
-/* 人形が軽く浮くようなアニメーション (親子に使用) */
-
-@keyframes gentle-float {
-
-    0% {
-
-        transform: translateY(0) rotate(0deg);
-
-    }
-
-    100% {
-
-        transform: translateY(-2%) rotate(5deg);
-
-    }
-
-}
-
-
-
-@keyframes sway {
-
-    0% {
-
-        transform: translateY(0) rotate(0deg);
-
-    }
-
-    100% {
-
-        transform: translateY(-2%) rotate(5deg);
-
-    }
-
-}
-
-
-
-/* 個人情報保護方針 */
-
-    ol li{
-
-        font-weight: bold;
-
-        margin: 2% 0 1% 0%;
-
-    }
-
-
-
-    ul li{
-
-        font-weight: normal;
-
-        margin: 0;
-
-    }
-
-
-
-#PP .header-blocks{
-
-    background-image: url(../img/PP-line.png);
-
-    background-repeat: repeat-x;
-
-    width: 100%;
-
-    height: 130px; /* 高さの調整 */
-
-    margin-bottom: 3.125%; /* 下の余白 */
-
-}
-
-
-
-/* HELP涙涙涙 */
-
-.privacy-policy{
-
- text-align: center;    
-
-}
-
-
-
-.test{
-
-    background-image: url(../img/PP-line.png);
-
-    background-repeat: repeat-x;
-
-    width: 100%;
-
-    height: 130px; /* 高さの調整 */
-
-    margin-bottom: 3.125%; /* 下の余白 */
-
-}
-
-
-
-.main-paaage {
-
-    width: 70%; /* ページのコンテンツ幅 */
-
-    margin: 0 auto;
-
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-
-}
-
-
-
-.personal-information{
-
-    margin: 80px 0 50px 0;
-
-}
-
-.slick-slider
-{
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-
-    height: auto;
-
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
-/* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
-
-/* Icons */
-@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}
-/* Arrows */
-.slick-prev,
-.slick-next
-{
-    font-size: 0;
-    line-height: 0;
-
-    position: absolute;
-    top: 50%;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
-    color: transparent;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
-{
-    opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
-{
-    opacity: .25;
-}
-
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: white;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev
-{
-    left: -25px;
-}
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
-
-.slick-next
-{
-    right: -25px;
-}
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
-
-/* Dots */
-.slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.slick-dots
-{
-    position: absolute;
-    bottom: -25px;
-
-    display: block;
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
-}
-.slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.slick-dots li button:hover,
-.slick-dots li button:focus
-{
-    outline: none;
-}
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.slick-dots li button:before
-{
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    content: '•';
-    text-align: center;
-
-    opacity: .25;
-    color: black;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before
-{
-    opacity: .75;
-    color: black;
-}
-
-
-/* 個人情報保護方針 */
-    ol li{
-        font-weight: bold;
-        margin: 2% 0 1% 0%;
-    }
-
-    ul li{
-        font-weight: normal;
-        margin: 0;
-    }
-
-#PP .header-blocks{
-    background-image: url(../img/PP-line.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 65px; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
-}
-
-/* HELP涙涙涙 */
-.privacy-policy{
- text-align: center;    
-}
-
-.test{ 
-    background-image: url(../img/PP-line.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 40px; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
-}
-
-.main-paaage {
-    width: 70%; /* ページのコンテンツ幅 */
-    margin: 0 auto;
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-}
-
-.personal-information{
-    margin: 80px 0 50px 0;
-}
-
-
-
-/* 特定商取引法 */
-#tokushoho .line-deco{
-    width: 100%;
-    height: 1.56%; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
-}
-
-#tokushoho .legal-notation-page {
-    width: 70%; /* ページのコンテンツ幅 */
-    max-width: 960px; /* 必要に応じて最大幅を設定 */
-    margin: 0 auto;
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-}
-
-/* ページタイトル */
-#tokushoho .page-title {
-    text-align: center;
-    font-size: 2.29vw; /* 画面幅に応じたサイズ */
-    margin-bottom: 5.2%;
-}
-
-/* ブロックタイトル（h2） */
-#tokushoho .block-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    margin: 1.52%; 
-    padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
-}
-
-#tokushoho .block-subtitle{
-    display: flex;
-    align-items: center;
-    font-size: 1.35vw; /* 画面幅に応じたサイズ */
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    padding-left: 0.52%; /* アイコンとテキストの間隔調整 */
-
-}
-
- .block-title .title-icon {
-    width: 2vw; /* アイコンのサイズ */
-    height: auto;
-    margin-right: 0.52%; /* アイコンとテキストの間隔 */
-}
-
-.block-subtitle .subtitle-icon{
-    width: 0.5vw; /* アイコンのサイズ */
-    height: auto;
-    margin-right: 0.75%; /* アイコンとテキストの間隔 */
-}
-
-/* 各情報のdlリスト */
-#tokushoho .info-list {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2.6%;
-}
-
-/* 項目名 (dt) */
-#tokushoho .info-list dt {
-    width: 25%; /* 項目名の幅 */
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 700; /* 太字 */
-    color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    padding: 0.78% 0;
-    line-height: 1.6;
-    vertical-align: top;
-}
-
-/* 内容 (dd) */
-#tokushoho .info-list dd {
-    width: 75%; /* 内容の幅 */
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 400;
-    color: #2C2929;
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    padding: 0.78% 0;
-    line-height: 1.6;
-}
-
-/* 店舗情報のリスト */
-#tokushoho .store-data dt {
-    width: 15%; /* 店舗情報部分はdtの幅を狭く */
-}
-#tokushoho .store-data dd {
-    width: 85%;
-}
-
-/* 支払い方法のdd内のp */
-#tokushoho .payment-data dd p {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* 区切り線 */
-#tokushoho .notation-hr {
-    border: none;
-    border-top: 1px solid #C4C4C4; /* グレーの細い線 */
-    margin: 3.125% 0; /* 上下の余白 */
-}
-
-/* 本文テキスト */
-#tokushoho .content-text {
-    font-size: 0.9375vw; /* 画面幅に応じたサイズ */
-    line-height: 1.8;
-    margin-top: 0;
-    margin-bottom: 1.56%;
-}
-
-/* 不良品の取り扱い内のリスト */
- #tokushoho.sub-list {
-    list-style: none;
-    padding-left: 0.52%;
-}
-#tokushoho .sub-list li p {
-    font-size: 0.9375vw;
-    line-height: 1.6;
-    margin: 0;
-}
-
-/* ブロックごとの余白調整 */
-#tokushoho .notation-block {
-    margin-bottom: 3.125%;
-}
