@@ -753,7 +753,6 @@ display: flex;
 /* ABOUT =====================================*/
 #about h2{
     text-align: center;
-
 }
 
 #about h5{
@@ -768,26 +767,16 @@ display: flex;
     padding: 0 100px;
 }
 
-#about .blocks{
-    background-image: url(../img/About-blocks.png);
-    height: 130px;
-    background-repeat: repeat-x;
-    width: 100%;
-    margin-bottom: 6.25%;
-}
-
 #about .Sliders{
     margin: 0 auto;
     width: 900px;
 }
-
+/* 牡蠣が点灯する */
  #about .BGanime {
   text-align: center;
   margin: 120px auto 80px;
-      
   background-repeat:no-repeat;
-  width: 990px;  /* 横幅を200pxに指定 */
- 
+  width: 990px;  /* 横幅を990pxに指定 */
   animation: image_anime 2s ease infinite; /* 5秒のアニメーションを繰り返す */
 }
 @keyframes image_anime {
@@ -810,17 +799,40 @@ display: flex;
     text-align: center;
 }
 
-#about .fixed-items{
-  background-image:url(../img/about-lemon.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  margin: 0 auto;
-  height: 450px;
-
+/* 背景固定画像　切り替わる */
+#about .switch-img{
+    margin:0 auto ;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 0;
 }
 
+#about .switch-img img{
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.switch-img .item-first{
+    animation: switch-img 5s infinite;
+}
+
+.switch-img .item-second{
+    animation: switch-img 5s infinite reverse;
+}
+
+@keyframes switch-img {
+    0%,49.999%{
+        opacity: 0%;
+    }
+    50%,100%{
+        opacity: 100%;
+    }
+}
+/* 背景固定画像　切り替わる */
 #about .about-slider{
     width: 100%;
     display: flex;
@@ -843,33 +855,61 @@ display: flex;
     100% {transform: translateX(-50%);}
 }
 
-#about .our-history{
-    display: flex;
+#about .title{
+    text-align: center;
+}
+
+#about .section-1{
+    display: FLEX;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+    position: relative;
 }
 
 
-#about .vertical-slider-left{
-    margin-left: 15%;
+#about .content-area{
+    margin: 10% 30%;
 }
 
-#about .vertical-slider-right{
-    margin-right: 15%;
+#about .flow-img down{
+  display:flex;
+  flex-direction: column;
+  position: absolute;   
+  width: 6.25%;
 }
 
-#about .vertical-slide-track{
-    display: flex;
-    flex-direction: column;
-    animation: scrollDown 15s linear infinite;
+#about .flow-img.down{
+    top: 0;
+    left: 0;
+}
+ 
+#about .flow-img.up{
+    top: 0;
+    right: 0;
 }
 
-#about .vertical-slider-left img{
-    width: 80px;}
-    
-#about .vertical-moji{
-    margin: 100px auto 100px;
 
 
+#about .flow-img.down img{
+    animation: flow-down 7s infinite linear;
 }
+
+#about .flow-img.up img{
+    animation: flow-down 7s infinite linear reverse;
+}
+
+@keyframes flow-down{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform:translateY(0%)
+    }
+}
+
+
 
 
 /*=================================
