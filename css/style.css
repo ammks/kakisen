@@ -765,6 +765,7 @@ display: flex;
     width: 100%;
     margin: 0 auto;
     padding: 0 100px;
+    overflow: hidden;
 }
 
 #about .Sliders{
@@ -812,8 +813,10 @@ display: flex;
     width: fit-content;
     margin: 0 auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.6);
+
 }
 
 .switch-img .item-first{
@@ -838,6 +841,9 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: 350px;
+    background-attachment: fixed;
 }
 #about .slide-track{
     display: flex;
@@ -859,57 +865,80 @@ display: flex;
     text-align: center;
 }
 
-#about .section-1{
-    display: FLEX;
+.section-1, .section-2 {
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
     overflow: hidden;
-    height: auto;
+    height: 750px;
     position: relative;
 }
 
-
-#about .content-area{
-    margin: 10% 30%;
+#about .bott{
+    justify-content: center;
 }
 
-#about .flow-img down{
-  display:flex;
-  flex-direction: column;
-  position: absolute;   
-  width: 6.25%;
+.section-1 .content-area, .section-2 .content-area {
+    padding: 10% 30%;
 }
 
-#about .flow-img.down{
-    top: 0;
-    left: 0;
-}
- 
-#about .flow-img.up{
-    top: 0;
-    right: 0;
+.flow-img {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-
-
-#about .flow-img.down img{
-    animation: flow-down 7s infinite linear;
+.flow-img.down img {
+    animation: flow 5s infinite linear;
+    width: 100%;
 }
 
-#about .flow-img.up img{
-    animation: flow-down 7s infinite linear reverse;
-}
-
-@keyframes flow-down{
-    0%{
+@keyframes flow {
+    0% {
         transform: translateY(-100%);
     }
 
-    100%{
-        transform:translateY(0%)
+    100% {
+        transform: translateY(0%);
     }
 }
 
+.flow-img.up img {
+    width: 100%;
+    animation: flow 5s infinite linear reverse;
+    padding: 10% 25%;
+}
 
+.rotate-flower1 {
+    position: absolute;
+    left: 10%; top: 3%;
+    animation: rotate-flower 6s infinite linear;
+}
+.rotate-flower2 {
+    position: absolute;
+    left: 70%; top: 66%;
+    animation: rotate-flower 13s infinite linear;
+}
+
+@keyframes rotate-flower {
+    0% {
+        scale: 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1;
+        rotate: 360deg;
+    }
+
+    100% {
+        scale: 0;
+        rotate: 720deg;
+    }}
+
+#about a img{
+  justify-content: center;
+}
 
 
 /*=================================
