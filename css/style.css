@@ -859,8 +859,6 @@ display: flex;
     width: fit-content;
     margin: 0 auto;
     position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .switch-img .item-first{
@@ -1174,7 +1172,6 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
-    margin-bottom: 17.86%;
 }
 #online .onlineShop .item-list .item {
     display: flex;
@@ -2413,7 +2410,7 @@ input, label, button {
         display: block;
     }
     #product main {
-        padding: 0 50px;
+        padding: 0 20px;
     }
     #product .kakisen.wrapper {
         flex-direction: column;
@@ -2527,7 +2524,7 @@ input, label, button {
     }
     /*----------- 詳細 ----------*/
     #online-contents main {
-        padding: 0 50px;
+        padding: 0 20px;
     }
     #online-contents .onlineShop-contents.wrapper {
         flex-direction: column;
@@ -2537,7 +2534,7 @@ input, label, button {
     }
     /*----------- カート ----------*/
     #cart main {
-        padding: 0 50px;
+        padding: 0 20px;
     }
     #cart .cart.wrapper {
         flex-direction: column;
