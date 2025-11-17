@@ -812,6 +812,7 @@ display: flex;
     width: 100%;
     margin: 0 auto;
     padding: 0 100px;
+    overflow: hidden;
 }
 
 #about .Sliders{
@@ -883,6 +884,9 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: 350px;
+    background-attachment: fixed;
 }
 #about .slide-track{
     display: flex;
@@ -904,57 +908,80 @@ display: flex;
     text-align: center;
 }
 
-#about .section-1{
-    display: FLEX;
+.section-1, .section-2 {
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
     overflow: hidden;
-    height: auto;
+    height: 750px;
     position: relative;
 }
 
-
-#about .content-area{
-    margin: 10% 30%;
+#about .bott{
+    justify-content: center;
 }
 
-#about .flow-img down{
-  display:flex;
-  flex-direction: column;
-  position: absolute;   
-  width: 6.25%;
+.section-1 .content-area, .section-2 .content-area {
+    padding: 10% 30%;
 }
 
-#about .flow-img.down{
-    top: 0;
-    left: 0;
-}
- 
-#about .flow-img.up{
-    top: 0;
-    right: 0;
+.flow-img {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-
-
-#about .flow-img.down img{
-    animation: flow-down 7s infinite linear;
+.flow-img.down img {
+    animation: flow 5s infinite linear;
+    width: 100%;
 }
 
-#about .flow-img.up img{
-    animation: flow-down 7s infinite linear reverse;
-}
-
-@keyframes flow-down{
-    0%{
+@keyframes flow {
+    0% {
         transform: translateY(-100%);
     }
 
-    100%{
-        transform:translateY(0%)
+    100% {
+        transform: translateY(0%);
     }
 }
 
+.flow-img.up img {
+    width: 100%;
+    animation: flow 5s infinite linear reverse;
+    padding: 10% 25%;
+}
 
+.rotate-flower1 {
+    position: absolute;
+    left: 10%; top: 3%;
+    animation: rotate-flower 6s infinite linear;
+}
+.rotate-flower2 {
+    position: absolute;
+    left: 70%; top: 66%;
+    animation: rotate-flower 13s infinite linear;
+}
+
+@keyframes rotate-flower {
+    0% {
+        scale: 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1;
+        rotate: 360deg;
+    }
+
+    100% {
+        scale: 0;
+        rotate: 720deg;
+    }}
+
+#about a img{
+  justify-content: center;
+}
 
 
 /*=================================
@@ -1616,13 +1643,9 @@ input, label, button {
 #access .line-deco{
     width: 100%;
     height: 1.56%; /* 高さの調整 */
-    margin-bottom: 6.25%;
 }
 #access .access-title-section {
     text-align: center;
-    margin-bottom: 5.2%;
-}
-#access .access-title-section .title {
     margin-bottom: 5.2%;
 }
 #access .access-title {
@@ -1651,27 +1674,11 @@ input, label, button {
     max-width: 600px;
     width: 90%;
     text-align: center;
+    position: relative;
 }
 .store-image-container img {
     height: auto;
     border-radius: 5px;
-}
-.store-image-section {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5vw;
-    position: relative;
-}
-.store-image-container {
-    max-width: 65vw; 
-    width: 90%; 
-    text-align: center;
-    position: relative;
-}
-.photo-slider img {
-    height: auto;
-    border-radius: 5px;
-    margin: 0 auto;
 }
 .photo-slider .slick-prev,
 .photo-slider .slick-next {
@@ -1996,7 +2003,11 @@ input, label, button {
 /* スライダーここまで */
 
 .contact-info {
+    width: fit-content;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap; /* スマホで折り返す */
     gap: 1.5rem 5vw; /* 縦横の隙間 */
@@ -2061,8 +2072,8 @@ input, label, button {
     height: auto;
 }
 .character-store {
-    right: calc(120px + 5%); 
-    bottom: 10%; 
+    right: calc(-50px + 5%); 
+    bottom: 7rem; 
     z-index: 10; 
     animation: gentle-float 2s infinite alternate ease-in-out;
 }
@@ -2240,7 +2251,6 @@ input, label, button {
             TOP
 =================================*/
     /* ヘッダー */
-    /* menuとlogoを中央揃えにしたい */
     header {
         justify-content: space-between;
         padding: 10px 20px;
@@ -2319,7 +2329,6 @@ input, label, button {
     #top .catch-column.left   { transition-delay: 0.6s; }
     /* せんべい単体 */
     #top .senbei-intro{
-        padding: 0 20px;
         margin-top: 16.25%;
     }
     #top .senbei-container {
@@ -2568,69 +2577,69 @@ input, label, button {
             ACCESS
 =================================*/
 @media(width<780px){
-#access p{
+    #access p{
         font-size: 0.65rem;
     }
 
-#access .line-deco {
+    #access .line-deco {
         margin-bottom: 6.25%;
     }
-#access .access-title-section {
+    #access .access-title-section {
         margin-bottom: 5.2%;
     }
-#access .access-title-section .title {
+    #access .access-title-section .title {
         font-size: 1rem;
         margin-bottom: 5.2%;
     }
-#access .title .title-icon {
+    #access .title .title-icon {
     width: 24px; 
     margin-right: 2%;
     }
-#access .access-title .subtitle-icon {
+    #access .access-title .subtitle-icon {
     width: 8px; 
     margin-right: 2%;
     }
-#access .access-title h2{
+    #access .access-title h2{
         font-size: 1rem;
     }
-#access .access-title span {
+    #access .access-title span {
         font-size: 0.8rem; 
     }
-.store-image-section {
+    #access .store-image-section {
         margin-bottom: 2.5rem;
     }
-.photo-slider .slick-dots {
+    #access .photo-slider .slick-dots {
         bottom: 0.3rem; 
     }
-.contact-info { 
+    #access .contact-info { 
         gap: 1rem 1rem; 
         margin-top: 1.5rem; /* 100pxからremに縮小 */
     }
-.info-item img {
+    #access .info-item img {
             width: 1rem; 
         }
-.pattern-divider {
+    #access .pattern-divider {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
     }
-.pattern-divider img {
+    #access .pattern-divider img {
         height: 20px; /* 模様の高さを小さく */
     }
-.map-container {
+    #access .map-container {
         margin-bottom: 3rem; /* 75pxからremに縮小 */
     }
-.character {
+    #access .character {
         width: clamp(5rem, 15vw, 10rem); 
     }
-.character-store {
+    #access .character-store {
         right: -10px; 
         bottom: 5rem; 
     }
-.character-map {
+    #access .character-map {
         left: -15px; 
         bottom: -3rem; 
     }
-#access .google-map-section {
+    #access .google-map-section {
         margin-bottom: 4rem;
     }
 }
@@ -2645,54 +2654,54 @@ ol {
 =================================*/
 @media(width<780px){
 /* 特定商取引法 */
-#tokushoho .line-deco {
+    #tokushoho .line-deco {
     height: 50%; 
     margin-bottom: 6.25%;
     }
-#tokushoho .legal-notation-page {
+    #tokushoho .legal-notation-page {
     width: 90%; 
     padding-bottom: 10%;
     }
-#tokushoho .page-title {
+    #tokushoho .page-title {
     font-size: 1rem; 
     margin-bottom: 5.25%;
     }
-#tokushoho .block-title {
+    #tokushoho .block-title {
     font-size: 1rem; 
     margin-bottom: 4%;
     padding-left: 0;
     }
-#tokushoho .block-subtitle {
+    #tokushoho .block-subtitle {
     font-size: 0.8rem; 
     padding-left: 0;
     margin-bottom: 3%;
     }
-#tokushoho .block-title .title-icon {
+    #tokushoho .block-title .title-icon {
     width: 24px; 
     margin-right: 2%;
     }
-#tokushoho .block-subtitle .subtitle-icon {
+    #tokushoho .block-subtitle .subtitle-icon {
     width: 8px; 
     margin-right: 2%;
     }
-#tokushoho .info-list dt,
-#tokushoho .info-list dd {
+    #tokushoho .info-list dt,
+    #tokushoho .info-list dd {
     width: 100%;
-    font-size: 0.8rem;
+    font-size:  0.65rem;
     padding: 0.5rem 0; 
     }
-#tokushoho .info-list dd p{
-    font-size: 0.8rem;
+    #tokushoho .info-list dd p{
+    font-size:  0.65rem;
 }
-#tokushoho .store-data dt, #tokushoho .store-data dd {
+    #tokushoho .store-data dt, #tokushoho .store-data dd {
     width: 100%;
     }
-#tokushoho .content-text,
+    #tokushoho .content-text,
     #tokushoho .sub-list p {
-    font-size: 0.8rem; 
+    font-size:  0.65rem; 
     line-height: 1.6;
     }
-#tokushoho .notation-hr {
+    #tokushoho .notation-hr {
     margin: 5% 0;
     }
     #tokushoho .notation-block {

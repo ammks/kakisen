@@ -45,14 +45,44 @@
 <body class="wrapper">
     
     <!-- ヘッダー -->
-    <header>
+	<header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
         <!-- グローバルナビ -->
-        <nav>
-        </nav>
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+        <!-- ONLINE SHOPボタン -->
+        <a href="../03online/index.html" class="fixed-shop-btn">
+            <h4>ONLINE<br>SHOP</h4>
+        </a>
     </header>
     <!-- メイン -->
     <main id="about">
-        <div class="blocks">
+            <div class="header-tile"><img src="../img/about-mtp.png" alt=""> </div>
 
 
         </div>
@@ -90,11 +120,13 @@
     <img src="../img/about-mtp.png" alt=""> 
     <!-- ↑　青いマステ柄 -->
 
-        
-   <div class="fixed-items"> <!-- 　固定背景 --></div>
+        <!-- 固定背景 -->
+   <div class="switch-img">
+        <div class="item-first"><img src="../img/about-lemon.png" alt="レモンの実が揺れている"></div>
+        <div class="item-second"><img src="../img/about-oyster.png" alt="牡蠣がたくさん"></div>
+   </div>
 
-    <img src="../img/about-mtp.png" alt=""> 
-    <!-- ↑　青いマステ柄 -->
+
 
    
 
@@ -108,21 +140,16 @@
                     <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">                
                     <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
                     <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
-                    <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">   
+                    <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px"> 
+                    <img src="../img/about-flow1.png" alt="牡蠣の写真" width="800px">
+                    <img src="../img/about-flow2.png" alt="せんべいの写真" width="800px">
+                    <img src="../img/about-flow3.png" alt="広島の海の写真" width="800px">  
                 </div>
             </div>
-
-    <div class="our-history">
-            <!--左マステ -->
-            <section class="section-1">
-
-        
-                <div class="section-1">
-                <div class="flow-img down"><img src="../img/about-vertical1.png">
-                <img src="../img/about-vertical1.png"><img src="../img/about-vertical1.png"></div>
-                <div class="content-area">
-            <!--文字 -->
-            <div class="vertical-moji">
+ <section class="section-1">
+        <div class="flow-img down"><img src="../img/about-vertical1.png" alt="">
+            <img src="../img/about-vertical1.png" alt=""><img src="../img/about-vertical1.png" alt=""></div>
+        <div class="content-area">
                     <div class="title">
                         <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
                         <h3>OUR STORY</h3>
@@ -138,28 +165,25 @@
                                 <br>お酒のおつまみとしてはもちろん老若男女問わず
                                 <br>多くの方々に選ばれています。
                             </p>
-
-                            <a href="../04access/index.html">
-                            <img src="../img/about-access.png" alt=""></a>
-                </div> 
+    <div class="">
+        <a  class="kakisen-a" href="#">
+            <div class="kakisen-btn">
+                <p>詳しく見る</p>
+                <div class="kakisen-circle">
                 </div>
+            </div>
+        </a>
+    </div>
 
-                
 
-                <div class="flow-img up"><img src="../img/about-vertical1.png">
-                    <img src="../img/about-vertical1.png"><img src="../img/about-vertical1.png"></div>
-
-                    
-            </section>
-            
-            <section class="section-1">
-
-        
-                <div class="section-1">
-                <div class="flow-img down"><img src="../img/about-vertical2.png">
-                <img src="../img/about-vertical2.png"><img src="../img/about-vertical2.png"></div>
-                <div class="content-area">
-            <!--文字 -->
+        </div>
+        <div class="rotate-flower1"><img src="../img/about-oysterflower1.png" alt=""></div>
+        <div class="rotate-flower2"><img src="../img/about-oysterflower2.png" alt=""></div>
+        <div class="flow-img up"><img src="../img/about-vertical1.png" alt=""><img src="../img/about-vertical1.png" alt=""><img src="../img/about-vertical1.png" alt=""></div>
+    </section>
+    <section class="section-2">
+        <div class="flow-img down"><img src="../img/about-vertical2.png" alt=""><img src="../img/about-vertical2.png" alt=""><img src="../img/about-vertical2.png" alt=""></div>
+        <div class="content-area">
             <div class="vertical-moji">
                     <div class="title">
                         <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
@@ -175,22 +199,19 @@
                             <br>これからも継続的に、より良い商品をお届けすることで、
                             <br>お客様に心から喜んでいただける瀬戸内の味をお届けしてまいります
                             </p>
-
-                             <a href="../02product/index.html">
-                            <img src="../img/about-access.png" alt=""></a>
-                </div> 
+    <div class="">
+        <a  class="kakisen-a" href="#">
+            <div class="kakisen-btn">
+                <p>詳しく見る</p>
+                <div class="kakisen-circle">
                 </div>
-
-                <div class="flow-img up"><img src="../img/about-vertical2.png">
-                    <img src="../img/about-vertical2.png" alt=""><img src="../img/about-vertical2.png"></div>
-            </section>
-
-
             </div>
-
-
-
-
+        </a>
+    </div>
+                </div> 
+        </div>
+        <div class="flow-img up"><img src="../img/about-vertical2.png" alt=""><img src="../img/about-vertical2.png" alt=""><img src="../img/about-vertical2.png" alt=""></div>
+    </section>
   
     </main>
      <script src="../js/no-top-header-menu.js"></script>
