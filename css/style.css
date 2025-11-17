@@ -711,7 +711,7 @@ display: flex;
     background-color: #FDC865;
 }
 /* フッター */
-.footer-area{
+footer .footer-area{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2516,11 +2516,14 @@ input, label, button {
     /*=================================
                 ONLINE
     =================================*/
+    #online main {
+        padding: 0 20px;
+    }
     #online .onlineShop .item-list {
         gap: 20px;
     }
     #online .onlineShop .item-list .item {
-        width: 110px;
+        width: 100px;
     }
     #online .onlineShop .item-list .item h4 {
         font-size: 16px
@@ -2573,7 +2576,7 @@ input, label, button {
     }
     /*----------- お会計 ----------*/
     #checkOut main {
-        padding: 0 50px;
+        padding: 0 20px;
     }
 }
 /*=================================
