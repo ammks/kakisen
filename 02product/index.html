@@ -38,12 +38,42 @@ $(function(){
 
 <body class="wrapper"  id="product">
     <!-- ヘッダー -->
-    <header>
+     	<header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
         <!-- グローバルナビ -->
-        <nav>
-        </nav>
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+        <!-- ONLINE SHOPボタン -->
+        <a href="../03online/index.html" class="fixed-shop-btn">
+            <h4>ONLINE<br>SHOP</h4>
+        </a>
     </header>
-    <div class="header-tile"></div>
+    <div class="header-tile"><img src="../img/product-tile-1-ver.2.png" alt=""></div>
     <!-- メイン -->
     <main>
         <!-- セクション諸々 -->
@@ -51,14 +81,14 @@ $(function(){
             <img src="../img/title-icon.png" alt="正方形の柄" width="34" height="34">
             <h3>PRODUCT</h3>
         </div>
-        <section class="kakisen-section">
+        <section class="kakisen-section tab-section">
             <div class="kakisen wrapper">
                 <div class="img-area"><img src="../img/product-kakisen-mv.png" alt="KAKISEN."></div>
                 <div class="content-area">
                     <img src="../img/product-tile-2.png" alt="">
                     <h2>
                         パリッ、サクッ。<br>
-                        海の旨みをぎゅっと閉じ込めた、<br>
+                        海の旨みを<br class="sp-br">ぎゅっと閉じ込めた、<br>
                         広島産牡蠣せんべい
                     </h2>
                     <h3>KAKISEN.</h3>
@@ -69,16 +99,16 @@ $(function(){
                 </div>
             </div>
             <div class="kakisen-list wrapper list">
-                <div class="list-button">
-                    <ul>
-                        <li class="active">Salt</li>
-                        <li>Butter Herb</li>
-                        <li>Spicy Red</li>
-                        <li>Lemon Pepper</li>
+                <div class="list-button container">
+                    <ul class="inner">
+                        <li class="btn active"><img src="../img/product-kakisen-salt.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakisen-butterHerb.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakisen-spicyRed.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakisen-lemonPeper.png" alt=""></li>
                     </ul>
                 </div>
                 <div class="list-container">
-                    <div class="item salt">
+                    <div class="item salt active">
                         <div class="img-area"><img src="../img/product-kakisen-salt.png" alt="KAKISEN.salt"></div>
                         <h4>Salt</h4>
                         <p>
@@ -89,7 +119,7 @@ $(function(){
                         </p>
                         <div class="graph-outer aroma">
                             <h5>香ばしさ</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -98,7 +128,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -127,7 +157,7 @@ $(function(){
                         </p>
                         <div class="graph-outer aroma">
                             <h5>香ばしさ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -145,7 +175,7 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -173,7 +203,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -182,7 +212,7 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -201,7 +231,7 @@ $(function(){
                         </p>
                         <div class="graph-outer aroma">
                             <h5>香ばしさ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -210,7 +240,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -219,11 +249,11 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph ">
                                 <div class="value-1 value"></div>
-                                <div class="value-2 value"><div class="circle"></div></div>
+                                <div class="value-2 value"></div>
                                 <div class="value-3 value"></div>
-                                <div class="value-4 value"></div>
+                                <div class="value-4 value"><div class="circle"></div></div>
                             </div>
                         </div> 
                     </div>
@@ -231,15 +261,15 @@ $(function(){
             </div>
         </section>
         
-        <section class="kakio-section">
+        <section class="kakio-section tab-section">
             <div class="kakisen wrapper">
                 <div class="img-area"><img src="../img/product-kakio-mv.png" alt="KAKISEN."></div>
                 <div class="content-area">
                     <img src="../img/product-tile-3.png" alt="">
                     <h2>
                         カリッ、ほろっ。<br>
-                        海の恵みと米の香ばしさをとじ込めた、<br>
-                        やさしい味わいの広島産牡蠣おかき
+                        海の恵みと<br class="sp-br">米の香ばしさをとじ込めた、<br>
+                        やさしい味わいの<br class="sp-br">広島産牡蠣おかき
                     </h2>
                     <h3>KAKIO.</h3>
                     <p>
@@ -249,8 +279,16 @@ $(function(){
                 </div>
             </div>
             <div class="kakio-list wrapper list">
+                <div class="list-button container">
+                    <ul class="inner">
+                        <li class="btn active"><img src="../img/product-kakio-salt.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakio-shoyu.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakio-spicyRed.png" alt=""></li>
+                        <li class="btn"><img src="../img/product-kakio-yuzuSalt.png" alt=""></li>
+                    </ul>
+                </div>
                 <div class="list-container">
-                    <div class="item salt">
+                    <div class="item salt active">
                         <div class="img-area"><img src="../img/product-kakio-salt.png" alt="KAKISEN.salt"></div>
                         <h4>Salt</h4>
                         <p>
@@ -261,7 +299,7 @@ $(function(){
                         </p>
                         <div class="graph-outer aroma">
                             <h5>香ばしさ</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -270,7 +308,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -317,7 +355,7 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -345,7 +383,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -354,7 +392,7 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -373,7 +411,7 @@ $(function(){
                         </p>
                         <div class="graph-outer aroma">
                             <h5>香ばしさ</h5>
-                            <div class="graph">
+                            <div class="graph point-3">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"><div class="circle"></div></div>
                                 <div class="value-3 value"></div>
@@ -382,7 +420,7 @@ $(function(){
                         </div>
                         <div class="graph-outer umami">
                             <h5>旨み</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -391,7 +429,7 @@ $(function(){
                         </div>
                         <div class="graph-outer sharp">
                             <h5>キレ</h5>
-                            <div class="graph">
+                            <div class="graph point-4">
                                 <div class="value-1 value"></div>
                                 <div class="value-2 value"></div>
                                 <div class="value-3 value"><div class="circle"></div></div>
@@ -408,7 +446,7 @@ $(function(){
                     <p>広島に旅行に来ている方</p>
                     <p>旅行を計画している方へ</p>
                     <div class="button">
-                        <a href="">アクセス</a>
+                        <a href="../04access/index.html">アクセス</a>
                     </div>
                 </div>
             </div>
@@ -417,7 +455,7 @@ $(function(){
                     <p>遠方の方</p>
                     <p>ご自宅でも楽しみたい方へ</p>
                     <div class="button">
-                        <a href="">オンラインショップ</a>
+                        <a href="../03online/index.html">オンラインショップ</a>
                     </div>
                 </div>
             </div>
@@ -425,7 +463,33 @@ $(function(){
     </main>
     <!-- フッター -->
     <footer>
+        <div class="footer-area">
+            <a href="../index.html"><img  src="../img/top-footer-logo.png" alt="KAKISEN.のロゴ" width="175" height="75"></a>
+            <nav class="nav-footer">
+                <ul>
+                    <a href="../01about/index.html"><li>ABOUT</li></a>
+                    <a href="../02product/index.html"><li>PRODUCT</li></a>
+                    <a href="../03online/index.html"><li>ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li>ACCESS</li></a>
+                </ul>     
+            </nav>
+            <div class="footer-sub">
+                <a href="../05privacy/index.html"><p>プライバシー・ポリシー</p></a>
+                <a href="../06tokushoho/index.html"><p>特定商取引法に基づく表示</p></a>
+            </div>
+            <div class="copyright">
+                <p>©2025 SETO CRAFTS Co.</p>
+            </div>
+        </div>
+        <div class="footer-pattern">
+            <div class="pattern-track">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+            </div>
+        </div>
     </footer>
+    <script src="../js/no-top-header-menu.js"></script>
+    <script src="../js/product-list-button.js"></script>
 </body>
 
 </html>

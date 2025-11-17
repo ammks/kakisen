@@ -63,19 +63,77 @@ $(function(){
             </div>
         </a>
     </div>
+
+
     <!-- ヘッダー -->
     <header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../img/top-header-logo.png" alt="kakisen.ロゴ" width="119" height="51"></a>
+        </div>
+        <div class="header-menu">
+            <div class="menu-btn" id="menu-btn">
+                <span class="menu-text">MENU</span>
+                <div class="menu-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                </div>
+            </div>
+        </div>
         <!-- グローバルナビ -->
-        <nav>
-        </nav>
+        <div id="global-nav" class="nav-overlay">
+            <div class="close-btn" id="menu-close">
+                <span class="close-line line1"></span>
+                <span class="close-line line2"></span>
+            </div>
+            <nav class="nav-content">
+                <ul>
+                    <a href="../01about/index.html"><li data-pattern="top-about-bg">ABOUT</li></a>
+                    <a href="../02product/index.html"><li data-pattern="top-product-bg">PRODUCT</li></a>
+                    <a href="../03online/index.html"><li data-pattern="top-online-bg">ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li data-pattern="top-access-bg">ACCESS</li></a>
+                </ul>  
+                <div id="pattern-bg">
+                </div>      
+            </nav>
+        </div>
+        <!-- ONLINE SHOPボタン -->
+        <a href="../03online/index.html" class="fixed-shop-btn">
+            <h4>ONLINE<br>SHOP</h4>
+        </a>
     </header>
-    <!-- メイン -->
-    <main>
-        <!-- セクション諸々 -->
-    </main>
-    <!-- フッター -->
+
+
+    <!-- フッター　-->
     <footer>
+        <div class="footer-area">
+            <a href="../index.html"><img  src="../img/top-footer-logo.png" alt="KAKISEN.のロゴ" width="175" height="75"></a>
+            <nav class="nav-footer">
+                <ul>
+                    <a href="../01about/index.html"><li>ABOUT</li></a>
+                    <a href="../02product/index.html"><li>PRODUCT</li></a>
+                    <a href="../03online/index.html"><li>ONLINE SHOP</li></a>
+                    <a href="../04access/index.html"><li>ACCESS</li></a>
+                </ul>     
+            </nav>
+            <div class="footer-sub">
+                <a href="../05privacy/index.html"><p>プライバシー・ポリシー</p></a>
+                <a href="../06tokushoho/index.html"><p>特定商取引法に基づく表示</p></a>
+            </div>
+            <div class="copyright">
+                <p>©2025 SETO CRAFTS Co.</p>
+            </div>
+        </div>
+        <div class="footer-pattern">
+            <div class="pattern-track">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+                <img src="../img/top-footer-kikagaku.png" alt="幾何学模様" width="3456" height="120">
+            </div>
+        </div>
     </footer>
+
+
+
+
 </body>
 
 </html>
