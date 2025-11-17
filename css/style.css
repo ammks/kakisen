@@ -64,7 +64,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 0.78%;
-    margin: 6.25% 0 5.2% 0;
+    margin: 6.25% 0 5.21% 0;
 }
 /* ボタン */
 .kakisen-btn{
@@ -521,7 +521,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-top: 5.2%;
+    margin-top: 5.21%;
 }
 #top .senbei-description h2 {
     margin: 15px 0;
@@ -549,7 +549,7 @@ header{
     gap: 10%;
     z-index: 10;
     position: relative;
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
 #top .text-highlight{
     font-family: "Gravitas One", serif;
@@ -589,7 +589,7 @@ header{
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
 #top .loop-track{
 display: flex;
@@ -635,7 +635,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     gap: 3%;
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
 #top .product-kakio{
     width: 100%;
@@ -655,7 +655,7 @@ display: flex;
 }
 #top .product-intro p{
     text-align: left;
-    margin: 3% 0 5.2% 3%;
+    margin: 3% 0 5.21% 3%;
 }
 #top .product-intro-title{
     display: flex;
@@ -1646,13 +1646,13 @@ input, label, button {
 }
 #access .access-title-section {
     text-align: center;
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
 #access .access-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0.52%;
+    gap: 0.78%
 }
 #access .access-title span{
     color:#2C2929;
@@ -1660,15 +1660,19 @@ input, label, button {
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
+    line-height: 1em;
 }
-#access .subtitle-icon{
-    height: 0.75%;
-    margin-right: 0.75%;
+#access .title .title-icon{
+    width: 34px;
+    height: auto;
+}
+#access .title .subtitle-icon{
+    width: 10px; 
+    height: auto;
 }
 .store-image-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 5.2%;
 }
 .store-image-container {
     max-width: 600px;
@@ -1678,7 +1682,6 @@ input, label, button {
 }
 .store-image-container img {
     height: auto;
-    border-radius: 5px;
 }
 .photo-slider .slick-prev,
 .photo-slider .slick-next {
@@ -2011,7 +2014,6 @@ input, label, button {
     justify-content: center;
     flex-wrap: wrap; /* スマホで折り返す */
     gap: 1.5rem 5vw; /* 縦横の隙間 */
-    margin-top: 100px;
 }
 .info-item {
     display: flex;
@@ -2035,8 +2037,8 @@ input, label, button {
 .pattern-divider {
     overflow: hidden;
     width: 100%;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 2.605%;
+    margin-bottom: 2.605%;
 }
 .pattern-divider img {
     height: 60px; /* 固定 */
@@ -2048,36 +2050,35 @@ input, label, button {
     animation: scroll-pattern 60s linear infinite;
 }
 /* 詳細地図セクション */
-.map-section {
+#access .map-section {
     text-align: center;
-    margin-bottom: 5.2%;    
 }
 #access .map-section .access-title{
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
-.map-container {
+#access .map-container {
     position: relative;
     max-width: 600px;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 75px;
 }
-.map-container img:not(.character) {
+#access .map-container img:not(.character) {
     width: 100%;
     height: auto;
 }
-.character {
+#access .character {
     position: absolute;
     width: clamp(8rem, 10vw, 12.5rem);
     height: auto;
 }
-.character-store {
+#access .character-store {
     right: calc(-50px + 5%); 
     bottom: 7rem; 
     z-index: 10; 
     animation: gentle-float 2s infinite alternate ease-in-out;
 }
-.character-map {   
+#access .character-map {   
     left: calc(-100px + 5%); 
     bottom: -5rem;
     z-index: 10;
@@ -2088,9 +2089,10 @@ input, label, button {
     margin-bottom: 6.25%;
 }
 #access .google-map-section .access-title{
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
+    line-height: 1em;
 }
-.google-map-wrapper {
+#access .google-map-wrapper {
     max-width: 600px;
     width: 90%;
     margin: 0 auto; 
@@ -2148,18 +2150,17 @@ input, label, button {
     width: 100%;
     height: 1.56%; 
     background-color: #E64C4C;
-    margin-bottom: 3.125%; 
+    margin-bottom: 6.25%; 
 }
 #tokushoho .legal-notation-page {
-    width: 70%; 
+    width: 100%; 
     max-width: 960px; 
     margin: 0 auto;
-    padding-bottom: 5.2%; 
 }
 #tokushoho .page-title {
     text-align: center;
     font-size: 2rem; 
-    margin-bottom: 5.2%;
+    margin-bottom: 5.21%;
 }
 #tokushoho .block-title {
     display: flex;
@@ -2168,6 +2169,7 @@ input, label, button {
     font-weight: 700; 
     color: #2C2929;
     margin-bottom: 1.56%;
+    gap: 0.78%
 }
 #tokushoho .block-subtitle{
     display: flex;
@@ -2177,16 +2179,15 @@ input, label, button {
     padding-left: 0.52%; 
     margin-bottom: 1.3%;
     color: #2C2929;
+    gap: 0.78%;
 }
 #tokushoho .block-title .title-icon {
     width: 34px;
     height: auto;
-    margin-right: 0.75%; 
 }
 #tokushoho .block-subtitle .subtitle-icon{
     width: 10px; 
-    height: auto;
-    margin-right: 0.75%; 
+    height: auto; 
 }
 #tokushoho .info-list {
     display: flex; 
@@ -2580,16 +2581,12 @@ input, label, button {
     #access p{
         font-size: 0.65rem;
     }
-
-    #access .line-deco {
-        margin-bottom: 6.25%;
-    }
     #access .access-title-section {
-        margin-bottom: 5.2%;
+        margin-bottom: 5.21%;
     }
     #access .access-title-section .title {
         font-size: 1rem;
-        margin-bottom: 5.2%;
+        margin-bottom: 5.21%;
     }
     #access .title .title-icon {
     width: 24px; 
