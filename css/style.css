@@ -2272,7 +2272,6 @@ input, label, button {
             TOP
 =================================*/
     /* ヘッダー */
-    /* menuとlogoを中央揃えにしたい */
     header {
         justify-content: space-between;
         padding: 10px 20px;
@@ -2351,7 +2350,6 @@ input, label, button {
     #top .catch-column.left   { transition-delay: 0.6s; }
     /* せんべい単体 */
     #top .senbei-intro{
-        padding: 0 20px;
         margin-top: 16.25%;
     }
     #top .senbei-container {
