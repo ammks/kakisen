@@ -76,7 +76,6 @@ html {
     background-color: #E64C4C;
     padding: 6px;
     color: #FFF8F0;
-    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5)
 }
 .kakisen-btn p{
     color: #FFF8F0;
@@ -270,7 +269,7 @@ header{
 /* ONLINE SHOPボタン */
 .fixed-shop-btn{
     position: fixed;
-    bottom: 2%;
+    bottom: 2.5%;
     right: 1%;
     width: 90px;
     height: 90px;
@@ -336,7 +335,6 @@ header{
 #top .scroll-item.suare{
     border-radius: 4px;
 }
-
 #top .dot{
     color: #E64C4C;
     margin: 0 12px;
@@ -655,7 +653,8 @@ display: flex;
 }
 #top .product-intro p{
     text-align: left;
-    margin: 3% 0 5.21% 3%;
+    margin: 3% 0 5.2% 3%;
+    line-height: 1.5em;
 }
 #top .product-intro-title{
     display: flex;
@@ -665,7 +664,6 @@ display: flex;
 }
 /* STORE */
 #top .ankerLink-section {
-    margin-top: 13.02%;
     display: flex;
     justify-content: center;
 }
@@ -2293,12 +2291,10 @@ input, label, button {
         height: 11vh;
     }
     #top .scroll-item{
-        font-size: 12px;
         padding: 3px 8px;
         margin: 0 2px;
     }
     #top .dot{
-        font-size: 14px;
         margin: 0 6px;
     }
     #top .scroll-wrapper{
@@ -2339,13 +2335,19 @@ input, label, button {
     #top .senbei-text{
         width: 40%;
     }
+    #top .senbei-intro-area{
+        padding: 0 20px;
+    }
     /* What is KAKISEN. */
+    #top .about-container{
+        padding: 0 20px;
+    }
     #top .about-text{
         flex-direction: column;
-        padding: 0 20px;
     }
     #top .about-text-p{
         margin-bottom: 15px;
+        line-height: 2em;
     }
     #top .slide-track{
         width: 50%;
