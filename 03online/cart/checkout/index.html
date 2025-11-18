@@ -25,14 +25,6 @@
 <!-- ビューポート -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--jQuery本体-->
-<script src="js/jquery-1.11.2.min.js"></script>
-
-<!--ready関数-->
-<script>
-$(function(){
-
-});
-</script>
 
 </head>
 
@@ -84,26 +76,36 @@ $(function(){
                 <div class="circle no-3"></div>
                 <div class="circle no-4"></div>
             </div>
-            <form action="">
-                <label for="" class="required">お名前</label>
-                <input type="text" placeholder="牡蠣　煎太郎">
-                <label for="" class="required">フリガナ</label>
-                <input type="text" placeholder="カキ　センタロウ">
-                <label for="" class="required">郵便番号</label>
-                <input type="text" placeholder="0000000">
-                <label for="" class="required">都道府県</label>
-                <input type="text" placeholder="都道府県">
-                <label for="" class="required">市区町村</label>
-                <input type="text" placeholder="呉市汐浜町">
-                <label for="" class="required">番地</label>
-                <input type="text" placeholder="２－１４－３">
-                <label for="" class="required">建物名・部屋番号</label>
-                <input type="text" placeholder="〇〇ビル１０１">
-                <label for="">電話番号</label>
-                <input type="text" placeholder="08012345678">
-                <label for="" class="required">メールアドレス</label>
-                <input type="text" placeholder="example@mail.com">
-                <button>お支払方法選択へ</button>
+            <div class="error-msg">必須の項目が入力されていません。</div>
+            <form action="" method="post">
+                <label for="user-name" class="required">お名前</label>
+                <input type="text" name="user-name" id="user-name" placeholder="牡蠣　煎太郎" required>
+
+                <label for="user-name-furigana" class="required">フリガナ</label>
+                <input type="text" name="user-name-furigana" id="user-name-furigana" placeholder="カキ　センタロウ" required>
+
+                <label for="post-code" class="required">郵便番号</label>
+                <input type="text" name="post-code" id="post-code" placeholder="0000000" required>
+
+                <label for="prefectures" class="required">都道府県</label>
+                <input type="text" name="prefectures" id="prefectures" placeholder="都道府県" required>
+
+                <label for="municipalities" class="required">市区町村</label>
+                <input type="text" name="municipalities" id="municipalities" placeholder="呉市汐浜町" required>
+
+                <label for="street-address" class="required">番地</label>
+                <input type="text" name="street-address" id="street-address" placeholder="２－１４－３" required>
+
+                <label for="building-name" class="required">建物名・部屋番号</label>
+                <input type="text" name="building-name" id="building-name" placeholder="〇〇ビル１０１" required>
+
+                <label for="telephone-number">電話番号</label>
+                <input type="text" name="telephone-number" id="telephone-number" placeholder="08012345678">
+
+                <label for="mail" class="required">メールアドレス</label>
+                <input type="text" name="mail" id="mail" placeholder="example@mail.com" required>
+
+                <button type="submit">お支払方法選択へ</button>
             </form>
         </section>
     </main>
@@ -136,6 +138,7 @@ $(function(){
     </footer>
     <script src="../../../js/no-top-header-menu.js"></script>
     <script src="../../../js/online-img-list.js"></script>
+    <script src="../../../js/checkout-form.js"></script>
 </body>
 
 </html>
