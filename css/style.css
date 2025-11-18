@@ -2,7 +2,6 @@
 /* CSS Document */
 /* フルードイメージ */
 img{max-width: 100%;height:auto;}
-
 /*=================================
             共通
 =================================*/
@@ -826,7 +825,6 @@ footer .footer-area{
   animation: image_anime 2s ease infinite; /* 5秒のアニメーションを繰り返す */
 }
 @keyframes image_anime {
-    
   0%{
     background-image: url(../img/about-bg0.png); /* 背景画像1を指定 */
   }
@@ -845,7 +843,6 @@ footer .footer-area{
 }
 /* 背景固定画像　切り替わる */
 #about .switch-img{
-    /* margin:0 auto ; */
     width: 100%;
     height: auto;
     position: sticky;
@@ -862,12 +859,10 @@ footer .footer-area{
     transform: translate(-50%,0) scale(0.6);
 }
 #about .BGI{
-    /* background-attachment: fixed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 60vh;
-    /* overflow: hidden; */
 }
 #about .BGI img {
     width: 100%;
@@ -962,7 +957,6 @@ footer .footer-area{
     0% {
         transform: translateY(-100%);
     }
-
     100% {
         transform: translateY(0%);
     }
@@ -970,7 +964,6 @@ footer .footer-area{
 .flow-img.up img {
     width: 100%;
     animation: flow 5s infinite linear reverse;}
-
 .rotate-flower1 {
     position: absolute;
     left: 10%; top: 3%;
@@ -996,12 +989,10 @@ footer .footer-area{
         scale: 0;
         rotate: 0deg;
     }
-
     50% {
         scale: 1;
         rotate: 360deg;
     }
-
     100% {
         scale: 0;
         rotate: 720deg;
@@ -2048,7 +2039,6 @@ input, label, button {
     color: black;
 }
 /* スライダーここまで */
-
 .contact-info {
     width: fit-content;
     margin: 0 auto;
@@ -2182,11 +2172,54 @@ input, label, button {
         transform: translateY(-2%) rotate(5deg);
     }
 }
-
 /*=================================
             PRIVACY
 =================================*/
+    .header-tile img {
+        width: 100%;
+    }
 
+    #PP ol {
+        list-style-type: decimal;
+    }
+    /* 個人情報保護方針 */
+    #PP ol li{
+        font-weight: bold;
+        margin: 2% 0 1% 0%;
+    }
+    #PP ul li{
+        font-weight: normal;
+        margin: 0;
+    }
+    #PP .header-blocks{
+        background-image: url(../img/PP-line.png);
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 65px; /* 高さの調整 */
+        margin-bottom: 3.125%; /* 下の余白 */
+    }
+    .privacy-sub{
+        margin-top: 5.2%;
+    }
+    /* HELP涙涙涙 */
+    .privacy-policy{
+    text-align: center;    
+    }
+    .test{ 
+        background-image: url(../img/PP-line.png);
+        background-repeat: repeat-x;
+        width: 100%;
+        height: 40px; /* 高さの調整 */
+        margin-bottom: 3.125%; /* 下の余白 */
+    }
+    .main-paaage {
+        width: 70%; /* ページのコンテンツ幅 */
+        margin: 0 auto;
+        padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+    }
+    .personal-information{
+        margin: 80px 0 50px 0;
+    }
 /*=================================
             TOKUSHO
 =================================*/
@@ -2284,9 +2317,6 @@ input, label, button {
 #tokushoho .notation-block {
     margin-bottom: 3.125%; 
 }
-
-
-
 /* ======================メディアクエリ始まり=========================*/
 @media(width<780px){
 /*=================================
@@ -2478,28 +2508,6 @@ input, label, button {
         width: 100%;
         padding: 20px;
     }
-    /* 背景固定画像　切り替わる
-    #about .switch-img{
-        margin:0 auto ;
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 0;
-    }
-    #about .switch-img img{
-        width: fit-content;
-        margin: 0 auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(1);
-    }
-    .switch-img .item-first{
-        animation: switch-img 5s infinite;
-    }
-    .switch-img .item-second{
-        animation: switch-img 5s infinite reverse;
-    } */
     #about .switch-img img{
         transform: translate(-50%,0) scale(1);
     }
@@ -2587,12 +2595,10 @@ input, label, button {
             scale: 0;
             rotate: 0deg;
         }
-
         50% {
             scale: 1;
             rotate: 360deg;
         }
-
         100% {
             scale: 0;
             rotate: 720deg;
@@ -2771,11 +2777,9 @@ input, label, button {
     #checkOut main {
         padding: 0 20px;
     }
-}
-/*=================================
-            ACCESS
-=================================*/
-@media(width<780px){
+    /*=================================
+                ACCESS
+    =================================*/
     #access p{
         font-size: 0.65rem;
     }
@@ -2837,128 +2841,65 @@ input, label, button {
     #access .google-map-section {
         margin-bottom: 4rem;
     }
-}
-/*=================================
-            PRIVACY
-=================================*/
-ol {
-	list-style-type: decimal;
-    
-/* 個人情報保護方針 */
-    ol li{
-        font-weight: bold;
-        margin: 2% 0 1% 0%;
-    }
-
-    ul li{
-        font-weight: normal;
-        margin: 0;
-    }
-}
-#PP .header-blocks{
-    background-image: url(../img/PP-line.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 65px; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
-}
-
-/* HELP涙涙涙 */
-.privacy-policy{
- text-align: center;    
-}
-
-.test{ 
-    background-image: url(../img/PP-line.png);
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 40px; /* 高さの調整 */
-    margin-bottom: 3.125%; /* 下の余白 */
-}
-
-.main-paaage {
-    width: 70%; /* ページのコンテンツ幅 */
-    margin: 0 auto;
-    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-}
-
-.personal-information{
-    margin: 80px 0 50px 0;
-}
-
-}
-/*=================================
-            TOKUSHO
-=================================*/
-@media(width<780px){
-/* 特定商取引法 */
+    /*=================================
+                PRIVACY
+    =================================*/
+    /*=================================
+                TOKUSHO
+    =================================*/
+    /* 特定商取引法 */
     #tokushoho .line-deco {
-    height: 50%; 
-    margin-bottom: 6.25%;
+        height: 50%; 
+        margin-bottom: 6.25%;
     }
     #tokushoho .legal-notation-page {
-    width: 90%; 
-    padding-bottom: 10%;
+        width: 90%; 
+        padding-bottom: 10%;
     }
     #tokushoho .page-title {
-    font-size: 1rem; 
-    margin-bottom: 5.25%;
+        font-size: 1rem; 
+        margin-bottom: 5.25%;
     }
     #tokushoho .block-title {
-    font-size: 1rem; 
-    margin-bottom: 4%;
-    padding-left: 0;
+        font-size: 1rem; 
+        margin-bottom: 4%;
+        padding-left: 0;
     }
     #tokushoho .block-subtitle {
-    font-size: 0.8rem; 
-    padding-left: 0;
-    margin-bottom: 3%;
+        font-size: 0.8rem; 
+        padding-left: 0;
+        margin-bottom: 3%;
     }
     #tokushoho .block-title .title-icon {
-    width: 24px; 
-    margin-right: 2%;
+        width: 24px; 
+        margin-right: 2%;
     }
     #tokushoho .block-subtitle .subtitle-icon {
-    width: 8px; 
-    margin-right: 2%;
+        width: 8px; 
+        margin-right: 2%;
     }
     #tokushoho .info-list dt,
     #tokushoho .info-list dd {
-    width: 100%;
-    font-size:  0.65rem;
-    padding: 0.5rem 0; 
+        width: 100%;
+        font-size:  0.65rem;
+        padding: 0.5rem 0; 
     }
     #tokushoho .info-list dd p{
-    font-size:  0.65rem;
-}
-/* オンラインショップのボタンを消す？ */
-/* キャッチコピー */
-#top .catch-column.right  { transition-delay: 0.2s; }
-#top .catch-column.center { transition-delay: 0.4s; }
-#top .catch-column.left   { transition-delay: 0.6s; }
-
-    /* PRODUCT */
-
-    /* ONLINE SHOP */
-
-    /* 個人情報保護方針 */
-    ol {
-	list-style-type: decimal;
+        font-size:  0.65rem;
+    }
     #tokushoho .store-data dt, #tokushoho .store-data dd {
-    width: 100%;
+        width: 100%;
     }
     #tokushoho .content-text,
     #tokushoho .sub-list p {
-    font-size:  0.65rem; 
-    line-height: 1.6;
+        font-size:  0.65rem; 
+        line-height: 1.6;
     }
     #tokushoho .notation-hr {
-    margin: 5% 0;
+        margin: 5% 0;
     }
     #tokushoho .notation-block {
-    margin-bottom: 6%;
+        margin-bottom: 6%;
     }
 }
-}
-
 /* ======================メディアクエリ終わり=========================*/
