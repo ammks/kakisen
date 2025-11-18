@@ -570,7 +570,6 @@ header{
 #top .slide-track img{
     width: 400px;
     height: auto;
-    border-radius: 8px;
     flex-shrink: 0;
 }
 @keyframes scrollSlide {
@@ -862,7 +861,7 @@ footer .footer-area{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60vh;
+    height: 100vh;
 }
 #about .BGI img {
     width: 100%;
@@ -894,19 +893,19 @@ footer .footer-area{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 350px;
+    height: 100%;
     background-attachment: fixed;
     background-color: #FFF8F0;
 }
 #about .slide-track{
     display: flex;
     gap: 20px;
-    animation: scrollSlide 30s linear infinite;
+    animation: scrollSlide 50s linear infinite;
+    background-color: #FFF8F0;
 }
 #about .slide-track img{
     width: 800px;
     height: auto;
-    border-radius: 8px;
     flex-shrink: 0;
 }
 @keyframes scrollSlide {
@@ -931,7 +930,7 @@ footer .footer-area{
 
 }
 .section-1 .content-area, .section-2 .content-area {
-    padding: 10% 80px;
+    padding:0 80px;
     width: 100%;
 }
 .section-2 .content-area .title {
@@ -950,7 +949,7 @@ footer .footer-area{
     top: 0; right: 0;
 }
 .flow-img.down img {
-    animation: flow 3s infinite linear;
+    animation: flow 5s infinite linear;
     width: 100%;
 }
 @keyframes flow {
@@ -2175,51 +2174,52 @@ input, label, button {
 /*=================================
             PRIVACY
 =================================*/
-    .header-tile img {
-        width: 100%;
-    }
+.header-tile img {
+    width: 100%;
+}
 
-    #PP ol {
-        list-style-type: decimal;
-    }
-    /* 個人情報保護方針 */
-    #PP ol li{
-        font-weight: bold;
-        margin: 2% 0 1% 0%;
-    }
-    #PP ul li{
-        font-weight: normal;
-        margin: 0;
-    }
-    #PP .header-blocks{
-        background-image: url(../img/PP-line.png);
-        background-repeat: repeat-x;
-        width: 100%;
-        height: 65px; /* 高さの調整 */
-        margin-bottom: 3.125%; /* 下の余白 */
-    }
-    .privacy-sub{
-        margin-top: 5.2%;
-    }
-    /* HELP涙涙涙 */
-    .privacy-policy{
-    text-align: center;    
-    }
-    .test{ 
-        background-image: url(../img/PP-line.png);
-        background-repeat: repeat-x;
-        width: 100%;
-        height: 40px; /* 高さの調整 */
-        margin-bottom: 3.125%; /* 下の余白 */
-    }
-    .main-paaage {
-        width: 70%; /* ページのコンテンツ幅 */
-        margin: 0 auto;
-        padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
-    }
-    .personal-information{
-        margin: 80px 0 50px 0;
-    }
+#PP ol {
+    list-style-type: decimal;
+}
+/* 個人情報保護方針 */
+#PP ol li{
+    font-weight: bold;
+    margin: 2% 0 1% 0%;
+}
+#PP ul li{
+    font-weight: normal;
+    margin: 0;
+}
+#PP .header-blocks{
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 65px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+.privacy-sub{
+    margin-top: 5.2%;
+}
+/* HELP涙涙涙 */
+.privacy-policy{
+text-align: center;    
+}
+.test{ 
+    background-image: url(../img/PP-line.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 40px; /* 高さの調整 */
+    margin-bottom: 3.125%; /* 下の余白 */
+}
+.main-paaage {
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto;
+    padding-bottom: 5.2%; /* メインコンテンツ下の余白 */
+}
+.personal-information{
+    margin: 80px 0 50px 0;
+}
 /*=================================
             TOKUSHO
 =================================*/
@@ -2411,9 +2411,6 @@ input, label, button {
     #top .senbei-text{
         width: 40%;
     }
-    #top .senbei-intro-area{
-        padding: 0 20px;
-    }
     /* What is KAKISEN. */
     #top .about-container{
         padding: 0 20px;
@@ -2532,7 +2529,7 @@ input, label, button {
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        height: 350px;
+        height: 100;
         background-attachment: fixed;
     }
     #about .slide-track{
@@ -2542,7 +2539,6 @@ input, label, button {
     #about .slide-track img{
         width: 300px;
         height: auto;
-        border-radius: 8px;
         flex-shrink: 0;
     }
     #about .title{
@@ -2784,11 +2780,15 @@ input, label, button {
         font-size: 0.65rem;
     }
     #access .access-title-section {
-        margin-bottom: 5.21%;
+        margin-bottom: 2.605%;
     }
     #access .access-title-section .title {
         font-size: 1rem;
-        margin-bottom: 5.21%;
+        margin-bottom: 2.605%;
+    }
+    #access.access-title{
+        font-size: 1rem;
+        margin-bottom: 2.605%;
     }
     #access .title .title-icon {
     width: 24px; 
@@ -2844,6 +2844,13 @@ input, label, button {
     /*=================================
                 PRIVACY
     =================================*/
+    .privacy-policy{
+        padding: 0 20px;
+    }
+    .privacy-sub{
+        margin-left: 20px;
+    }
+
     /*=================================
                 TOKUSHO
     =================================*/
