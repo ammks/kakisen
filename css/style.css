@@ -2089,8 +2089,14 @@ input, label, button {
     width: auto;
     display: block;
 }
-.pattern-divider .pattern-track {
+.pattern-divider .pattern-flow {
     display: flex;
+    width: 100%;
+    /* transform: translateX(100%); */
+}
+.pattern-divider .pattern-flow img {
+    width: 100%;
+    height: auto;
     animation: scroll-pattern 60s linear infinite;
 }
 /* 詳細地図セクション */
@@ -2162,7 +2168,7 @@ input, label, button {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* 模様画像を2枚連結しているため-50%で無限ループ */
+        transform: translateX(-100%); /* 模様画像を2枚連結しているため-50%で無限ループ */
     }
 }
 /* キャラクター画像のアニメーション */
