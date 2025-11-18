@@ -1672,6 +1672,15 @@ input, label, button {
 #checkOut .checkOut.wrapper form button:hover {
     background-color: #FDC865;
 }
+.error-msg {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10.00%;
+    padding: 2.08% 4.17%;
+    background-color: #ffb5b5;
+    color: #E64C4C;
+    display: none;
+}
 /*=================================
             ACCESS
 =================================*/
