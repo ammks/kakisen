@@ -1690,7 +1690,7 @@ input, label, button {
 }
 #access .access-title-section {
     text-align: center;
-    margin-bottom: 5.21%;
+    margin-bottom: 2.605%;
 }
 #access .access-title {
     display: flex;
@@ -2081,8 +2081,8 @@ input, label, button {
 .pattern-divider {
     overflow: hidden;
     width: 100%;
-    margin-top: 2.605%;
-    margin-bottom: 2.605%;
+    margin-top: 5.21%;
+    margin-bottom: 5.21%;
 }
 .pattern-divider img {
     height: 60px; /* 固定 */
@@ -2098,7 +2098,7 @@ input, label, button {
     text-align: center;
 }
 #access .map-section .access-title{
-    margin-bottom: 5.21%;
+    margin-bottom: 2.605%;
 }
 #access .map-container {
     position: relative;
@@ -2133,7 +2133,7 @@ input, label, button {
     margin-bottom: 6.25%;
 }
 #access .google-map-section .access-title{
-    margin-bottom: 5.21%;
+    margin-bottom: 2.605%;
     line-height: 1em;
 }
 #access .google-map-wrapper {
