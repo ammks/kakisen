@@ -49,7 +49,7 @@ ul.bxslider {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2000;
+  z-index: 99;
 }
 /* PAGER */
 .bx-wrapper .bx-pager {
@@ -113,7 +113,7 @@ ul.bxslider {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  z-index: 9999;
+  z-index: 99;
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
